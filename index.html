@@ -60,6 +60,7 @@
       background:linear-gradient(to bottom, rgba(255,255,255,.08), rgba(255,255,255,.04));
       box-shadow:var(--shadow);
       position:sticky;top:14px;backdrop-filter:blur(10px);
+      z-index: 10;
     }
     .brand{display:flex;align-items:center;gap:12px}
     .logo{
@@ -106,6 +107,7 @@
       padding:10px 12px;border-radius:12px;border:1px solid var(--line);
       background:rgba(255,255,255,.06);
       font-size:13px;color:var(--text);
+      cursor:pointer;
     }
     .btn.primary{
       border-color:rgba(125,211,252,.35);
@@ -125,8 +127,6 @@
     .section h2{margin:0 0 12px;font-size:16px;color:var(--text);letter-spacing:.2px}
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
     @media (max-width: 900px){.grid{grid-template-columns:1fr}}
-    .subgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    @media (max-width: 900px){.subgrid{grid-template-columns:1fr}}
     .badge{
       font-size:12px;padding:6px 10px;border-radius:999px;
       border:1px solid var(--line);
@@ -145,7 +145,7 @@
       font-size:13px;
     }
 
-    /* Honor display (fairness-first) */
+    /* Honor display legend */
     .honorLegend{display:flex;gap:10px;flex-wrap:wrap}
     .chip{
       display:inline-flex;align-items:center;gap:8px;
@@ -158,29 +158,8 @@
     .dot.good{background:rgba(52,211,153,.9)}
     .dot.warn{background:rgba(251,191,36,.9)}
     .dot.acc{background:rgba(125,211,252,.95)}
-    .industryCard h3{margin:0 0 8px;font-size:15px}
-    .industryCard p{margin:0 0 10px}
-    .honors{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .hon{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted)}
-    .people{margin-top:10px;display:grid;gap:8px}
-    .person{
-      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
-      padding:10px 12px;border-radius:14px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);
-    }
-    .who{min-width:160px;display:flex;flex-direction:column;gap:2px}
-    .who b{font-size:13px}
-    .who span{font-size:12px;color:var(--muted)}
-    .what{flex:1;color:var(--muted);font-size:13px;line-height:1.55}
-    .roles{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-    .role{
-      font-size:12px;padding:4px 8px;border-radius:999px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);
-      height:24px;display:inline-flex;align-items:center;
-    }
-    .role.acc{border-color:rgba(125,211,252,.35);background:rgba(125,211,252,.12);color:var(--text)}
-    .role.good{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.12);color:var(--text)}
-    .role.warn{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.12);color:var(--text)}
+
+    /* Industry wall */
     .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     input[type="search"]{
       width:100%;max-width:420px;
@@ -193,6 +172,53 @@
       border:1px solid var(--line);background:rgba(255,255,255,.04);
       color:var(--text);outline:none;
     }
+    .industryCard h3{margin:0 0 8px;font-size:15px}
+    .industryCard p{margin:0 0 10px}
+    .honors{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .hon{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted)}
+
+    /* People cards (reused by carousel + lists) */
+    .people{margin-top:10px;display:grid;gap:8px}
+    .person{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+      padding:10px 12px;border-radius:14px;
+      border:1px solid var(--line);background:rgba(255,255,255,.04);
+    }
+    .who{min-width:200px;display:flex;flex-direction:column;gap:2px}
+    .who b{font-size:13px}
+    .who span{font-size:12px;color:var(--muted)}
+    .what{flex:1;color:var(--muted);font-size:13px;line-height:1.55}
+    .roles{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start}
+
+    .role{
+      font-size:12px;padding:4px 8px;border-radius:999px;
+      border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);
+      height:24px;display:inline-flex;align-items:center;
+      white-space:nowrap;
+    }
+    .role.acc{border-color:rgba(125,211,252,.35);background:rgba(125,211,252,.12);color:var(--text)}
+    .role.good{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.12);color:var(--text)}
+    .role.warn{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.12);color:var(--text)}
+
+    details summary{
+      list-style:none;
+      user-select:none;
+    }
+    details summary::-webkit-details-marker{display:none}
+    details summary{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-size:12px;
+      cursor:pointer;
+      margin-top:8px;
+    }
+
     footer{
       margin-top:22px;padding:14px 4px;
       color:var(--muted);font-size:12px;
@@ -213,8 +239,9 @@
         </div>
       </div>
       <nav>
-        <a class="pill" href="#industries">行业 × 职业</a>
-        <a class="pill" href="#honor">荣誉展示原则</a>
+        <a class="pill" href="#honor">原则</a>
+        <a class="pill" href="#timeline">动态</a>
+        <a class="pill" href="#industries">行业×职业</a>
         <a class="pill" href="#how">参与共创</a>
         <a class="pill" href="https://github.com/windmoon-Lotus/Career-Information-Sharing" target="_blank" rel="noreferrer">GitHub 仓库</a>
       </nav>
@@ -245,7 +272,7 @@
         <div class="notice">
           <b>目录导航（仓库内）</b><br/>
           职业百科 / 资源 / 趣味知识 / 管理规范 / 探索工具（按需扩展）。<br/>
-          说明：本站首页只负责“导览与共创荣誉展示”，详细内容以仓库文件为准。
+          说明：本站首页负责导览、原则说明、以及按“时间线”展示共创动态；详细内容以仓库文件为准。
         </div>
       </div>
 
@@ -253,38 +280,73 @@
         <div class="kv">
           <div class="row"><b>目标</b><span>降低探索门槛</span></div>
           <div class="row"><b>方法</b><span>结构化沉淀 + 同好接力</span></div>
-          <div class="row"><b>原则</b><span>等权致谢、不做排行</span></div>
+          <div class="row"><b>展示策略</b><span>等权致谢 + 时间线</span></div>
           <div class="row"><b>入口</b><span class="mono">PR / Issue / 访谈 / 校对</span></div>
         </div>
       </aside>
     </section>
 
     <section id="honor" class="section">
-      <h2>贡献人荣誉展示原则（避免“厚此薄彼”）</h2>
+      <h2>贡献展示原则（避免“厚此薄彼”）</h2>
       <div class="card">
         <p>
-          本项目的“荣誉展示”遵循三条底线：<b>不设榜单</b>、<b>不做贡献量对比</b>、<b>不突出单一人物</b>。展示重点放在“贡献类型与影响面”，而非“数量与排名”。
+          本项目的展示规则强调“可追溯、可理解、可持续”，并避免把贡献变成竞赛：
+          <b>不设榜单</b>、<b>不做贡献量对比</b>、<b>不突出单一人物</b>。
+          动态轮播仅按<b>贡献时间</b>展示“最新更新”，不代表贡献高低。
         </p>
+
         <div class="divider"></div>
 
-        <div class="honorLegend" aria-label="荣誉标签说明">
+        <div class="honorLegend" aria-label="贡献类型徽章说明">
           <span class="chip"><span class="dot acc"></span>行业洞察（行业脉络/生态/趋势）</span>
           <span class="chip"><span class="dot good"></span>职业词条（岗位职责/路径/能力图谱）</span>
-          <span class="chip"><span class="dot warn"></span>访谈与一手报告（真实案例/实践复盘）</span>
-          <span class="chip"><span class="dot"></span>校对与审核（一致性/可读性/结构化）</span>
-          <span class="chip"><span class="dot"></span>工具与模板（问卷/模板/流程）</span>
+          <span class="chip"><span class="dot warn"></span>访谈/一手报告（真实案例/实践复盘）</span>
+          <span class="chip"><span class="dot"></span>校对/审核（一致性/可读性/结构化）</span>
+          <span class="chip"><span class="dot"></span>工具/模板（问卷/模板/流程）</span>
           <span class="chip"><span class="dot"></span>资源整理（课程/书单/链接）</span>
         </div>
 
         <div class="divider"></div>
 
         <div class="notice">
-          <b>为了公平：</b><br/>
-          1）贡献人展示采用<b>等尺寸卡片</b>与<b>同权信息密度</b>；<br/>
-          2）默认排序使用<b>拼音/字母序</b>或<b>随机轮换</b>（可切换）；<br/>
-          3）“荣誉”以<b>贡献类型徽章</b>呈现，不使用“TOP/冠军/第X名”；<br/>
-          4）每个行业/职业的“共创荣誉”优先展示<b>团队成果</b>（新增/完善/校对/访谈等维度），弱化个人对比。
+          <b>公平性兜底：</b><br/>
+          1）轮播仅展示最新若干条，页面同时提供“全部贡献记录（时间线）”；<br/>
+          2）每条记录使用同一模板（同权信息密度），详细说明采用折叠展开；<br/>
+          3）不展示排名、贡献值、贡献数量等可能引发比较的数据。
         </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section">
+      <h2>最新共创动态（按时间排序轮播）</h2>
+      <div class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+          <p style="margin:0">展示规则：仅按贡献时间轮播，不做排行与对比。</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn" id="prevBtn" type="button">上一条</button>
+            <button class="btn primary" id="toggleBtn" type="button">暂停轮播</button>
+            <button class="btn" id="nextBtn" type="button">下一条</button>
+            <a class="btn" href="#all-contrib">查看全部</a>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="carousel" class="person" aria-live="polite"></div>
+        <div style="margin-top:10px;color:var(--muted);font-size:12px" class="mono">
+          当前展示：<span id="idx"></span>/<span id="total"></span> · 最近更新：<span id="latestAt"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="all-contrib" class="section">
+      <h2>全部贡献记录（时间线）</h2>
+      <div class="card">
+        <p style="margin:0">
+          所有贡献按时间线收录；轮播仅展示最新若干条，不代表贡献高低。
+        </p>
+        <div class="divider"></div>
+        <div id="eventList" class="people"></div>
       </div>
     </section>
 
@@ -303,7 +365,7 @@
           </select>
         </div>
         <p style="margin-top:10px">
-          说明：每个行业卡片展示“团队共创荣誉”（不对比个人），并列出贡献人及其“贡献类型徽章”（不展示数量、级别与排行）。
+          说明：行业卡片展示“团队共创荣誉”（不对比个人），贡献人展示仅使用贡献类型徽章与一句话说明（不显示数量/排名）。
         </p>
       </div>
 
@@ -328,15 +390,14 @@
         </div>
 
         <div class="card">
-          <h3 style="margin:0 0 8px;font-size:15px">如何被“公平致谢”</h3>
+          <h3 style="margin:0 0 8px;font-size:15px">如何被“时间线”收录</h3>
           <p>
-            提交内容后，只需在对应行业/职业条目里补充一行贡献信息（或在 PR/Issue 中声明），即可被自动纳入“行业×职业荣誉墙”。<br/>
-            贡献类型采用统一枚举（徽章），避免主观评价与对比。
+            贡献合入后，将一条事件写入首页的数据区（或未来自动化生成）。字段固定、模板固定，避免主观评价与比较：
+            <span class="mono">时间</span>、<span class="mono">行业/职业</span>、<span class="mono">贡献类型</span>、<span class="mono">摘要</span>、<span class="mono">详细说明（可选）</span>、<span class="mono">证据链接</span>。
           </p>
           <div class="divider"></div>
           <div class="notice">
-            建议填写字段：<span class="mono">姓名/昵称</span>、<span class="mono">GitHub</span>、<span class="mono">贡献类型</span>、<span class="mono">一句话贡献说明</span>。<br/>
-            隐私需要时，可仅展示 <span class="mono">@handle</span> 或匿名。
+            隐私需要时，可仅展示 <span class="mono">@handle</span> 或匿名；“详细说明”建议遵循统一结构：做了什么 / 解决什么 / 影响面 / 链接证据。
           </div>
         </div>
       </div>
@@ -349,8 +410,9 @@
   </div>
 
   <script>
-    // ======= Data (请在这里维护行业/职业/贡献人) =======
-    // 设计原则：不记录贡献数量、不记录排名；只记录“贡献类型”与“一句话说明”，尽量避免比较感。
+    // =========================
+    // 1) 贡献类型（徽章）
+    // =========================
     const TAGS = [
       { key:"industry",  label:"行业洞察", color:"acc" },
       { key:"career",    label:"职业词条", color:"good" },
@@ -360,7 +422,39 @@
       { key:"resource",  label:"资源整理", color:"" },
     ];
 
-    // 示例数据（请替换为真实行业与职业条目；贡献人建议按拼音/字母序录入）
+    // =========================
+    // 2) 贡献事件时间线（用于轮播 + 全量列表）
+    //    维护要点：不记数量、不记等级、不排行；只按时间展示。
+    // =========================
+    const EVENTS = [
+      {
+        time: "2025-12-13T10:30:00Z",
+        person: { name:"A-Lotus", handle:"@windmoon-Lotus", url:"https://github.com/windmoon-Lotus" },
+        scope: { industry:"互联网 / 软件", career:"安全工程师" },
+        tags: ["career","review"],
+        summary: "完善安全工程师词条结构，补齐职责边界与成长路径。",
+        details: "补充能力图谱（基础/进阶/专项）、常见误区与入门路线；统一术语口径与小节结构，增强可读性与可复用性。",
+        links: [
+          { label:"职业百科目录", url:"https://github.com/windmoon-Lotus/Career-Information-Sharing/tree/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91" }
+        ]
+      },
+      {
+        time: "2025-12-12",
+        person: { name:"Chen", handle:"@chenxxx", url:"https://github.com/chenxxx" },
+        scope: { industry:"金融 / 投研", career:"风控" },
+        tags: ["industry","resource"],
+        summary: "补充行业生态与风控岗位路径，并整理入门资源清单。",
+        details: "补充常见分工与典型工作流；整理推荐阅读与课程索引，强调适用范围与边界条件。",
+        links: [
+          { label:"Issues 讨论区", url:"https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" }
+        ]
+      }
+    ];
+
+    // =========================
+    // 3) 行业×职业荣誉墙（团队荣誉 + 贡献人等权展示）
+    //    维护要点：团队成果优先、个人同权信息密度、可随机轮换减少固定曝光差。
+    // =========================
     const INDUSTRIES = [
       {
         name: "互联网 / 软件",
@@ -377,21 +471,24 @@
         teamHonors: ["补充行业生态与常见路径", "完善入门误区与学习资源"],
         contributors: [
           { name:"Li", handle:"@lixxx", tags:["industry","resource"], note:"整理入门资源与典型工作流，增强可落地性。" },
-          { name:"Wang", handle:"@wangxxx", tags:["career","review"], note:"补齐岗位职责与协作边界，提升可读性一致性。" },
-        ]
-      },
-      {
-        name: "制造 / 工业",
-        careers: ["质量工程师", "工艺工程师", "供应链计划"],
-        teamHonors: ["建立岗位术语对照", "沉淀真实案例口径"],
-        contributors: [
-          { name:"Zhao", handle:"@zhaoxxx", tags:["career","fieldwork"], note:"补充真实案例与常见场景，提升“像查字典一样”的可用性。" }
+          { name:"Wang", handle:"@wangxxx", tags:["career","review"], note:"补齐岗位职责与协作边界，提升一致性。" },
         ]
       }
     ];
 
-    // ======= Rendering =======
+    // =========================
+    // 通用工具函数
+    // =========================
     const $ = (id) => document.getElementById(id);
+
+    function escapeHtml(str){
+      return String(str ?? "")
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
 
     function shuffle(arr){
       const a = arr.slice();
@@ -406,14 +503,144 @@
       const meta = TAGS.find(t=>t.key===tagKey);
       const cls = meta?.color ? `role ${meta.color}` : "role";
       const text = meta?.label || tagKey;
-      return `<span class="${cls}">${text}</span>`;
+      return `<span class="${cls}">${escapeHtml(text)}</span>`;
     }
 
+    function formatTime(t){
+      const d = new Date(t);
+      if (isNaN(d.getTime())) return escapeHtml(t);
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth()+1).padStart(2,"0");
+      const dd = String(d.getDate()).padStart(2,"0");
+      const hh = String(d.getHours()).padStart(2,"0");
+      const mi = String(d.getMinutes()).padStart(2,"0");
+      return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
+    }
+
+    // =========================
+    // 4) 时间线：轮播 + 全量列表
+    // =========================
+    const eventsSorted = EVENTS
+      .slice()
+      .sort((a,b) => new Date(b.time).getTime() - new Date(a.time).getTime());
+
+    let cur = 0;
+    let timer = null;
+    let playing = true;
+    const intervalMs = 6000;
+
+    function renderCarousel(){
+      const box = $("carousel");
+      if(!box) return;
+
+      if(eventsSorted.length === 0){
+        box.innerHTML = `<div class="notice">暂无贡献记录。可先补充 EVENTS 数据。</div>`;
+        $("idx").textContent = "0";
+        $("total").textContent = "0";
+        $("latestAt").textContent = "-";
+        return;
+      }
+
+      const e = eventsSorted[cur];
+
+      $("total").textContent = String(eventsSorted.length);
+      $("idx").textContent = String(cur + 1);
+      $("latestAt").textContent = eventsSorted[0] ? formatTime(eventsSorted[0].time) : "-";
+
+      const personLink = e.person?.url
+        ? `<a href="${escapeHtml(e.person.url)}" target="_blank" rel="noreferrer">${escapeHtml(e.person.name || "匿名共创者")}</a>`
+        : escapeHtml(e.person?.name || "匿名共创者");
+
+      const handle = e.person?.handle ? escapeHtml(e.person.handle) : "";
+      const scope = `${escapeHtml(e.scope?.industry || "未分类")} · ${escapeHtml(e.scope?.career || "未指定职业")}`;
+
+      const linksHtml = (e.links||[]).map(l =>
+        `<a class="btn" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`
+      ).join("");
+
+      box.innerHTML = `
+        <div class="who">
+          <b>${personLink}</b>
+          <span class="mono">${handle}</span>
+          <span class="mono">${scope}</span>
+          <span class="mono">时间：${escapeHtml(formatTime(e.time))}</span>
+        </div>
+        <div class="what">
+          <div>${escapeHtml(e.summary || "")}</div>
+          ${e.details ? `
+            <details>
+              <summary>展开详细说明</summary>
+              <div style="margin-top:10px;color:var(--muted);line-height:1.6">${escapeHtml(e.details)}</div>
+            </details>
+          ` : ""}
+          ${linksHtml ? `<div class="cta" style="margin-top:10px">${linksHtml}</div>` : ""}
+        </div>
+        <div class="roles">${(e.tags||[]).map(tagPill).join("")}</div>
+      `;
+    }
+
+    function renderEventList(){
+      const list = $("eventList");
+      if(!list) return;
+
+      if(eventsSorted.length === 0){
+        list.innerHTML = `<div class="notice">暂无贡献记录。可先补充 EVENTS 数据。</div>`;
+        return;
+      }
+
+      list.innerHTML = eventsSorted.map(e => {
+        const person = e.person?.url
+          ? `<a href="${escapeHtml(e.person.url)}" target="_blank" rel="noreferrer">${escapeHtml(e.person.name || "匿名共创者")}</a>`
+          : escapeHtml(e.person?.name || "匿名共创者");
+        const handle = e.person?.handle ? escapeHtml(e.person.handle) : "";
+        const scope = `${escapeHtml(e.scope?.industry || "未分类")} · ${escapeHtml(e.scope?.career || "未指定职业")}`;
+        const links = (e.links||[]).map(l => `<a class="btn" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`).join("");
+
+        return `
+          <div class="person">
+            <div class="who">
+              <b>${person}</b>
+              <span class="mono">${handle}</span>
+              <span class="mono">${scope}</span>
+              <span class="mono">时间：${escapeHtml(formatTime(e.time))}</span>
+            </div>
+            <div class="what">
+              <div>${escapeHtml(e.summary || "")}</div>
+              ${e.details ? `<div style="margin-top:10px">${escapeHtml(e.details)}</div>` : ""}
+              ${links ? `<div class="cta" style="margin-top:10px">${links}</div>` : ""}
+            </div>
+            <div class="roles">${(e.tags||[]).map(tagPill).join("")}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function next(){ if(eventsSorted.length){ cur = (cur + 1) % eventsSorted.length; renderCarousel(); } }
+    function prev(){ if(eventsSorted.length){ cur = (cur - 1 + eventsSorted.length) % eventsSorted.length; renderCarousel(); } }
+
+    function start(){
+      if (timer || eventsSorted.length <= 1) return;
+      timer = setInterval(next, intervalMs);
+      playing = true;
+      const btn = $("toggleBtn"); if(btn) btn.textContent = "暂停轮播";
+    }
+    function stop(){
+      if (!timer) return;
+      clearInterval(timer);
+      timer = null;
+      playing = false;
+      const btn = $("toggleBtn"); if(btn) btn.textContent = "继续轮播";
+    }
+    function toggle(){ playing ? stop() : start(); }
+
+    // =========================
+    // 5) 行业×职业荣誉墙渲染（带搜索/筛选）
+    // =========================
     function industryMatches(ind, q){
       if(!q) return true;
       const s = q.toLowerCase();
-      const inName = ind.name.toLowerCase().includes(s);
-      const inCareers = (ind.careers||[]).some(c=>c.toLowerCase().includes(s));
+      const inName = (ind.name||"").toLowerCase().includes(s);
+      const inCareers = (ind.careers||[]).some(c=>String(c).toLowerCase().includes(s));
       const inPeople = (ind.contributors||[]).some(p =>
         (p.name||"").toLowerCase().includes(s) || (p.handle||"").toLowerCase().includes(s)
       );
@@ -425,10 +652,13 @@
       return (ind.contributors||[]).some(p => (p.tags||[]).includes(tag));
     }
 
-    function render(){
-      const q = ($("q").value || "").trim();
-      const sort = $("sort").value;
-      const filterTag = $("filterTag").value;
+    function renderIndustryWall(){
+      const grid = $("industryGrid");
+      if(!grid) return;
+
+      const q = ($("q")?.value || "").trim();
+      const sort = $("sort")?.value || "alpha";
+      const filterTag = $("filterTag")?.value || "";
 
       let list = INDUSTRIES.filter(ind => industryMatches(ind, q) && hasTag(ind, filterTag));
 
@@ -436,7 +666,6 @@
       else list = list.slice().sort((a,b)=> (a.name||"").localeCompare(b.name||"", "zh-Hans-CN-u-co-pinyin"));
 
       const html = list.map(ind => {
-        // contributors: equal-weight display; default alpha/pinyin; optional random is handled at industry level.
         let people = (ind.contributors||[]).slice().sort((a,b)=> (a.name||"").localeCompare(b.name||"", "zh-Hans-CN-u-co-pinyin"));
         if(sort === "random") people = shuffle(people);
 
@@ -476,32 +705,53 @@
         `;
       }).join("");
 
-      $("industryGrid").innerHTML = html || `<div class="card"><p>未找到匹配项。可尝试更换关键词或清空筛选。</p></div>`;
+      grid.innerHTML = html || `<div class="card"><p>未找到匹配项。可尝试更换关键词或清空筛选。</p></div>`;
     }
 
-    function escapeHtml(str){
-      return String(str)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
+    // =========================
+    // 6) 初始化
+    // =========================
+    function initFooter(){
+      const now = new Date();
+      const y = $("y"), d = $("d");
+      if(y) y.textContent = String(now.getFullYear());
+      if(d) d.textContent = now.toISOString().slice(0,10);
     }
 
-    // init footer
-    const now = new Date();
-    document.getElementById("y").textContent = String(now.getFullYear());
-    document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    function initFilters(){
+      const sel = $("filterTag");
+      if(!sel) return;
+      const opt = TAGS.map(t=>`<option value="${t.key}">筛选：${t.label}</option>`).join("");
+      sel.insertAdjacentHTML("beforeend", opt);
 
-    // init filter options
-    const opt = TAGS.map(t=>`<option value="${t.key}">筛选：${t.label}</option>`).join("");
-    document.getElementById("filterTag").insertAdjacentHTML("beforeend", opt);
+      const q = $("q"), sort = $("sort"), filter = $("filterTag");
+      if(q) q.addEventListener("input", renderIndustryWall);
+      if(sort) sort.addEventListener("change", renderIndustryWall);
+      if(filter) filter.addEventListener("change", renderIndustryWall);
+    }
 
-    // bind
-    ["q","sort","filterTag"].forEach(id => $(id).addEventListener("input", render));
-    ["sort","filterTag"].forEach(id => $(id).addEventListener("change", render));
+    function initCarousel(){
+      const hasUI = $("carousel") && $("prevBtn") && $("nextBtn") && $("toggleBtn");
+      if(!hasUI) return;
 
-    render();
+      $("prevBtn").addEventListener("click", () => { stop(); prev(); });
+      $("nextBtn").addEventListener("click", () => { stop(); next(); });
+      $("toggleBtn").addEventListener("click", toggle);
+
+      renderCarousel();
+      renderEventList();
+      start();
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) stop();
+        else if (playing) start();
+      });
+    }
+
+    initFooter();
+    initFilters();
+    initCarousel();
+    renderIndustryWall();
   </script>
 </body>
 </html>
