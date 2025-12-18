@@ -1,0 +1,27 @@
+{
+  "coCreationThanks": [
+    {
+      "name": "张三",
+      "role": "受访者",
+      "topic": "制造业 · 质量工程师",
+      "note": "分享真实工作流与入门误区，帮助完善词条可用性。",
+      "links": [{ "label": "个人主页", "url": "https://example.com" }]
+    },
+    {
+      "name": "李四",
+      "role": "访谈人",
+      "topic": "金融 · 风控",
+      "note": "完成访谈提纲与整理，输出结构化摘要。",
+      "links": []
+    }
+  ],
+  "developmentThanks": [
+    {
+      "name": "王五",
+      "role": "项目建议",
+      "topic": "协作机制",
+      "note": "建议用“时间线 + 等权模板”替代榜单，避免比较感。",
+      "links": [{ "label": "GitHub", "url": "https://github.com/wangwu" }]
+    }
+  ]
+}
