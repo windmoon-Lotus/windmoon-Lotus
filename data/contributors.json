@@ -1,0 +1,19 @@
+{
+  "contributors": [
+    {
+      "id": "windmoon-Lotus",
+      "displayName": "A-Lotus",
+      "handle": "@windmoon-Lotus",
+      "avatar": "https://avatars.githubusercontent.com/u/000000?v=4",
+      "bio": "从业方向：职业信息共享与结构化知识沉淀。欢迎通过 PR/Issue 共创。",
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/windmoon-Lotus" },
+        { "label": "个人站点", "url": "https://windmoon-lotus.github.io/" }
+      ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    }
+  ]
+}
