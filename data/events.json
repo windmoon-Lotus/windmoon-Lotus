@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "time": "2025-12-13T10:30:00Z",
+      "personId": "windmoon-Lotus",
+      "scope": { "industry": "互联网 / 软件", "career": "安全工程师" },
+      "tags": ["career", "review"],
+      "summary": "完善安全工程师词条结构，补齐职责边界与成长路径。",
+      "details": "补充能力图谱、常见误区与入门路线；统一术语口径与小节结构。",
+      "evidence": [
+        { "label": "相关目录", "url": "https://github.com/windmoon-Lotus/Career-Information-Sharing/tree/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91" }
+      ]
+    }
+  ]
+}
