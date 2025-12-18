@@ -4,36 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>百家职业信息共享大全｜Career Information Sharing</title>
-  <meta name="description" content="一个由真实从业者共创、持续更新的职业信息共享大全。按行业与职业组织内容，强调等权致谢与可持续共创。" />
+  <meta name="description" content="真实从业者共创的职业信息共享大全。首页聚焦导览与致谢墙：共创致谢（访谈人/受访者）与项目建议致谢，并随机展示部分贡献与事件。" />
   <meta name="color-scheme" content="light dark" />
-
-  <meta property="og:title" content="百家职业信息共享大全" />
-  <meta property="og:description" content="真实从业者共创的职业“活字典”：行业×职业结构化沉淀，降低探索门槛。" />
-  <meta property="og:type" content="website" />
-
   <style>
     :root{
       --bg:#0b0f14;
       --panel:rgba(255,255,255,.06);
-      --panel2:rgba(255,255,255,.10);
       --text:rgba(255,255,255,.92);
       --muted:rgba(255,255,255,.70);
       --line:rgba(255,255,255,.12);
       --accent:#7dd3fc;
       --accent2:#a78bfa;
-      --good:#34d399;
-      --warn:#fbbf24;
 
       --radius:18px;
       --shadow:0 10px 30px rgba(0,0,0,.35);
       --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-      --sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      --sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
     }
     @media (prefers-color-scheme: light){
       :root{
         --bg:#f7f7fb;
         --panel:rgba(0,0,0,.04);
-        --panel2:rgba(0,0,0,.06);
         --text:rgba(0,0,0,.88);
         --muted:rgba(0,0,0,.62);
         --line:rgba(0,0,0,.10);
@@ -60,7 +51,7 @@
       background:linear-gradient(to bottom, rgba(255,255,255,.08), rgba(255,255,255,.04));
       box-shadow:var(--shadow);
       position:sticky;top:14px;backdrop-filter:blur(10px);
-      z-index: 10;
+      z-index:10;
     }
     .brand{display:flex;align-items:center;gap:12px}
     .logo{
@@ -77,28 +68,22 @@
       font-size:13px;color:var(--muted);
     }
     .pill:hover{background:rgba(255,255,255,.08);color:var(--text)}
-    .hero{
-      margin-top:26px;
-      display:grid;grid-template-columns:1.35fr .65fr;gap:16px;
-    }
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      header{position:static}
-    }
     .card{
       border:1px solid var(--line);border-radius:var(--radius);
       background:linear-gradient(to bottom, rgba(255,255,255,.08), rgba(255,255,255,.04));
       box-shadow:var(--shadow);
       padding:18px;
     }
+    .hero{margin-top:26px;display:grid;grid-template-columns:1.35fr .65fr;gap:16px}
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr} header{position:static} }
     h1{margin:0 0 10px;font-size:28px;letter-spacing:.2px}
+    h2{margin:0 0 12px;font-size:16px;letter-spacing:.2px}
     p{margin:0;color:var(--muted);line-height:1.65}
     .meta{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
     .tag{
       font-family:var(--mono);
       font-size:12px;padding:6px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
+      border:1px solid var(--line);background:rgba(255,255,255,.04);
       color:var(--muted);
     }
     .cta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
@@ -113,7 +98,6 @@
       border-color:rgba(125,211,252,.35);
       background:linear-gradient(135deg, rgba(125,211,252,.22), rgba(167,139,250,.18));
     }
-    .btn small{color:var(--muted)}
     .kv{display:grid;gap:10px}
     .row{
       display:flex;justify-content:space-between;gap:12px;
@@ -124,106 +108,48 @@
     .row b{font-weight:600}
     .row span{color:var(--muted)}
     .section{margin-top:18px}
-    .section h2{margin:0 0 12px;font-size:16px;color:var(--text);letter-spacing:.2px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
-    .badge{
-      font-size:12px;padding:6px 10px;border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
-      color:var(--muted);
-      white-space:nowrap;
-    }
-    .mono{font-family:var(--mono)}
     .divider{border-top:1px dashed var(--line);margin:12px 0}
-    .notice{
-      padding:12px 12px;border-radius:14px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
-      color:var(--muted);
-      line-height:1.6;
-      font-size:13px;
-    }
 
-    /* Honor display legend */
-    .honorLegend{display:flex;gap:10px;flex-wrap:wrap}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+
+    /* list cards */
+    .list{display:grid;gap:10px}
+    .item{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+      padding:12px;border-radius:14px;border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+    }
+    .left{min-width:220px;display:flex;flex-direction:column;gap:4px}
+    .left b{font-size:13px}
+    .left .mono{font-family:var(--mono);font-size:12px;color:var(--muted)}
+    .right{flex:1;color:var(--muted);font-size:13px;line-height:1.55}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .chip{
-      display:inline-flex;align-items:center;gap:8px;
       font-size:12px;padding:6px 10px;border-radius:999px;
       border:1px solid var(--line);
       background:rgba(255,255,255,.04);
       color:var(--muted);
+      display:inline-flex;align-items:center;gap:8px;
     }
-    .dot{width:8px;height:8px;border-radius:99px;background:var(--line)}
-    .dot.good{background:rgba(52,211,153,.9)}
-    .dot.warn{background:rgba(251,191,36,.9)}
-    .dot.acc{background:rgba(125,211,252,.95)}
-
-    /* Industry wall */
-    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    input[type="search"]{
-      width:100%;max-width:420px;
-      padding:10px 12px;border-radius:12px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);
-      color:var(--text);outline:none;
-    }
-    select{
-      padding:10px 12px;border-radius:12px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);
-      color:var(--text);outline:none;
-    }
-    .industryCard h3{margin:0 0 8px;font-size:15px}
-    .industryCard p{margin:0 0 10px}
-    .honors{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .hon{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted)}
-
-    /* People cards (reused by carousel + lists) */
-    .people{margin-top:10px;display:grid;gap:8px}
-    .person{
-      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
-      padding:10px 12px;border-radius:14px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);
-    }
-    .who{min-width:200px;display:flex;flex-direction:column;gap:2px}
-    .who b{font-size:13px}
-    .who span{font-size:12px;color:var(--muted)}
-    .what{flex:1;color:var(--muted);font-size:13px;line-height:1.55}
-    .roles{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start}
-
-    .role{
-      font-size:12px;padding:4px 8px;border-radius:999px;
-      border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);
-      height:24px;display:inline-flex;align-items:center;
-      white-space:nowrap;
-    }
-    .role.acc{border-color:rgba(125,211,252,.35);background:rgba(125,211,252,.12);color:var(--text)}
-    .role.good{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.12);color:var(--text)}
-    .role.warn{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.12);color:var(--text)}
-
     details summary{
-      list-style:none;
-      user-select:none;
-    }
-    details summary::-webkit-details-marker{display:none}
-    details summary{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:6px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background:rgba(255,255,255,.04);
-      color:var(--text);
-      font-size:12px;
-      cursor:pointer;
+      list-style:none;cursor:pointer;user-select:none;
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border:1px solid var(--line);border-radius:999px;
+      background:rgba(255,255,255,.04);color:var(--text);font-size:12px;
       margin-top:8px;
     }
-
+    details summary::-webkit-details-marker{display:none}
     footer{
       margin-top:22px;padding:14px 4px;
       color:var(--muted);font-size:12px;
       display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
       border-top:1px solid var(--line);
+    }
+    .notice{
+      padding:12px;border-radius:14px;border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);font-size:13px;line-height:1.6;
     }
   </style>
 </head>
@@ -239,10 +165,10 @@
         </div>
       </div>
       <nav>
-        <a class="pill" href="#honor">原则</a>
-        <a class="pill" href="#timeline">动态</a>
-        <a class="pill" href="#industries">行业×职业</a>
+        <a class="pill" href="#thanks">致谢墙</a>
+        <a class="pill" href="#random">随机展示</a>
         <a class="pill" href="#how">参与共创</a>
+        <a class="pill" href="contributors/index.html">贡献人目录</a>
         <a class="pill" href="https://github.com/windmoon-Lotus/Career-Information-Sharing" target="_blank" rel="noreferrer">GitHub 仓库</a>
       </nav>
     </header>
@@ -251,153 +177,121 @@
       <div class="card">
         <h1>职业探索像查字典一样简单</h1>
         <p>
-          “百家职业共享”是一个由真实从业者共创、持续更新的职业信息共享空间：以行业与职业为索引，沉淀一手洞察、实践报告与结构化词条，降低探索门槛，并让共创可持续。
+          “百家职业共享”聚焦职业信息结构化沉淀：以真实从业者共创为基础，沉淀行业洞察、职业词条、访谈与实践报告，让职业探索更低门槛、更可验证。
         </p>
 
         <div class="meta">
-          <span class="tag">行业洞察</span>
           <span class="tag">职业百科</span>
-          <span class="tag">同好接力</span>
-          <span class="tag">共创规范</span>
+          <span class="tag">访谈共创</span>
+          <span class="tag">结构化词条</span>
+          <span class="tag">等权致谢</span>
         </div>
 
         <div class="cta">
-          <a class="btn primary" href="#industries">浏览行业与职业 <small>Explore</small></a>
-          <a class="btn" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/tree/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91" target="_blank" rel="noreferrer">进入职业百科 <small>Wiki</small></a>
-          <a class="btn" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" target="_blank" rel="noreferrer">提问 / 讨论 <small>Issues</small></a>
+          <a class="btn primary" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/tree/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91" target="_blank" rel="noreferrer">进入职业百科</a>
+          <a class="btn" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" target="_blank" rel="noreferrer">提问 / 讨论</a>
+          <a class="btn" href="contributors/index.html">贡献人目录</a>
         </div>
 
         <div class="divider"></div>
 
         <div class="notice">
-          <b>目录导航（仓库内）</b><br/>
-          职业百科 / 资源 / 趣味知识 / 管理规范 / 探索工具（按需扩展）。<br/>
-          说明：本站首页负责导览、原则说明、以及按“时间线”展示共创动态；详细内容以仓库文件为准。
+          <b>展示说明</b><br/>
+          首页不做贡献榜单；致谢墙按“角色/场景”分类展示；随机展示仅用于让读者快速感受共创内容，完整记录请以仓库与贡献人目录页为准。
         </div>
       </div>
 
       <aside class="card">
         <div class="kv">
           <div class="row"><b>目标</b><span>降低探索门槛</span></div>
-          <div class="row"><b>方法</b><span>结构化沉淀 + 同好接力</span></div>
-          <div class="row"><b>展示策略</b><span>等权致谢 + 时间线</span></div>
-          <div class="row"><b>入口</b><span class="mono">PR / Issue / 访谈 / 校对</span></div>
+          <div class="row"><b>方式</b><span>共创 + 结构化</span></div>
+          <div class="row"><b>致谢分类</b><span>访谈/受访 · 建议</span></div>
+          <div class="row"><b>数据维护</b><span class="mono">JSON 可扩展</span></div>
         </div>
       </aside>
     </section>
 
-    <section id="honor" class="section">
-      <h2>贡献展示原则（避免“厚此薄彼”）</h2>
-      <div class="card">
-        <p>
-          本项目的展示规则强调“可追溯、可理解、可持续”，并避免把贡献变成竞赛：
-          <b>不设榜单</b>、<b>不做贡献量对比</b>、<b>不突出单一人物</b>。
-          动态轮播仅按<b>贡献时间</b>展示“最新更新”，不代表贡献高低。
-        </p>
-
-        <div class="divider"></div>
-
-        <div class="honorLegend" aria-label="贡献类型徽章说明">
-          <span class="chip"><span class="dot acc"></span>行业洞察（行业脉络/生态/趋势）</span>
-          <span class="chip"><span class="dot good"></span>职业词条（岗位职责/路径/能力图谱）</span>
-          <span class="chip"><span class="dot warn"></span>访谈/一手报告（真实案例/实践复盘）</span>
-          <span class="chip"><span class="dot"></span>校对/审核（一致性/可读性/结构化）</span>
-          <span class="chip"><span class="dot"></span>工具/模板（问卷/模板/流程）</span>
-          <span class="chip"><span class="dot"></span>资源整理（课程/书单/链接）</span>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="notice">
-          <b>公平性兜底：</b><br/>
-          1）轮播仅展示最新若干条，页面同时提供“全部贡献记录（时间线）”；<br/>
-          2）每条记录使用同一模板（同权信息密度），详细说明采用折叠展开；<br/>
-          3）不展示排名、贡献值、贡献数量等可能引发比较的数据。
-        </div>
-      </div>
-    </section>
-
-    <section id="timeline" class="section">
-      <h2>最新共创动态（按时间排序轮播）</h2>
-      <div class="card">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-          <p style="margin:0">展示规则：仅按贡献时间轮播，不做排行与对比。</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn" id="prevBtn" type="button">上一条</button>
-            <button class="btn primary" id="toggleBtn" type="button">暂停轮播</button>
-            <button class="btn" id="nextBtn" type="button">下一条</button>
-            <a class="btn" href="#all-contrib">查看全部</a>
+    <section id="thanks" class="section">
+      <h2>致谢墙</h2>
+      <div class="grid">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+            <div>
+              <b>共创致谢</b>
+              <div class="notice" style="margin-top:10px">
+                致谢对象：<span class="mono">访谈人</span> 与 <span class="mono">受访者</span>。<br/>
+                展示规则：随机抽取若干条等权展示，不做排名。
+              </div>
+            </div>
+            <button class="btn" id="refreshCo" type="button">换一批</button>
           </div>
+          <div class="divider"></div>
+          <div id="coThanks" class="list"></div>
         </div>
 
-        <div class="divider"></div>
-
-        <div id="carousel" class="person" aria-live="polite"></div>
-        <div style="margin-top:10px;color:var(--muted);font-size:12px" class="mono">
-          当前展示：<span id="idx"></span>/<span id="total"></span> · 最近更新：<span id="latestAt"></span>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+            <div>
+              <b>项目发展建议致谢</b>
+              <div class="notice" style="margin-top:10px">
+                致谢对象：提供项目方向、协作机制、内容结构、传播策略等建议的人。<br/>
+                展示规则：随机抽取若干条等权展示，不做排名。
+              </div>
+            </div>
+            <button class="btn" id="refreshDev" type="button">换一批</button>
+          </div>
+          <div class="divider"></div>
+          <div id="devThanks" class="list"></div>
         </div>
       </div>
     </section>
 
-    <section id="all-contrib" class="section">
-      <h2>全部贡献记录（时间线）</h2>
-      <div class="card">
-        <p style="margin:0">
-          所有贡献按时间线收录；轮播仅展示最新若干条，不代表贡献高低。
-        </p>
-        <div class="divider"></div>
-        <div id="eventList" class="people"></div>
-      </div>
-    </section>
-
-    <section id="industries" class="section">
-      <h2>行业 × 职业共创荣誉墙</h2>
-
-      <div class="card" style="margin-bottom:14px">
-        <div class="controls">
-          <input id="q" type="search" placeholder="搜索：行业 / 职业 / 贡献人（例如：金融 / 产品经理 / @handle）" />
-          <select id="sort">
-            <option value="alpha">排序：字母/拼音序（推荐）</option>
-            <option value="random">排序：随机轮换（减少固定曝光差）</option>
-          </select>
-          <select id="filterTag">
-            <option value="">筛选：全部贡献类型</option>
-          </select>
+    <section id="random" class="section">
+      <h2>随机展示：部分贡献片段与事件信息</h2>
+      <div class="grid">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+            <b>随机贡献片段（来自时间线）</b>
+            <button class="btn" id="refreshContrib" type="button">换一批</button>
+          </div>
+          <div class="divider"></div>
+          <div id="randContrib" class="list"></div>
         </div>
-        <p style="margin-top:10px">
-          说明：行业卡片展示“团队共创荣誉”（不对比个人），贡献人展示仅使用贡献类型徽章与一句话说明（不显示数量/排名）。
-        </p>
-      </div>
 
-      <div id="industryGrid" class="grid" aria-label="行业列表"></div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+            <b>随机项目事件（来自时间线）</b>
+            <button class="btn" id="refreshMilestone" type="button">换一批</button>
+          </div>
+          <div class="divider"></div>
+          <div id="randMilestone" class="list"></div>
+        </div>
+      </div>
     </section>
 
     <section id="how" class="section">
       <h2>参与共创</h2>
       <div class="grid">
         <div class="card">
-          <h3 style="margin:0 0 8px;font-size:15px">贡献方式（任选其一）</h3>
           <p>
             1）完善职业词条：通过 Pull Request 更新内容；<br/>
-            2）贡献新知：基于模板补充行业/岗位的一手信息；<br/>
-            3）参与共创：认领一个主题，完成访谈/整理/校对；<br/>
-            4）提问讨论：用 Issues 发起问题与反馈。
+            2）贡献一手信息：基于模板补充行业/岗位；<br/>
+            3）参与访谈：访谈人/受访者共创；<br/>
+            4）给建议：内容结构、协作机制、传播策略等均可。
           </p>
           <div class="cta">
-            <a class="btn primary" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/pulls" target="_blank" rel="noreferrer">发起 PR <small>Pull Request</small></a>
-            <a class="btn" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" target="_blank" rel="noreferrer">发起 Issue <small>Discussion</small></a>
+            <a class="btn primary" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/pulls" target="_blank" rel="noreferrer">发起 PR</a>
+            <a class="btn" href="https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" target="_blank" rel="noreferrer">发起 Issue</a>
           </div>
         </div>
 
         <div class="card">
-          <h3 style="margin:0 0 8px;font-size:15px">如何被“时间线”收录</h3>
-          <p>
-            贡献合入后，将一条事件写入首页的数据区（或未来自动化生成）。字段固定、模板固定，避免主观评价与比较：
-            <span class="mono">时间</span>、<span class="mono">行业/职业</span>、<span class="mono">贡献类型</span>、<span class="mono">摘要</span>、<span class="mono">详细说明（可选）</span>、<span class="mono">证据链接</span>。
-          </p>
-          <div class="divider"></div>
           <div class="notice">
-            隐私需要时，可仅展示 <span class="mono">@handle</span> 或匿名；“详细说明”建议遵循统一结构：做了什么 / 解决什么 / 影响面 / 链接证据。
+            <b>维护建议（面向长期）</b><br/>
+            - 致谢墙维护：编辑 <span class="mono">/data/thanks.json</span><br/>
+            - 贡献人自述：编辑 <span class="mono">/data/contributors.json</span><br/>
+            - 贡献/事件时间线：编辑 <span class="mono">/data/events.json</span>（同一 personId 可多条）<br/>
+            - 个人页会按 <span class="mono">personId</span> 自动汇总该贡献人的全部事件。
           </div>
         </div>
       </div>
@@ -409,349 +303,169 @@
     </footer>
   </div>
 
-  <script>
-    // =========================
-    // 1) 贡献类型（徽章）
-    // =========================
-    const TAGS = [
-      { key:"industry",  label:"行业洞察", color:"acc" },
-      { key:"career",    label:"职业词条", color:"good" },
-      { key:"fieldwork", label:"访谈/一手报告", color:"warn" },
-      { key:"review",    label:"校对/审核", color:"" },
-      { key:"tooling",   label:"工具/模板", color:"" },
-      { key:"resource",  label:"资源整理", color:"" },
-    ];
+<script>
+  // ===== Tags label (可选：用于事件 tags 展示) =====
+  const TAGS = {
+    industry: "行业洞察",
+    career: "职业词条",
+    fieldwork: "访谈/一手报告",
+    review: "校对/审核",
+    tooling: "工具/模板",
+    resource: "资源整理"
+  };
 
-    // =========================
-    // 2) 贡献事件时间线（用于轮播 + 全量列表）
-    //    维护要点：不记数量、不记等级、不排行；只按时间展示。
-    // =========================
-    const EVENTS = [
-      {
-        time: "2025-12-13T10:30:00Z",
-        person: { name:"A-Lotus", handle:"@windmoon-Lotus", url:"https://github.com/windmoon-Lotus" },
-        scope: { industry:"互联网 / 软件", career:"安全工程师" },
-        tags: ["career","review"],
-        summary: "完善安全工程师词条结构，补齐职责边界与成长路径。",
-        details: "补充能力图谱（基础/进阶/专项）、常见误区与入门路线；统一术语口径与小节结构，增强可读性与可复用性。",
-        links: [
-          { label:"职业百科目录", url:"https://github.com/windmoon-Lotus/Career-Information-Sharing/tree/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91" }
-        ]
-      },
-      {
-        time: "2025-12-12",
-        person: { name:"Chen", handle:"@chenxxx", url:"https://github.com/chenxxx" },
-        scope: { industry:"金融 / 投研", career:"风控" },
-        tags: ["industry","resource"],
-        summary: "补充行业生态与风控岗位路径，并整理入门资源清单。",
-        details: "补充常见分工与典型工作流；整理推荐阅读与课程索引，强调适用范围与边界条件。",
-        links: [
-          { label:"Issues 讨论区", url:"https://github.com/windmoon-Lotus/Career-Information-Sharing/issues" }
-        ]
-      }
-    ];
+  const $ = (id)=>document.getElementById(id);
+  const escapeHtml = (s)=>String(s??"")
+    .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;").replaceAll("'","&#039;");
 
-    // =========================
-    // 3) 行业×职业荣誉墙（团队荣誉 + 贡献人等权展示）
-    //    维护要点：团队成果优先、个人同权信息密度、可随机轮换减少固定曝光差。
-    // =========================
-    const INDUSTRIES = [
-      {
-        name: "互联网 / 软件",
-        careers: ["后端工程师", "安全工程师", "产品经理"],
-        teamHonors: ["完成行业脉络梳理", "补齐典型岗位画像", "沉淀访谈提纲模板"],
-        contributors: [
-          { name:"A-Lotus", handle:"@windmoon-Lotus", tags:["industry","career","review"], note:"维护结构与共创规范，统一词条结构化口径。" },
-          { name:"Chen", handle:"@chenxxx", tags:["career"], note:"补充岗位路径与能力图谱，完善术语与边界。" },
-        ]
-      },
-      {
-        name: "金融 / 投研",
-        careers: ["量化研究", "风控", "投研助理"],
-        teamHonors: ["补充行业生态与常见路径", "完善入门误区与学习资源"],
-        contributors: [
-          { name:"Li", handle:"@lixxx", tags:["industry","resource"], note:"整理入门资源与典型工作流，增强可落地性。" },
-          { name:"Wang", handle:"@wangxxx", tags:["career","review"], note:"补齐岗位职责与协作边界，提升一致性。" },
-        ]
-      }
-    ];
+  function fmtTime(t){
+    const d = new Date(t);
+    if (isNaN(d.getTime())) return escapeHtml(t);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth()+1).padStart(2,"0");
+    const dd = String(d.getDate()).padStart(2,"0");
+    return `${yyyy}-${mm}-${dd}`;
+  }
 
-    // =========================
-    // 通用工具函数
-    // =========================
-    const $ = (id) => document.getElementById(id);
+  function sample(arr, n){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]]=[a[j],a[i]];
+    }
+    return a.slice(0, Math.max(0,n));
+  }
 
-    function escapeHtml(str){
-      return String(str ?? "")
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
+  function renderThanks(containerId, rows, n){
+    const el = $(containerId);
+    if(!el) return;
+    if(!rows || rows.length===0){
+      el.innerHTML = `<div class="notice">暂无数据。请维护 /data/thanks.json</div>`;
+      return;
     }
 
-    function shuffle(arr){
-      const a = arr.slice();
-      for(let i=a.length-1;i>0;i--){
-        const j = Math.floor(Math.random()*(i+1));
-        [a[i], a[j]] = [a[j], a[i]];
-      }
-      return a;
-    }
-
-    function tagPill(tagKey){
-      const meta = TAGS.find(t=>t.key===tagKey);
-      const cls = meta?.color ? `role ${meta.color}` : "role";
-      const text = meta?.label || tagKey;
-      return `<span class="${cls}">${escapeHtml(text)}</span>`;
-    }
-
-    function formatTime(t){
-      const d = new Date(t);
-      if (isNaN(d.getTime())) return escapeHtml(t);
-      const yyyy = d.getFullYear();
-      const mm = String(d.getMonth()+1).padStart(2,"0");
-      const dd = String(d.getDate()).padStart(2,"0");
-      const hh = String(d.getHours()).padStart(2,"0");
-      const mi = String(d.getMinutes()).padStart(2,"0");
-      return `${yyyy}-${mm}-${dd} ${hh}:${mi}`;
-    }
-
-    // =========================
-    // 4) 时间线：轮播 + 全量列表
-    // =========================
-    const eventsSorted = EVENTS
-      .slice()
-      .sort((a,b) => new Date(b.time).getTime() - new Date(a.time).getTime());
-
-    let cur = 0;
-    let timer = null;
-    let playing = true;
-    const intervalMs = 6000;
-
-    function renderCarousel(){
-      const box = $("carousel");
-      if(!box) return;
-
-      if(eventsSorted.length === 0){
-        box.innerHTML = `<div class="notice">暂无贡献记录。可先补充 EVENTS 数据。</div>`;
-        $("idx").textContent = "0";
-        $("total").textContent = "0";
-        $("latestAt").textContent = "-";
-        return;
-      }
-
-      const e = eventsSorted[cur];
-
-      $("total").textContent = String(eventsSorted.length);
-      $("idx").textContent = String(cur + 1);
-      $("latestAt").textContent = eventsSorted[0] ? formatTime(eventsSorted[0].time) : "-";
-
-      const personLink = e.person?.url
-        ? `<a href="${escapeHtml(e.person.url)}" target="_blank" rel="noreferrer">${escapeHtml(e.person.name || "匿名共创者")}</a>`
-        : escapeHtml(e.person?.name || "匿名共创者");
-
-      const handle = e.person?.handle ? escapeHtml(e.person.handle) : "";
-      const scope = `${escapeHtml(e.scope?.industry || "未分类")} · ${escapeHtml(e.scope?.career || "未指定职业")}`;
-
-      const linksHtml = (e.links||[]).map(l =>
-        `<a class="btn" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`
-      ).join("");
-
-      box.innerHTML = `
-        <div class="who">
-          <b>${personLink}</b>
-          <span class="mono">${handle}</span>
-          <span class="mono">${scope}</span>
-          <span class="mono">时间：${escapeHtml(formatTime(e.time))}</span>
+    const picked = sample(rows, n);
+    el.innerHTML = picked.map(x=>{
+      const links = (x.links||[]).map(l=>`<a class="chip" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`).join("");
+      return `
+        <div class="item">
+          <div class="left">
+            <b>${escapeHtml(x.name || "匿名")}</b>
+            <div class="mono">${escapeHtml(x.role || "")}</div>
+            <div class="mono">${escapeHtml(x.topic || "")}</div>
+          </div>
+          <div class="right">
+            <div>${escapeHtml(x.note || "")}</div>
+            ${links ? `<div class="chips">${links}</div>` : ""}
+          </div>
         </div>
-        <div class="what">
-          <div>${escapeHtml(e.summary || "")}</div>
-          ${e.details ? `
-            <details>
-              <summary>展开详细说明</summary>
-              <div style="margin-top:10px;color:var(--muted);line-height:1.6">${escapeHtml(e.details)}</div>
-            </details>
-          ` : ""}
-          ${linksHtml ? `<div class="cta" style="margin-top:10px">${linksHtml}</div>` : ""}
-        </div>
-        <div class="roles">${(e.tags||[]).map(tagPill).join("")}</div>
       `;
+    }).join("");
+  }
+
+  function renderEvents(containerId, events, contributorsById, n, kindFilterFn){
+    const el = $(containerId);
+    if(!el) return;
+
+    const filtered = (events||[]).filter(kindFilterFn);
+    if(filtered.length===0){
+      el.innerHTML = `<div class="notice">暂无数据。请维护 /data/events.json</div>`;
+      return;
     }
 
-    function renderEventList(){
-      const list = $("eventList");
-      if(!list) return;
+    const picked = sample(filtered, n);
+    el.innerHTML = picked.map(e=>{
+      const person = e.personId ? (contributorsById[e.personId] || null) : null;
+      const profileUrl = e.personId ? `contributors/profile.html?id=${encodeURIComponent(e.personId)}` : null;
 
-      if(eventsSorted.length === 0){
-        list.innerHTML = `<div class="notice">暂无贡献记录。可先补充 EVENTS 数据。</div>`;
-        return;
-      }
+      const whoHtml = person
+        ? `<a href="${profileUrl}"><b>${escapeHtml(person.displayName || e.personId)}</b></a><div class="mono">${escapeHtml(person.handle||"")}</div>`
+        : (e.personId ? `<a href="${profileUrl}"><b>${escapeHtml(e.personId)}</b></a>` : `<b>项目事件</b>`);
 
-      list.innerHTML = eventsSorted.map(e => {
-        const person = e.person?.url
-          ? `<a href="${escapeHtml(e.person.url)}" target="_blank" rel="noreferrer">${escapeHtml(e.person.name || "匿名共创者")}</a>`
-          : escapeHtml(e.person?.name || "匿名共创者");
-        const handle = e.person?.handle ? escapeHtml(e.person.handle) : "";
-        const scope = `${escapeHtml(e.scope?.industry || "未分类")} · ${escapeHtml(e.scope?.career || "未指定职业")}`;
-        const links = (e.links||[]).map(l => `<a class="btn" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`).join("");
+      const tags = (e.tags||[]).map(t=>`<span class="chip">${escapeHtml(TAGS[t]||t)}</span>`).join("");
+      const links = (e.links||[]).map(l=>`<a class="chip" href="${escapeHtml(l.url)}" target="_blank" rel="noreferrer">${escapeHtml(l.label)}</a>`).join("");
 
-        return `
-          <div class="person">
-            <div class="who">
-              <b>${person}</b>
-              <span class="mono">${handle}</span>
-              <span class="mono">${scope}</span>
-              <span class="mono">时间：${escapeHtml(formatTime(e.time))}</span>
-            </div>
-            <div class="what">
-              <div>${escapeHtml(e.summary || "")}</div>
-              ${e.details ? `<div style="margin-top:10px">${escapeHtml(e.details)}</div>` : ""}
-              ${links ? `<div class="cta" style="margin-top:10px">${links}</div>` : ""}
-            </div>
-            <div class="roles">${(e.tags||[]).map(tagPill).join("")}</div>
+      return `
+        <div class="item">
+          <div class="left">
+            ${whoHtml}
+            <div class="mono">时间：${escapeHtml(fmtTime(e.time))}</div>
+            <div class="mono">类型：${escapeHtml(e.kind||"")}</div>
           </div>
-        `;
-      }).join("");
-    }
-
-    function next(){ if(eventsSorted.length){ cur = (cur + 1) % eventsSorted.length; renderCarousel(); } }
-    function prev(){ if(eventsSorted.length){ cur = (cur - 1 + eventsSorted.length) % eventsSorted.length; renderCarousel(); } }
-
-    function start(){
-      if (timer || eventsSorted.length <= 1) return;
-      timer = setInterval(next, intervalMs);
-      playing = true;
-      const btn = $("toggleBtn"); if(btn) btn.textContent = "暂停轮播";
-    }
-    function stop(){
-      if (!timer) return;
-      clearInterval(timer);
-      timer = null;
-      playing = false;
-      const btn = $("toggleBtn"); if(btn) btn.textContent = "继续轮播";
-    }
-    function toggle(){ playing ? stop() : start(); }
-
-    // =========================
-    // 5) 行业×职业荣誉墙渲染（带搜索/筛选）
-    // =========================
-    function industryMatches(ind, q){
-      if(!q) return true;
-      const s = q.toLowerCase();
-      const inName = (ind.name||"").toLowerCase().includes(s);
-      const inCareers = (ind.careers||[]).some(c=>String(c).toLowerCase().includes(s));
-      const inPeople = (ind.contributors||[]).some(p =>
-        (p.name||"").toLowerCase().includes(s) || (p.handle||"").toLowerCase().includes(s)
-      );
-      return inName || inCareers || inPeople;
-    }
-
-    function hasTag(ind, tag){
-      if(!tag) return true;
-      return (ind.contributors||[]).some(p => (p.tags||[]).includes(tag));
-    }
-
-    function renderIndustryWall(){
-      const grid = $("industryGrid");
-      if(!grid) return;
-
-      const q = ($("q")?.value || "").trim();
-      const sort = $("sort")?.value || "alpha";
-      const filterTag = $("filterTag")?.value || "";
-
-      let list = INDUSTRIES.filter(ind => industryMatches(ind, q) && hasTag(ind, filterTag));
-
-      if(sort === "random") list = shuffle(list);
-      else list = list.slice().sort((a,b)=> (a.name||"").localeCompare(b.name||"", "zh-Hans-CN-u-co-pinyin"));
-
-      const html = list.map(ind => {
-        let people = (ind.contributors||[]).slice().sort((a,b)=> (a.name||"").localeCompare(b.name||"", "zh-Hans-CN-u-co-pinyin"));
-        if(sort === "random") people = shuffle(people);
-
-        const peopleHtml = people.map(p => `
-          <div class="person">
-            <div class="who">
-              <b>${escapeHtml(p.name || "匿名共创者")}</b>
-              <span class="mono">${escapeHtml(p.handle || "")}</span>
-            </div>
-            <div class="what">${escapeHtml(p.note || "贡献内容已合入对应条目。")}</div>
-            <div class="roles">
-              ${(p.tags||[]).map(tagPill).join("")}
-            </div>
+          <div class="right">
+            <div>${escapeHtml(e.summary||"")}</div>
+            ${e.details ? `
+              <details>
+                <summary>展开详细说明</summary>
+                <div style="margin-top:10px">${escapeHtml(e.details)}</div>
+              </details>` : ""
+            }
+            ${(tags || links) ? `<div class="chips">${tags}${links}</div>` : ""}
           </div>
-        `).join("");
+        </div>
+      `;
+    }).join("");
+  }
 
-        return `
-          <article class="card industryCard">
-            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
-              <div>
-                <h3>${escapeHtml(ind.name)}</h3>
-                <p>覆盖职业：${(ind.careers||[]).map(escapeHtml).join(" · ") || "持续补充中"}</p>
-              </div>
-              <span class="badge">展示：等权致谢</span>
-            </div>
+  async function loadJson(path){
+    const res = await fetch(path, {cache:"no-store"});
+    if(!res.ok) throw new Error(`Failed to load ${path}`);
+    return await res.json();
+  }
 
-            <div class="honors" aria-label="行业共创荣誉（团队维度）">
-              ${(ind.teamHonors||[]).map(h=>`<span class="hon">共创荣誉：${escapeHtml(h)}</span>`).join("")}
-            </div>
+  async function boot(){
+    // footer
+    const now = new Date();
+    $("y").textContent = String(now.getFullYear());
+    $("d").textContent = now.toISOString().slice(0,10);
 
-            <div class="divider"></div>
-
-            <div class="people" aria-label="贡献人（不排行、不计数）">
-              ${peopleHtml || `<div class="notice">该行业正在招募共创官：欢迎通过 PR/Issue 参与。</div>`}
-            </div>
-          </article>
-        `;
-      }).join("");
-
-      grid.innerHTML = html || `<div class="card"><p>未找到匹配项。可尝试更换关键词或清空筛选。</p></div>`;
+    // load data
+    let contributors = {contributors:[]}, events = {events:[]}, thanks = {coCreationThanks:[], developmentThanks:[]};
+    try{
+      [contributors, events, thanks] = await Promise.all([
+        loadJson("data/contributors.json"),
+        loadJson("data/events.json"),
+        loadJson("data/thanks.json")
+      ]);
+    }catch(err){
+      // degrade gracefully
+      const msg = `<div class="notice">数据文件加载失败。请检查 data/*.json 路径与 JSON 格式是否正确。</div>`;
+      $("coThanks").innerHTML = msg;
+      $("devThanks").innerHTML = msg;
+      $("randContrib").innerHTML = msg;
+      $("randMilestone").innerHTML = msg;
+      return;
     }
 
-    // =========================
-    // 6) 初始化
-    // =========================
-    function initFooter(){
-      const now = new Date();
-      const y = $("y"), d = $("d");
-      if(y) y.textContent = String(now.getFullYear());
-      if(d) d.textContent = now.toISOString().slice(0,10);
-    }
+    const contributorsById = {};
+    (contributors.contributors||[]).forEach(c=>{ if(c.id) contributorsById[c.id]=c; });
 
-    function initFilters(){
-      const sel = $("filterTag");
-      if(!sel) return;
-      const opt = TAGS.map(t=>`<option value="${t.key}">筛选：${t.label}</option>`).join("");
-      sel.insertAdjacentHTML("beforeend", opt);
+    const allEvents = (events.events||[]).slice().sort((a,b)=>new Date(b.time)-new Date(a.time));
 
-      const q = $("q"), sort = $("sort"), filter = $("filterTag");
-      if(q) q.addEventListener("input", renderIndustryWall);
-      if(sort) sort.addEventListener("change", renderIndustryWall);
-      if(filter) filter.addEventListener("change", renderIndustryWall);
-    }
+    // initial render (你可以调整随机展示数量)
+    const N_THANKS = 4;
+    const N_CONTRIB = 3;
+    const N_MILESTONE = 3;
 
-    function initCarousel(){
-      const hasUI = $("carousel") && $("prevBtn") && $("nextBtn") && $("toggleBtn");
-      if(!hasUI) return;
+    const renderAll = ()=>{
+      renderThanks("coThanks", thanks.coCreationThanks || [], N_THANKS);
+      renderThanks("devThanks", thanks.developmentThanks || [], N_THANKS);
 
-      $("prevBtn").addEventListener("click", () => { stop(); prev(); });
-      $("nextBtn").addEventListener("click", () => { stop(); next(); });
-      $("toggleBtn").addEventListener("click", toggle);
+      renderEvents("randContrib", allEvents, contributorsById, N_CONTRIB, (e)=>String(e.kind||"") === "contribution");
+      renderEvents("randMilestone", allEvents, contributorsById, N_MILESTONE, (e)=>String(e.kind||"") !== "contribution");
+    };
 
-      renderCarousel();
-      renderEventList();
-      start();
+    renderAll();
 
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) stop();
-        else if (playing) start();
-      });
-    }
+    // buttons
+    $("refreshCo").addEventListener("click", ()=>renderThanks("coThanks", thanks.coCreationThanks || [], N_THANKS));
+    $("refreshDev").addEventListener("click", ()=>renderThanks("devThanks", thanks.developmentThanks || [], N_THANKS));
+    $("refreshContrib").addEventListener("click", ()=>renderEvents("randContrib", allEvents, contributorsById, N_CONTRIB, (e)=>String(e.kind||"")==="contribution"));
+    $("refreshMilestone").addEventListener("click", ()=>renderEvents("randMilestone", allEvents, contributorsById, N_MILESTONE, (e)=>String(e.kind||"")!=="contribution"));
+  }
 
-    initFooter();
-    initFilters();
-    initCarousel();
-    renderIndustryWall();
-  </script>
+  boot();
+</script>
 </body>
 </html>
