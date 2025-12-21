@@ -5,11 +5,58 @@
       "displayName": "A-Lotus",
       "handle": "@windmoon-Lotus",
       "avatar": "https://avatars.githubusercontent.com/u/000000?v=4",
-      "bio": "从业方向：职业信息共享与结构化知识沉淀。欢迎通过 PR/Issue 共创。",
+      "bio": "从业方向：网安工作者。欢迎通过 PR/Issue 共创。",
       "links": [
         { "label": "GitHub", "url": "https://github.com/windmoon-Lotus" },
         { "label": "个人站点", "url": "https://windmoon-lotus.github.io/" }
       ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "Secur1ty0",
+      "displayName": "Secur1ty",
+      "handle": "@Secur1ty0",
+      "avatar": "https://avatars.githubusercontent.com/u/71308908?v=4",
+      "bio": "个人介绍：网安技术大佬。",
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/Secur1ty0" }
+      ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "一个路过的好心人",
+      "displayName": "好心人",
+      "handle": "@一个路过的好心人",
+      "avatar": "",
+      "bio": "个人介绍：资深外企技术工作者。",
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "第二个路过的好心人",
+      "displayName": "好心人",
+      "handle": "@第二个路过的好心人",
+      "avatar": "",
+      "bio": "个人介绍：即将毕业的各种主线任务加身的在读博士生。",
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "沽小朵",
+      "displayName": "琼楠",
+      "handle": "@琼楠",
+      "avatar": "",
+      "bio": "个人介绍：一个努力前进的信安大学生。",
       "privacy": {
         "showEmail": false,
         "showLocation": false
