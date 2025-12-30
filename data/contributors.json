@@ -61,6 +61,17 @@
         "showEmail": false,
         "showLocation": false
       }
+    },
+    {
+      "id": "流年",
+      "displayName": "流年",
+      "handle": "@流年",
+      "avatar": "",
+      "bio": "个人介绍：一个热爱游戏，并准备重回职业生活的功能测试工程师。",
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
     }
   ]
 }

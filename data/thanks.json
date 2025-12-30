@@ -1,16 +1,16 @@
 {
   "coCreationThanks": [
     {
-      "name": "张三",
+      "name": "流年",
       "role": "受访者",
-      "topic": "制造业 · 质量工程师",
-      "note": "分享真实工作流与入门误区，帮助完善词条可用性。",
-      "links": [{ "label": "个人主页", "url": "https://example.com" }]
+      "topic": "互联网 · 功能测试工程师",
+      "note": "分享真实拿大礼包后的自由人生和入行经验。",
+      "links": []
     },
     {
-      "name": "李四",
+      "name": "windmoon-Lotus",
       "role": "访谈人",
-      "topic": "金融 · 风控",
+      "topic": "互联网 · 功能测试工程师",
       "note": "完成访谈提纲与整理，输出结构化摘要。",
       "links": []
     }
