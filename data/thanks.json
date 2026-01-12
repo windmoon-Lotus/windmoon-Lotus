@@ -13,6 +13,13 @@
       "topic": "互联网 · 功能测试工程师",
       "note": "完成访谈提纲与整理，输出结构化摘要。",
       "links": []
+    },
+    {
+      "name": "Secur1ty0",
+      "role": "受访者",
+      "topic": "互联网 · 渗透测试工程师",
+      "note": "感谢受访者的坦诚与细致分享：他既以技术追求者的视角梳理了渗透测试工程师的成长关键节点，也真挚讲述了从单身到二人世界的幸福与感悟。",
+      "links": [{ "label": "GitHub", "url": "https://github.com/Secur1ty0" }]
     }
   ],
   "developmentThanks": [
