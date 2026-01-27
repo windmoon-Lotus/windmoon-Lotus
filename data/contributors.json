@@ -72,6 +72,31 @@
         "showEmail": false,
         "showLocation": false
       }
+    },
+    {
+      "id": "好想养李",
+      "displayName": "好想养李",
+      "handle": "@好想养李",
+      "avatar": "",
+      "bio": "个人介绍：这人太懒了，并不想介绍自己，他是四川凉山的，但他酒量很差。",
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "天天睡大觉",
+      "displayName": "天天睡大觉",
+      "handle": "@好天天睡大觉",
+      "avatar": "",
+      "bio": "个人介绍：坎坷但又行动力强的他，中专电工，行业艰难，毅然转行；投身会计，入职先不看能力看性别，让人失落。但心性坚韧，任继续寻求工作，纵百般因性别原因被拒，也不改其心之善。",
+      "links": [
+        { "label": "小红书", "url": "https://www.xiaohongshu.com/user/profile/645340770000000014010dd9" }
+      ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
     }
   ]
 }
