@@ -119,8 +119,22 @@
       "avatar": "",
       "bio": "个人介绍：导演｜户外Vlogger ｜M仓主理人\n\n热烈而自由的生活\n\n户外徒步装备需求请联系@M户外装备租赁仓 呀",
       "links": [
-        { "label": "M大佬小红书主页", "url": "https://www.xiaohongshu.com/user/profile/5e476fc7000000000100a1cb" }
+        { "label": "M大佬小红书主页", "url": "https://www.xiaohongshu.com/user/profile/5e476fc7000000000100a1cb" },
+        { "label": "M户外装备租赁仓小红书主页", "url": "https://www.xiaohongshu.com/user/profile/672ae898000000001c01b912" }
       ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "一个俗人漫画嘉",
+      "displayName": "一个俗人漫画嘉",
+      "handle": "一个俗人漫画嘉",
+      "avatar": "",
+      "bio": "个人介绍：一个热爱绘画，画风治愈可爱的，兴趣爱好多样的美术老师/原创画师/绘画博主",
+      "links": [
+        { "label":"", "url": "" }  ],
       "privacy": {
         "showEmail": false,
         "showLocation": false
