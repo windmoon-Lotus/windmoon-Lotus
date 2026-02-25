@@ -139,6 +139,19 @@
         "showEmail": false,
         "showLocation": false
       }
+    },
+    {
+      "id": "Lc",
+      "displayName": "Lc",
+      "handle": "Lc",
+      "avatar": "",
+      "bio": "个人介绍：回国后的海外留学心理咨询师",
+      "links": [
+        { "label":"", "url": "" }  ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
     }
   ]
 }
