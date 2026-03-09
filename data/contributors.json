@@ -152,6 +152,19 @@
         "showEmail": false,
         "showLocation": false
       }
+    },
+    {
+      "id": "第三个路过的好心人",
+      "displayName": "第三个路过的好心人",
+      "handle": "第三个路过的好心人",
+      "avatar": "",
+      "bio": "个人介绍：神奇的医疗行业从业者",
+      "links": [
+        { "label":"", "url": "" }  ],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
     }
   ]
 }
