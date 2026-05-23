@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN" data-root=".." data-sections="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>文章库 | 人生五年</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html"><span class="brand-mark">五</span><span>人生五年</span></a>
+      <nav class="site-nav"><a href="../index.html">首页</a><a href="../articles/">文章库</a></nav>
+    </header>
+    <main class="library-page">
+      <section class="library-hero">
+        <p class="eyebrow">Library</p>
+        <h1>文章库</h1>
+        <p>这里沉淀了「人生五年」与「百家职业共享」公开 Markdown 内容，部署时不再依赖外部资料目录。</p>
+      </section>
+      <section class="module-section" aria-label="栏目入口">
+        <div class="module-grid" data-section-cards></div>
+      </section>
+      <section class="library-tools">
+        <strong data-article-count>加载中</strong>
+        <input type="search" placeholder="搜索标题、摘要或来源路径" data-article-search>
+      </section>
+      <section class="library-grid" data-article-list></section>
+    </main>
+    <script src="../assets/js/library.js"></script>
+  </body>
+</html>

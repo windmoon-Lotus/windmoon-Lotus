@@ -165,6 +165,42 @@
         "showEmail": false,
         "showLocation": false
       }
+    },
+    {
+      "id": "第十次访谈受访者",
+      "displayName": "第十次访谈受访者",
+      "handle": "@第十次访谈受访者",
+      "avatar": "",
+      "bio": "个人介绍：计算机专业出身，现从事广告相关行业运营工作，偏好流程化与标准化，也持续关注 AI 对小众行业与岗位变化的影响。",
+      "links": [],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "六零",
+      "displayName": "六零",
+      "handle": "@六零",
+      "avatar": "",
+      "bio": "个人介绍：持续精进中的财务从业者，希望把财务全流程做透，并朝更高阶的职业发展方向长期推进。",
+      "links": [],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
+    },
+    {
+      "id": "Yamu",
+      "displayName": "Yamu",
+      "handle": "@Yamu",
+      "avatar": "",
+      "bio": "个人介绍：Yamu，自由职业者，一人公司，连续创业者，曾做过摄影化妆工作室等创业项目，现如今在做新媒体代运营，富含生活哲学的零零后女性。",
+      "links": [],
+      "privacy": {
+        "showEmail": false,
+        "showLocation": false
+      }
     }
   ]
 }
