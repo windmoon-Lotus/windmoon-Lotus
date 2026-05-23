@@ -3,11 +3,15 @@ const profiles = {
     order: "01",
     topic: "自由职业 / 一人公司 / 连续创业",
     name: "Yamu",
+    kicker: "第一期人物",
     summary:
       "00后自由职业者，一人公司，连续创业者，曾做过摄影化妆工作室等创业项目，现做新媒体代运营。",
     line: "相信人生的意义藏在风、雨、阳光和每一餐饭里。",
+    promo:
+      "她把年轻、独立、创业和生活热爱揉在一起，让“自由职业”不只是一个标签，而是一段具体的自我负责。",
     tags: ["独立背后的重量", "创业挣扎", "社交与消费逻辑", "五年后的生活"],
     question: "她是否仍在事业、自律与自由之间找到自己的节奏？睡眠和关系会不会有新的变化？",
+    personUrl: "people/profile.html?id=Yamu",
     articles: [
       {
         type: "访谈成稿",
@@ -27,11 +31,15 @@ const profiles = {
     order: "02",
     topic: "保险代理 / 基建投资 / 职业转型",
     name: "刘进步",
+    kicker: "第二期人物",
     summary:
       "85后保险代理人，曾在基建投资领域工作十年。转入商业保险行业后，她在理解家庭风险与生活规划的过程中重新认识工作、关系与自我。",
     line: "一生努力，一生被爱。",
+    promo:
+      "她的故事不只是在讲一次转行，也是在讲一个人如何在时代、家庭、亲密关系和自我选择之间重新站稳。",
     tags: ["职业转型", "时代周期", "情绪与控制感", "35岁之后的自我选择"],
     question: "她会如何继续理解保险事业的价值？自主选择、亲密关系和城市归属会不会出现新的答案？",
+    personUrl: "people/profile.html?id=liujinbu",
     articles: [
       {
         type: "访谈成稿",
@@ -51,11 +59,15 @@ const profiles = {
     order: "03",
     topic: "离职两年后 / 游戏 / 生活暂停",
     name: "流年",
+    kicker: "第三期人物",
     summary:
       "离职两年多、暂时没有重新进入职场的95后男性。游戏、存款、找工作、减肥、婚姻期待和五年后的自己，都在这次聊天里被自然地聊到。",
     line: "不上班是为了什么？肯定不是为了委屈自己。",
+    promo:
+      "他让“暂停工作”这件事变得具体：不是简单躺平，而是一个普通人在压力、快乐、存款和未来之间摸索节奏。",
     tags: ["离职两年后", "工作暂停", "游戏与生活", "五年后的自己"],
     question: "他会重新进入怎样的工作节奏？是否能保持开心，也收获自己期待的幸福小家？",
+    personUrl: "people/profile.html?id=%E6%B5%81%E5%B9%B4",
     articles: [
       {
         type: "访谈成稿",
@@ -105,10 +117,13 @@ function renderProfile(profileId, articleIndex = 0) {
 
   profileCard.querySelector("[data-profile-order]").textContent = profile.order;
   profileCard.querySelector("[data-profile-topic]").textContent = profile.topic;
+  profileCard.querySelector("[data-profile-kicker]").textContent = profile.kicker;
   profileCard.querySelector("[data-profile-name]").textContent = profile.name;
   profileCard.querySelector("[data-profile-summary]").textContent = profile.summary;
   profileCard.querySelector("[data-profile-line]").textContent = profile.line;
+  profileCard.querySelector("[data-profile-promo]").textContent = profile.promo;
   profileCard.querySelector("[data-profile-question]").textContent = profile.question;
+  profileCard.querySelector("[data-profile-person-link]").setAttribute("href", profile.personUrl);
 
   const tagList = profileCard.querySelector("[data-profile-tags]");
   tagList.innerHTML = "";

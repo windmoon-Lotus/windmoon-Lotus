@@ -72,8 +72,28 @@ function card(person) {
       <div class="person-project">${esc(projectBadge(person))}</div>
       <p>${esc(person.headline || person.bio)}</p>
       <div class="person-tags">${(person.tags || []).slice(0, 4).map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>
+      <a class="person-cta" href="${personUrl(person.id)}">进入人物介绍</a>
     </article>
   `;
+}
+
+function infoRows(person, articles) {
+  return [
+    ["姓名", person.displayName],
+    ["身份", person.role],
+    ["所属栏目", groupTitle(personBucket(person))],
+    ["项目关系", projectBadge(person)],
+    ["关键词", (person.tags || []).join(" / ")],
+    ["关联文章", articles.length ? `${articles.length} 篇` : "暂无"]
+  ].filter(([, value]) => value);
+}
+
+function contactLinks(person) {
+  const links = (person.links || []).filter((link) => link.url);
+  if (!links.length) {
+    return `<span class="contact-empty">暂未公开联系方式</span>`;
+  }
+  return links.map((link) => `<a href="${esc(link.url)}" target="_blank" rel="noreferrer">${esc(link.label)}</a>`).join("");
 }
 
 async function bootPeopleList() {
@@ -143,36 +163,59 @@ async function bootPersonProfile() {
       .map((articleId) => articleData.articles.find((article) => article.id === articleId))
       .filter(Boolean);
 
-    document.title = `${person.displayName} | 人物介绍`;
+    const notes = person.notes || [];
+    const primaryArticle = articles[0];
+
+    document.title = `${person.displayName} | 个人介绍`;
     target.innerHTML = `
-      <section class="person-hero">
-        ${avatar(person.displayName)}
-        <div>
-          <p class="eyebrow">${esc(groupTitle(personBucket(person)))}</p>
-          <div class="person-project large">${esc(projectBadge(person))}</div>
+      <section class="person-profile-layout">
+        <aside class="person-sidebar">
+          ${avatar(person.displayName)}
           <h1>${esc(person.displayName)}</h1>
-          <p class="lead">${esc(person.headline)}</p>
-          <p>${esc(person.bio)}</p>
+          <p>${esc(person.role)}</p>
           <div class="person-tags">${(person.tags || []).map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>
-          <div class="person-links">${(person.links || []).filter((link) => link.url).map((link) => `<a href="${esc(link.url)}" target="_blank" rel="noreferrer">${esc(link.label)}</a>`).join("")}</div>
-        </div>
-      </section>
-      <section class="person-detail">
-        <div>
-          <h2>相关说明</h2>
-          <ul>${(person.notes || []).map((note) => `<li>${esc(note)}</li>`).join("") || "<li>暂无补充说明。</li>"}</ul>
-        </div>
-        <div>
-          <h2>相关文章</h2>
-          <div class="person-articles">
-            ${articles.length ? articles.map((article) => `
-              <a class="person-article" href="${articleUrl(article.id)}">
-                <span>${esc(article.sectionLabel)}</span>
-                <strong>${esc(article.title)}</strong>
-                <em>${esc(article.excerpt || "")}</em>
-              </a>
-            `).join("") : "<p>暂无已关联文章。</p>"}
+          <div class="person-contact">
+            <strong>联系方式</strong>
+            <div>${contactLinks(person)}</div>
           </div>
+          <a class="button ghost" href="${peopleRoot}/people/">返回人物档案</a>
+        </aside>
+
+        <div class="person-main">
+          <section class="person-intro-card">
+            <p class="eyebrow">Personal Profile</p>
+          <h1>${esc(person.displayName)}</h1>
+            <p class="lead">${esc(person.headline)}</p>
+            <p>${esc(person.bio)}</p>
+            <div class="person-main-actions">
+              ${primaryArticle ? `<a class="button primary" href="${articleUrl(primaryArticle.id)}">阅读代表故事</a>` : ""}
+            </div>
+          </section>
+
+          <section class="person-info-card">
+            <h2>基本信息</h2>
+            <dl class="person-info-list">
+              ${infoRows(person, articles).map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}
+            </dl>
+          </section>
+
+          <section class="person-info-card">
+            <h2>个人说明</h2>
+            <ul class="person-note-list">${notes.map((note) => `<li>${esc(note)}</li>`).join("") || "<li>暂无补充说明。</li>"}</ul>
+          </section>
+
+          <section class="person-info-card">
+            <h2>相关内容</h2>
+            <div class="person-articles">
+              ${articles.length ? articles.map((article) => `
+                <a class="person-article" href="${articleUrl(article.id)}">
+                  <span>${esc(article.sectionLabel)}</span>
+                  <strong>${esc(article.title)}</strong>
+                  <em>${esc(article.excerpt || "")}</em>
+                </a>
+              `).join("") : "<p>暂无已关联文章。</p>"}
+            </div>
+          </section>
         </div>
       </section>
     `;
