@@ -23,6 +23,12 @@ function articleUrl(id) {
   return `${peopleRoot}/articles/view.html?id=${encodeURIComponent(id)}`;
 }
 
+function sourceUrl(article) {
+  return article.sourceUrl
+    ? `<a href="${esc(article.sourceUrl)}" target="_blank" rel="noreferrer">原始素材</a>`
+    : "";
+}
+
 function avatar(name) {
   const text = [...String(name || "人")][0] || "人";
   return `<span class="person-avatar">${esc(text)}</span>`;
@@ -208,11 +214,12 @@ async function bootPersonProfile() {
             <h2>相关内容</h2>
             <div class="person-articles">
               ${articles.length ? articles.map((article) => `
-                <a class="person-article" href="${articleUrl(article.id)}">
+                <article class="person-article">
                   <span>${esc(article.sectionLabel)}</span>
-                  <strong>${esc(article.title)}</strong>
+                  <strong><a href="${articleUrl(article.id)}">${esc(article.title)}</a></strong>
                   <em>${esc(article.excerpt || "")}</em>
-                </a>
+                  <small>${sourceUrl(article)}</small>
+                </article>
               `).join("") : "<p>暂无已关联文章。</p>"}
             </div>
           </section>

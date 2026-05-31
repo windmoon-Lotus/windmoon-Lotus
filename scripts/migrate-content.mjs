@@ -7,12 +7,14 @@ const sources = [
   {
     key: "life",
     label: "人生五年",
-    root: path.resolve("F:/笔记汇总/git/人生五年")
+    root: path.resolve("F:/笔记汇总/git/人生五年"),
+    sourceBaseUrl: "https://github.com/windmoon-Lotus/life5years/blob/main"
   },
   {
     key: "career",
     label: "百家职业共享",
-    root: path.resolve("F:/笔记汇总/git/百家职业共享大全")
+    root: path.resolve("F:/笔记汇总/git/百家职业共享大全"),
+    sourceBaseUrl: "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main"
   }
 ];
 
@@ -83,6 +85,10 @@ function makeId(sourceKey, relativePath) {
   return `${sourceKey}-${createHash("sha1").update(normalizeSlash(relativePath)).digest("hex").slice(0, 12)}`;
 }
 
+function githubSourceUrl(source, relativePath) {
+  return `${source.sourceBaseUrl}/${normalizeSlash(relativePath).split("/").map(encodeURIComponent).join("/")}`;
+}
+
 async function main() {
   await rm(contentRoot, { recursive: true, force: true });
   await mkdir(contentRoot, { recursive: true });
@@ -115,6 +121,7 @@ async function main() {
         section,
         sectionLabel,
         sourcePath: normalizedRelative,
+        sourceUrl: githubSourceUrl(source, normalizedRelative),
         contentPath: normalizeSlash(path.relative(siteRoot, outputPath)),
         excerpt: text.slice(0, 180),
         wordCount: text.length,

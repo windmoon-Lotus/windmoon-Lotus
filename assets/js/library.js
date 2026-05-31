@@ -35,7 +35,16 @@ function articleUrl(id) {
   return `${rootPrefix}/articles/view.html?id=${encodeURIComponent(id)}`;
 }
 
+function sourceLink(article) {
+  if (!article.sourceUrl) return "";
+  return `<a class="reader-source-link" href="${escapeHtml(article.sourceUrl)}" target="_blank" rel="noreferrer">查看 GitHub 原始素材</a>`;
+}
+
 function renderArticleCard(article) {
+  const rawLink = article.sourceUrl
+    ? `<a class="source-text-link" href="${escapeHtml(article.sourceUrl)}" target="_blank" rel="noreferrer">原始素材</a>`
+    : "";
+
   return `
     <article class="library-card">
       <div class="library-meta">
@@ -46,7 +55,10 @@ function renderArticleCard(article) {
       <p>${escapeHtml(article.excerpt || "暂无摘要。")}</p>
       <div class="library-card-foot">
         <span>${Math.max(1, Math.round((article.wordCount || 0) / 500))} 分钟读完</span>
-        <a href="${articleUrl(article.id)}">阅读文章</a>
+        <div class="library-card-actions">
+          <a href="${articleUrl(article.id)}">阅读文章</a>
+          ${rawLink}
+        </div>
       </div>
     </article>
   `;
@@ -212,6 +224,7 @@ async function bootArticleView() {
     document.querySelector("[data-article-source]").textContent = article.sourceProjectLabel;
     document.querySelector("[data-article-section]").textContent = article.sectionLabel;
     document.querySelector("[data-article-path]").textContent = article.sourcePath;
+    document.querySelector("[data-article-source-link]").innerHTML = sourceLink(article);
 
     const response = await fetch(`${rootPrefix}/${article.contentPath}`, { cache: "no-store" });
     if (!response.ok) throw new Error("文章内容加载失败");
