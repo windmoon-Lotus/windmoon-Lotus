@@ -89,6 +89,40 @@ const profiles = {
       }
     ]
   },
+  haoxiangyangli: {
+    order: "04",
+    topic: "异地婚姻 / 年轻父亲 / 回乡愿望",
+    name: "好想养李",
+    kicker: "第四期人物",
+    summary:
+      "视频监控设备部署工程师，也是一位长期在外做项目、半个月到一个月回一次家的年轻父亲。",
+    line: "人生并不总是在一个人想清楚以后才开始。",
+    promo:
+      "他的故事把家庭账本、婚姻维系、女儿教育和回乡愿望放在一起，呈现一个普通人如何一边承担责任，一边寻找自己的路。",
+    tags: ["异地婚姻", "年轻父亲", "家庭责任", "回乡愿望"],
+    question: "五年后，他是否回到县城？是否找到留在家乡的工作或生意？一家人的新生活会长成什么样？",
+    personUrl: "people/profile.html?id=%E5%A5%BD%E6%83%B3%E5%85%BB%E6%9D%8E",
+    articles: [
+      {
+        type: "人物故事",
+        title: "顾家的人也在找路",
+        desc: "第四期人生五年故事稿，写异地婚姻、女儿养育、家庭账本和回乡愿望。",
+        url: "articles/view.html?id=life-e473fc8264e0"
+      },
+      {
+        type: "访谈后记",
+        title: "人生五年V4-幸福的一种模样和我的阴暗面",
+        desc: "访谈后记，记录这次谈话如何照见访谈人对亲密关系、家庭和自我的理解。",
+        url: "articles/view.html?id=life-83f4b6bb0297"
+      },
+      {
+        type: "职业共享旧稿",
+        title: "刚有孩子的大学好友-视频监控设备部署工程师",
+        desc: "职业共享阶段的旧稿，作为他早期工作和人生阶段变化的项目归档材料。",
+        url: "articles/view.html?id=career-99646b9514c5"
+      }
+    ]
+  },
 };
 
 const profileCard = document.querySelector("[data-profile-card]");
