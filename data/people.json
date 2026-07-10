@@ -7,10 +7,26 @@
       "group": "contributor",
       "headline": "网安从业者，也是「人生五年」与「百家职业共享」的主要发起者。",
       "bio": "从职业信息共享出发，逐渐转向记录更完整的人：一个人如何生活、如何变化、如何被家庭、时代、关系和工作塑造。",
-      "tags": ["项目发起", "访谈", "文字整理", "网安"],
-      "articleIds": ["life-8ec9a00bfd09", "life-dc77440009a6", "life-1298443b716a"],
-      "notes": ["负责项目整体策划、访谈设计、文字整理、内容发布和长期框架沉淀。"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/windmoon-Lotus" }]
+      "tags": [
+        "项目发起",
+        "访谈",
+        "文字整理",
+        "网安"
+      ],
+      "articleIds": [
+        "life-8ec9a00bfd09",
+        "life-dc77440009a6",
+        "life-1298443b716a"
+      ],
+      "notes": [
+        "负责项目整体策划、访谈设计、文字整理、内容发布和长期框架沉淀。"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/windmoon-Lotus"
+        }
+      ]
     },
     {
       "id": "Yamu",
@@ -19,10 +35,23 @@
       "group": "interviewee",
       "headline": "自由职业者，一人公司，连续创业者，富含生活哲学的零零后女性。",
       "bio": "童年随母而居，在不安中学会独自扛事。十九岁创业，在多重压力下负重前行。如今工作生活平衡，有属于自己的节奏与热爱。",
-      "tags": ["自由职业", "一人公司", "连续创业", "生活哲学"],
-      "articleIds": ["life-cc8cf6a30eb1", "life-501d2e48a882"],
-      "notes": ["第一期「人生五年」受访者。", "项目规划中也作为音视频运营相关协作者出现。"],
-      "links": []
+      "tags": [
+        "自由职业",
+        "一人公司",
+        "连续创业",
+        "生活哲学"
+      ],
+      "articleIds": [
+        "life-cc8cf6a30eb1",
+        "life-501d2e48a882"
+      ],
+      "notes": [
+        "第一期「人生五年」受访者。",
+        "项目规划中也作为音视频运营相关协作者出现。"
+      ],
+      "links": [],
+      "currentWork": "新媒体代运营、摄影化妆经验与音视频协作。",
+      "collaboration": "可通过「事象记录」联系，先确认本人意愿后再转达。"
     },
     {
       "id": "liujinbu",
@@ -31,10 +60,22 @@
       "group": "interviewee",
       "headline": "85后保险代理人，曾在基建投资领域工作十年。",
       "bio": "经历高强度、结果导向的职业环境后转入商业保险行业，在理解家庭风险与生活规划的过程中重新认识工作、关系与自我。",
-      "tags": ["保险代理", "职业转型", "基建投资", "35岁之后"],
-      "articleIds": ["life-e60f5bd3bbb1", "life-a3c5298224a1"],
-      "notes": ["第二期「人生五年」受访者。"],
-      "links": []
+      "tags": [
+        "保险代理",
+        "职业转型",
+        "基建投资",
+        "35岁之后"
+      ],
+      "articleIds": [
+        "life-e60f5bd3bbb1",
+        "life-a3c5298224a1"
+      ],
+      "notes": [
+        "第二期「人生五年」受访者。"
+      ],
+      "links": [],
+      "currentWork": "商业保险咨询与家庭风险规划。",
+      "collaboration": "可通过「事象记录」联系，先确认本人意愿后再转达。"
     },
     {
       "id": "流年",
@@ -43,10 +84,50 @@
       "group": "interviewee",
       "headline": "离职两年多、暂时没有重新进入职场的95后男性，也曾分享功能测试岗位经历。",
       "bio": "早期在职业共享中分享功能测试岗位与离职后的真实状态；人生五年第三期中，他作为“离职两年多后的青年”样本，呈现工作暂停、游戏、存款、找工作、减肥、婚姻期待和五年后自己的真实状态。",
-      "tags": ["功能测试", "互联网", "离职两年后", "人生五年"],
-      "articleIds": ["career-0e10ddf9e1f1", "life-67e5e130a54f", "life-4c03b7637a91"],
-      "notes": ["职业共享首次访谈受访者。", "第三期「人生五年」受访者，定稿内容已同步至发布站。"],
-      "links": []
+      "tags": [
+        "功能测试",
+        "互联网",
+        "离职两年后",
+        "人生五年"
+      ],
+      "articleIds": [
+        "career-0e10ddf9e1f1",
+        "life-67e5e130a54f",
+        "life-4c03b7637a91"
+      ],
+      "notes": [
+        "职业共享首次访谈受访者。",
+        "第三期「人生五年」受访者，定稿内容已同步至发布站。"
+      ],
+      "links": [],
+      "currentWork": "功能测试经历、离职缓冲期与生活状态分享。",
+      "collaboration": "暂未公开商业联系方式，推荐先阅读相关故事。"
+    },
+    {
+      "id": "幸福的家庭-暂定",
+      "displayName": "一个幸福的家庭（暂定）",
+      "role": "人生五年第五期访谈对象",
+      "group": "interviewee",
+      "headline": "一个暂以“幸福的家庭”命名的共同生活样本。",
+      "bio": "这一期不再只以单一人物作为入口，而是将一个家庭、一段关系和一种共同生活的长成过程作为记录对象。",
+      "tags": [
+        "幸福的家庭",
+        "爱情与真实",
+        "共同生活",
+        "家庭支点"
+      ],
+      "articleIds": [
+        "life-f5136c0f1784",
+        "life-bb626685cbaf",
+        "life-74309b00d599"
+      ],
+      "notes": [
+        "第五期「人生五年」访谈对象。",
+        "名称暂定，待受访者确认后再调整。"
+      ],
+      "links": [],
+      "currentWork": "家庭关系、爱情长成后的真实生活，以及共同生活里的支撑。",
+      "collaboration": "暂未公开联系方式；这里先作为家庭和共同生活的记录入口。"
     },
     {
       "id": "Secur1ty0",
@@ -55,10 +136,24 @@
       "group": "both",
       "headline": "网安从业者，项目早期方向修正的重要建议者。",
       "bio": "既以技术追求者的视角梳理渗透测试工程师成长路径，也帮助项目完善贡献机制和访谈流程。",
-      "tags": ["网络安全", "渗透测试", "项目建议"],
-      "articleIds": ["career-d49215cf161c", "career-0c3c846eb6b6"],
-      "notes": ["提出前置问卷、意向确认、基础信息收集等轻量化访谈建议。"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/Secur1ty0" }]
+      "tags": [
+        "网络安全",
+        "渗透测试",
+        "项目建议"
+      ],
+      "articleIds": [
+        "career-d49215cf161c",
+        "career-0c3c846eb6b6"
+      ],
+      "notes": [
+        "提出前置问卷、意向确认、基础信息收集等轻量化访谈建议。"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Secur1ty0"
+        }
+      ]
     },
     {
       "id": "好想养李",
@@ -67,10 +162,26 @@
       "group": "interviewee",
       "headline": "视频监控设备部署工程师，也是「人生五年」第四期中那位努力顾家的年轻父亲。",
       "bio": "早期以视频监控部署工程师视角呈现行业特点；在人生五年第四期中，他分享了异地婚姻、女儿养育、回乡愿望和普通家庭责任里的真实处境。",
-      "tags": ["电力", "视频监控", "家庭阶段", "人生五年"],
-      "articleIds": ["career-99646b9514c5", "career-e55d54c19e17", "career-a4c5c67fb069", "life-e473fc8264e0", "life-83f4b6bb0297"],
-      "notes": ["第三次职业访谈受访者。", "第四期「人生五年」受访者，定稿内容已同步至发布站。"],
-      "links": []
+      "tags": [
+        "电力",
+        "视频监控",
+        "家庭阶段",
+        "人生五年"
+      ],
+      "articleIds": [
+        "career-99646b9514c5",
+        "career-e55d54c19e17",
+        "career-a4c5c67fb069",
+        "life-e473fc8264e0",
+        "life-83f4b6bb0297"
+      ],
+      "notes": [
+        "第三次职业访谈受访者。",
+        "第四期「人生五年」受访者，定稿内容已同步至发布站。"
+      ],
+      "links": [],
+      "currentWork": "视频监控设备部署经验、异地婚姻和回乡生活记录。",
+      "collaboration": "暂未公开商业联系方式，推荐先阅读相关故事。"
     },
     {
       "id": "天天睡大觉",
@@ -79,10 +190,21 @@
       "group": "interviewee",
       "headline": "中专电工转向会计，在求职困境中仍保持行动力。",
       "bio": "分享技校出身者从电工转向会计的轨迹，也呈现城市边缘求职、性别门槛与个体尊严的复杂处境。",
-      "tags": ["电工", "会计", "求职困境"],
+      "tags": [
+        "电工",
+        "会计",
+        "求职困境"
+      ],
       "articleIds": [],
-      "notes": ["职业共享第五阶段前后的重要受访者之一。"],
-      "links": [{ "label": "小红书", "url": "https://www.xiaohongshu.com/user/profile/645340770000000014010dd9" }]
+      "notes": [
+        "职业共享第五阶段前后的重要受访者之一。"
+      ],
+      "links": [
+        {
+          "label": "小红书",
+          "url": "https://www.xiaohongshu.com/user/profile/645340770000000014010dd9"
+        }
+      ]
     },
     {
       "id": "彦子lzo",
@@ -91,10 +213,26 @@
       "group": "interviewee",
       "headline": "从早期计算机从业、创业转向陶艺工作室经营者。",
       "bio": "重视挑战、基础和把生活还给生活，多次追问项目目的，促使项目更贴近真实目标。",
-      "tags": ["陶艺", "计算机转型", "基础主义"],
-      "articleIds": ["career-c90705ad933d", "career-3c806ba11950"],
-      "notes": ["第五次职业访谈受访者。"],
-      "links": [{ "label": "小红书", "url": "https://www.xiaohongshu.com/user/profile/5f7eb025000000000101e1ec" }]
+      "tags": [
+        "陶艺",
+        "计算机转型",
+        "基础主义"
+      ],
+      "articleIds": [
+        "career-c90705ad933d",
+        "career-3c806ba11950"
+      ],
+      "notes": [
+        "第五次职业访谈受访者。"
+      ],
+      "links": [
+        {
+          "label": "小红书",
+          "url": "https://www.xiaohongshu.com/user/profile/5f7eb025000000000101e1ec"
+        }
+      ],
+      "currentWork": "陶艺创作与工作室经营。",
+      "collaboration": "可通过公开小红书主页了解作品与近况。"
     },
     {
       "id": "Maggie",
@@ -103,13 +241,31 @@
       "group": "interviewee",
       "headline": "导演、户外 Vlogger、M仓主理人，从会计走向独立制片。",
       "bio": "她把从迷茫到出国探索、从零开始进入影视行业、再到独立承接项目与创业的关键节点讲得清晰而坦荡。",
-      "tags": ["影视", "独立制片", "户外", "创业"],
-      "articleIds": ["career-a1f9eed6896c", "career-648a3d115602"],
-      "notes": ["第六次职业访谈受访者。"],
+      "tags": [
+        "影视",
+        "独立制片",
+        "户外",
+        "创业"
+      ],
+      "articleIds": [
+        "career-a1f9eed6896c",
+        "career-648a3d115602"
+      ],
+      "notes": [
+        "第六次职业访谈受访者。"
+      ],
       "links": [
-        { "label": "小红书", "url": "https://www.xiaohongshu.com/user/profile/5e476fc7000000000100a1cb" },
-        { "label": "M仓", "url": "https://www.xiaohongshu.com/user/profile/672ae898000000001c01b912" }
-      ]
+        {
+          "label": "小红书",
+          "url": "https://www.xiaohongshu.com/user/profile/5e476fc7000000000100a1cb"
+        },
+        {
+          "label": "M仓",
+          "url": "https://www.xiaohongshu.com/user/profile/672ae898000000001c01b912"
+        }
+      ],
+      "currentWork": "独立制片、户外内容创作与 M 仓户外装备相关项目。",
+      "collaboration": "可通过公开小红书主页了解作品与项目。"
     },
     {
       "id": "一个俗人漫画嘉",
@@ -118,10 +274,21 @@
       "group": "interviewee",
       "headline": "美术老师、原创画师、绘画博主。",
       "bio": "她把艺术并不悬空的一面讲得很真实：启蒙者的托举、教培与自由职业的成本、选择与取舍。",
-      "tags": ["美术老师", "自由职业", "艺术启蒙"],
-      "articleIds": ["career-176ceaace7ff", "career-d27d506f4cfb"],
-      "notes": ["第七次职业访谈受访者。"],
-      "links": []
+      "tags": [
+        "美术老师",
+        "自由职业",
+        "艺术启蒙"
+      ],
+      "articleIds": [
+        "career-176ceaace7ff",
+        "career-d27d506f4cfb"
+      ],
+      "notes": [
+        "第七次职业访谈受访者。"
+      ],
+      "links": [],
+      "currentWork": "美术教学、原创绘画与绘画内容创作。",
+      "collaboration": "暂未公开联系方式，推荐先阅读相关故事。"
     },
     {
       "id": "Lc",
@@ -130,10 +297,26 @@
       "group": "interviewee",
       "headline": "回国后的海外留学心理咨询师。",
       "bio": "分享心理咨询行业门槛、收益上限、隐性成本，也讨论真人咨询与 AI 自助的边界。",
-      "tags": ["心理咨询", "海外经历", "AI边界"],
-      "articleIds": ["career-c1c91ef2fd6b", "career-da3c7844dfe6"],
-      "notes": ["第八次职业访谈受访者。"],
-      "links": [{ "label": "小红书", "url": "https://www.xiaohongshu.com/user/profile/6911df8f000000003702eb69" }]
+      "tags": [
+        "心理咨询",
+        "海外经历",
+        "AI边界"
+      ],
+      "articleIds": [
+        "career-c1c91ef2fd6b",
+        "career-da3c7844dfe6"
+      ],
+      "notes": [
+        "第八次职业访谈受访者。"
+      ],
+      "links": [
+        {
+          "label": "小红书",
+          "url": "https://www.xiaohongshu.com/user/profile/6911df8f000000003702eb69"
+        }
+      ],
+      "currentWork": "心理咨询相关学习、实践与行业观察。",
+      "collaboration": "可通过公开小红书主页了解近况。"
     },
     {
       "id": "第三个路过的好心人",
@@ -142,9 +325,17 @@
       "group": "interviewee",
       "headline": "医疗行业从业者。",
       "bio": "分享医疗行业中的经历与入行路径，因内容敏感做了必要调整和克制呈现。",
-      "tags": ["医疗行业", "办公室副主任", "职业路径"],
-      "articleIds": ["career-6c105cc20013"],
-      "notes": ["第九次职业访谈受访者。"],
+      "tags": [
+        "医疗行业",
+        "办公室副主任",
+        "职业路径"
+      ],
+      "articleIds": [
+        "career-6c105cc20013"
+      ],
+      "notes": [
+        "第九次职业访谈受访者。"
+      ],
       "links": []
     },
     {
@@ -154,9 +345,18 @@
       "group": "interviewee",
       "headline": "计算机专业出身，现从事广告相关行业运营工作。",
       "bio": "偏好流程化与标准化，也持续关注 AI 对小众行业与岗位变化的影响。这次访谈直接推动项目从职业信息转向长期人生变化。",
-      "tags": ["广告运营", "流程化", "AI影响"],
-      "articleIds": ["career-fc4e698b8c91", "career-bf30971162a4"],
-      "notes": ["第十次职业访谈受访者。"],
+      "tags": [
+        "广告运营",
+        "流程化",
+        "AI影响"
+      ],
+      "articleIds": [
+        "career-fc4e698b8c91",
+        "career-bf30971162a4"
+      ],
+      "notes": [
+        "第十次职业访谈受访者。"
+      ],
       "links": []
     },
     {
@@ -166,9 +366,17 @@
       "group": "interviewee",
       "headline": "持续精进中的财务从业者。",
       "bio": "把财务职业路径内化为长期人生追求，希望把财务全流程做透，并朝更高阶方向推进。",
-      "tags": ["财务", "会计", "长期主义"],
-      "articleIds": ["career-537c5f69bc38"],
-      "notes": ["第十一次职业访谈受访者。"],
+      "tags": [
+        "财务",
+        "会计",
+        "长期主义"
+      ],
+      "articleIds": [
+        "career-537c5f69bc38"
+      ],
+      "notes": [
+        "第十一次职业访谈受访者。"
+      ],
       "links": []
     },
     {
@@ -178,9 +386,15 @@
       "group": "contributor",
       "headline": "帮助项目澄清目标与落地策略的外企技术工作者。",
       "bio": "把项目从“想做”带回到“为什么做、为谁做、怎么做”，并提供可执行建议和对标方向。",
-      "tags": ["项目目标", "落地策略", "建议"],
+      "tags": [
+        "项目目标",
+        "落地策略",
+        "建议"
+      ],
       "articleIds": [],
-      "notes": ["项目发展建议贡献者。"],
+      "notes": [
+        "项目发展建议贡献者。"
+      ],
       "links": []
     },
     {
@@ -190,9 +404,18 @@
       "group": "contributor",
       "headline": "在读博士生，帮助评审并重构访谈模板。",
       "bio": "提出结构优化与模块重构建议，帮助提升访谈连贯性与可执行性。",
-      "tags": ["模板", "访谈结构", "审校"],
-      "articleIds": ["career-7117914dcec7", "career-7716852fb93e"],
-      "notes": ["模板完善贡献者。"],
+      "tags": [
+        "模板",
+        "访谈结构",
+        "审校"
+      ],
+      "articleIds": [
+        "career-7117914dcec7",
+        "career-7716852fb93e"
+      ],
+      "notes": [
+        "模板完善贡献者。"
+      ],
       "links": []
     },
     {
@@ -202,9 +425,15 @@
       "group": "contributor",
       "headline": "长期关注项目，并持续提供鼓励、反馈与建议。",
       "bio": "在关键阶段给予信心支持，并对项目定位、呈现方式与协作机制提出改进建议。",
-      "tags": ["反馈", "项目建议", "长期关注"],
+      "tags": [
+        "反馈",
+        "项目建议",
+        "长期关注"
+      ],
       "articleIds": [],
-      "notes": ["项目发展建议贡献者。"],
+      "notes": [
+        "项目发展建议贡献者。"
+      ],
       "links": []
     }
   ]

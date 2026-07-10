@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="zh-CN" data-root=".." data-sections="">
+<html lang="zh-CN" data-root=".." data-sections="" data-statuses="published,archive">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>文章库 | 人生五年</title>
+    <meta name="description" content="阅读人生五年人物访谈、职业故事、随笔与主题文章。">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
@@ -21,8 +23,41 @@
         <div class="module-grid" data-section-cards></div>
       </section>
       <section class="library-tools">
-        <strong data-article-count>加载中</strong>
-        <input type="search" placeholder="搜索标题、摘要或来源路径" data-article-search>
+        <div class="library-tool-summary">
+          <strong data-article-count>加载中</strong>
+          <div class="library-status-filter" aria-label="内容状态筛选">
+            <button class="active" type="button" data-status-filter="published" aria-pressed="true">公开阅读</button>
+            <button type="button" data-status-filter="archive" aria-pressed="false">资料归档</button>
+          </div>
+        </div>
+        <div class="library-control-grid">
+          <label>
+            <span>栏目</span>
+            <select data-article-category>
+              <option value="">全部栏目</option>
+              <option value="life-interview">人生五年访谈</option>
+              <option value="career-interview">职业访谈</option>
+              <option value="essay">随笔</option>
+              <option value="topic">人生话题</option>
+              <option value="template">共创模板</option>
+              <option value="encyclopedia">职业百科</option>
+              <option value="project">项目故事</option>
+              <option value="tool">探索工具</option>
+            </select>
+          </label>
+          <label>
+            <span>排序</span>
+            <select data-article-sort>
+              <option value="featured">编辑精选</option>
+              <option value="newest">最近更新</option>
+              <option value="title">标题顺序</option>
+            </select>
+          </label>
+          <label class="library-search-label">
+            <span>搜索</span>
+            <input type="search" placeholder="搜索标题、摘要或来源路径" data-article-search>
+          </label>
+        </div>
       </section>
       <section class="library-grid" data-article-list></section>
     </main>

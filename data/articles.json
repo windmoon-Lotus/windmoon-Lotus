@@ -1,7 +1,41 @@
 {
-  "generatedAt": "2026-06-10T13:05:57.465Z",
-  "articleCount": 91,
+  "generatedAt": "2026-06-28T08:13:27.832Z",
+  "articleCount": 101,
   "articles": [
+    {
+      "id": "life-74309b00d599",
+      "title": "播客单集介绍",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "life-interview",
+      "sectionLabel": "人生五年访谈",
+      "sourcePath": "人生五年/20260613-/2026-0613_播客单集介绍.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260613-/2026-0613_%E6%92%AD%E5%AE%A2%E5%8D%95%E9%9B%86%E4%BB%8B%E7%BB%8D.md",
+      "contentPath": "content/life-interview/life-74309b00d599.md",
+      "excerpt": "《人生五年》20260613 单集介绍 受访者已匿名处理，对外发布时不保留真实姓名、孩子昵称、具体地名和可识别信息。 推荐标题 从电影情节般的爱情，到她亲手种下的真实 备选标题 1. 在朋友家里，看见一个家庭的支点 2. 他们不是一路人，后来却一起种下了真实 3. 爱情没有秘诀，只是在生活里重新排序……",
+      "wordCount": 944,
+      "updatedAt": "2026-06-28T08:13:25.328Z",
+      "displayTitle": "播客单集介绍",
+      "status": "archive",
+      "featured": false
+    },
+    {
+      "id": "life-f5136c0f1784",
+      "title": "从电影情节般的爱情，到她亲手种下的真实",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "life-interview",
+      "sectionLabel": "人生五年访谈",
+      "sourcePath": "人生五年/20260613-/2026-0613_从电影情节般的爱情，到她亲手种下的真实.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260613-/2026-0613_%E4%BB%8E%E7%94%B5%E5%BD%B1%E6%83%85%E8%8A%82%E8%88%AC%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%8C%E5%88%B0%E5%A5%B9%E4%BA%B2%E6%89%8B%E7%A7%8D%E4%B8%8B%E7%9A%84%E7%9C%9F%E5%AE%9E.md",
+      "contentPath": "content/life-interview/life-f5136c0f1784.md",
+      "excerpt": "她一开始觉得他们不是一路人。一个太规矩，一个太自由；一个多年后像没事人一样回来，一个还记得当年的火气。后来，在一连串误会、重逢、家庭现场和具体生活里，她慢慢看见了“可靠”的重量。再后来，有了孩子，她开始在泥土、",
+      "wordCount": 4429,
+      "updatedAt": "2026-06-28T08:13:25.324Z",
+      "displayTitle": "从电影情节般的爱情，到她亲手种下的真实",
+      "status": "published",
+      "featured": true
+    },
     {
       "id": "life-e473fc8264e0",
       "title": "顾家的人也在找路",
@@ -12,9 +46,12 @@
       "sourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-顾家的人也在找路-受访者的故事.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260526-%E5%B9%B8%E7%A6%8F%E7%9A%84%E4%B8%80%E7%A7%8D%E6%A8%A1%E6%A0%B7/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4V4-%E9%A1%BE%E5%AE%B6%E7%9A%84%E4%BA%BA%E4%B9%9F%E5%9C%A8%E6%89%BE%E8%B7%AF-%E5%8F%97%E8%AE%BF%E8%80%85%E7%9A%84%E6%95%85%E4%BA%8B.md",
       "contentPath": "content/life-interview/life-e473fc8264e0.md",
-      "excerpt": "顾家的人也在找路 他是我的大学同学，也是这次《人生五年》的第四位受访者。 我们聊天前，我原本想问的是一些很现实的问题：他现在在外地做项目，半个月到一个月才回一次家，妻子和女儿在老家，这样的婚姻怎么维持？家里的开销够不够？以后父母养老怎么办？女儿上学怎么办？他们会买房吗？他会回去吗？ 聊完之后，我发现这些问题确实都重要，但更重要的是，他身上有一种很朴素的状态：",
+      "excerpt": "他是我的大学同学，也是这次《人生五年》的第四位受访者。 我们聊天前，我原本想问的是一些很现实的问题：他现在在外地做项目，半个月到一个月才回一次家，妻子和女儿在老家，这样的婚姻怎么维持？家里的开销够不够？以后父母养老怎么办？女儿上学怎么办？他们会买房吗？他会回去吗？",
       "wordCount": 2455,
-      "updatedAt": "2026-06-10T13:05:57.085Z"
+      "updatedAt": "2026-06-28T08:13:25.320Z",
+      "displayTitle": "顾家的人也在找路",
+      "status": "published",
+      "featured": true
     },
     {
       "id": "life-e60f5bd3bbb1",
@@ -26,9 +63,12 @@
       "sourcePath": "人生五年/20260425-访谈保险代理人刘进步/刘进步的故事.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260425-%E8%AE%BF%E8%B0%88%E4%BF%9D%E9%99%A9%E4%BB%A3%E7%90%86%E4%BA%BA%E5%88%98%E8%BF%9B%E6%AD%A5/%E5%88%98%E8%BF%9B%E6%AD%A5%E7%9A%84%E6%95%85%E4%BA%8B.md",
       "contentPath": "content/life-interview/life-e60f5bd3bbb1.md",
-      "excerpt": "一个不太把成绩当成成绩的人 刘进步有许多容易被写成“履历亮点”的经历。 她在放养式成长里考上不错的学校，大学时参加创业大赛，拿到过风投，也在职业生涯中做成许多人做不到的事。她考过不少证书，后来还考过注册会计师。可是这些东西在她自己眼中，并不算特别值得夸耀的成就。她甚至可以轻描淡写地把进入保险行业之前的自己概括为“一个普通人”。 这并不代表她真的普通。更像是她",
+      "excerpt": "一个不太把成绩当成成绩的人 刘进步有许多容易被写成“履历亮点”的经历。 她在放养式成长里考上不错的学校，大学时参加创业大赛，拿到过风投，也在职业生涯中做成许多人做不到的事。她考过不少证书，后来还考过注册会计师。可是这些东西在她自己眼中，并不算特别值得夸耀的成就。",
       "wordCount": 6397,
-      "updatedAt": "2026-06-10T13:05:57.071Z"
+      "updatedAt": "2026-06-28T08:13:25.302Z",
+      "displayTitle": "刘进步的故事",
+      "status": "published",
+      "featured": true
     },
     {
       "id": "life-67e5e130a54f",
@@ -40,9 +80,12 @@
       "sourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/流年的故事.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260512-%E7%88%B1%E7%8E%A9%E6%B8%B8%E6%88%8F%E7%9A%84%E7%9F%AD%E6%9A%82%E8%87%AA%E7%94%B1%E4%BA%BA/%E6%B5%81%E5%B9%B4%E7%9A%84%E6%95%85%E4%BA%8B.md",
       "contentPath": "content/life-interview/life-67e5e130a54f.md",
-      "excerpt": "流年的故事 不上班真的养人吗 流年离职以后，状态比很多人想象中稳定。 他没有立刻进入一种强烈的焦虑，也没有把“找工作”变成每天压在头上的任务。对他来说，工作当然还是要找，钱当然也重要，但只要眼下的生活还过得下去，就没有必要先把自己逼进一种很痛苦的状态里。 他说，不上班是为了什么？肯定不是为了委屈自己。 这句话很像流年。他不是那种要把生活讲得很热血的人，也不太",
+      "excerpt": "不上班真的养人吗 流年离职以后，状态比很多人想象中稳定。 他没有立刻进入一种强烈的焦虑，也没有把“找工作”变成每天压在头上的任务。对他来说，工作当然还是要找，钱当然也重要，但只要眼下的生活还过得下去，就没有必要先把自己逼进一种很痛苦的状态里。 他说，不上班是为了什么？肯定不是为了委屈自己。",
       "wordCount": 4917,
-      "updatedAt": "2026-06-10T13:05:57.078Z"
+      "updatedAt": "2026-06-28T08:13:25.311Z",
+      "displayTitle": "流年的故事",
+      "status": "published",
+      "featured": true
     },
     {
       "id": "life-cc8cf6a30eb1",
@@ -54,9 +97,12 @@
       "sourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/人生五年V1——破茧成蝶的自由职业者Yamu.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260411-%E4%B8%8D%E8%A2%AB%E5%AE%9A%E4%B9%89%E7%9A%84%E6%96%9C%E6%9D%A000%E5%90%8E%EF%BC%8C%E6%88%90%E5%8A%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%80%85/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4V1%E2%80%94%E2%80%94%E7%A0%B4%E8%8C%A7%E6%88%90%E8%9D%B6%E7%9A%84%E8%87%AA%E7%94%B1%E8%81%8C%E4%B8%9A%E8%80%85Yamu.md",
       "contentPath": "content/life-interview/life-cc8cf6a30eb1.md",
-      "excerpt": "本期《人生五年》受访者介绍 Yamu，自由职业者，一人公司，连续创业者，曾做过摄影化妆工作室等创业项目，现如今在做新媒体代运营，富含生活哲学的零零后女性。 童年随母而居，在不安中学会独自扛事。 父亲离世，她用三年完成一场迟到的告别。 十九岁创业，在多重压力下负重前行。 如今工作生活平衡，有属于自己的节奏与热爱。 她以自我为圆心构建世界，却处处透着对他人妥帖的",
+      "excerpt": "本期《人生五年》受访者介绍 Yamu，自由职业者，一人公司，连续创业者，曾做过摄影化妆工作室等创业项目，现如今在做新媒体代运营，富含生活哲学的零零后女性。 童年随母而居，在不安中学会独自扛事。 父亲离世，她用三年完成一场迟到的告别。 十九岁创业，在多重压力下负重前行。",
       "wordCount": 2837,
-      "updatedAt": "2026-06-10T13:05:57.062Z"
+      "updatedAt": "2026-06-28T08:13:25.291Z",
+      "displayTitle": "Yamu：把自由一步步接住",
+      "status": "published",
+      "featured": true
     },
     {
       "id": "life-a3c5298224a1",
@@ -68,9 +114,12 @@
       "sourcePath": "人生五年/20260425-访谈保险代理人刘进步/人生五年V2——访谈保险代理人刘进步-发布公众号等公开平台.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260425-%E8%AE%BF%E8%B0%88%E4%BF%9D%E9%99%A9%E4%BB%A3%E7%90%86%E4%BA%BA%E5%88%98%E8%BF%9B%E6%AD%A5/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4V2%E2%80%94%E2%80%94%E8%AE%BF%E8%B0%88%E4%BF%9D%E9%99%A9%E4%BB%A3%E7%90%86%E4%BA%BA%E5%88%98%E8%BF%9B%E6%AD%A5-%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7%E7%AD%89%E5%85%AC%E5%BC%80%E5%B9%B3%E5%8F%B0.md",
       "contentPath": "content/life-interview/life-a3c5298224a1.md",
-      "excerpt": "本期《人生五年》受访者介绍 刘进步，85后，保险代理人，曾在基建投资领域工作十年，参与道路、桥梁、高速、地铁等大型基础设施项目的前期投资与合作。如今转入商业保险行业，在与人深度沟通、理解家庭风险与生活规划的过程中，重新认识工作、关系与自我。 她曾长期处在高强度、强交付、结果导向的职业环境里，也曾相信努力就会带来明确回报。行业周期变化后，她开始意识到，个人命运",
+      "excerpt": "本期《人生五年》受访者介绍 刘进步，85后，保险代理人，曾在基建投资领域工作十年，参与道路、桥梁、高速、地铁等大型基础设施项目的前期投资与合作。如今转入商业保险行业，在与人深度沟通、理解家庭风险与生活规划的过程中，重新认识工作、关系与自我。",
       "wordCount": 3526,
-      "updatedAt": "2026-06-10T13:05:57.066Z"
+      "updatedAt": "2026-06-28T08:13:25.297Z",
+      "displayTitle": "刘进步：在职业转型中重新站稳",
+      "status": "published",
+      "featured": true
     },
     {
       "id": "life-4c03b7637a91",
@@ -82,9 +131,12 @@
       "sourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/人生五年V3-感觉不上班真养人的流年.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260512-%E7%88%B1%E7%8E%A9%E6%B8%B8%E6%88%8F%E7%9A%84%E7%9F%AD%E6%9A%82%E8%87%AA%E7%94%B1%E4%BA%BA/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4V3-%E6%84%9F%E8%A7%89%E4%B8%8D%E4%B8%8A%E7%8F%AD%E7%9C%9F%E5%85%BB%E4%BA%BA%E7%9A%84%E6%B5%81%E5%B9%B4.md",
       "contentPath": "content/life-interview/life-4c03b7637a91.md",
-      "excerpt": "受访者——流年 他是一位离职两年多、暂时还没有重新进入职场的青年。成长过程中，他曾经很内向，也曾因为游戏、近视和学习状态的变化，经历过成绩起伏与选择偏移。进入职场后，他在外包项目和大厂环境里慢慢学会表达，也开始意识到环境、目标和他人的牵引，对一个人的改变有多大。 离职后的他暂时没有急着重新进入工作，而是处在一种“钱还够、先让自己舒服一点”的缓冲期里。游戏、存",
+      "excerpt": "受访者——流年 他是一位离职两年多、暂时还没有重新进入职场的青年。成长过程中，他曾经很内向，也曾因为游戏、近视和学习状态的变化，经历过成绩起伏与选择偏移。进入职场后，他在外包项目和大厂环境里慢慢学会表达，也开始意识到环境、目标和他人的牵引，对一个人的改变有多大。",
       "wordCount": 1658,
-      "updatedAt": "2026-06-10T13:05:57.075Z"
+      "updatedAt": "2026-06-28T08:13:25.306Z",
+      "displayTitle": "流年：不上班真的养人吗？",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-83f4b6bb0297",
@@ -96,9 +148,29 @@
       "sourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-幸福的一种模样和我的阴暗面.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260526-%E5%B9%B8%E7%A6%8F%E7%9A%84%E4%B8%80%E7%A7%8D%E6%A8%A1%E6%A0%B7/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4V4-%E5%B9%B8%E7%A6%8F%E7%9A%84%E4%B8%80%E7%A7%8D%E6%A8%A1%E6%A0%B7%E5%92%8C%E6%88%91%E7%9A%84%E9%98%B4%E6%9A%97%E9%9D%A2.md",
       "contentPath": "content/life-interview/life-83f4b6bb0297.md",
-      "excerpt": "这是《人生五年V4》的访谈后记。 上一篇写他的故事，这一篇写我在听完他的故事之后，被照见的一部分。一个人讲起自己平淡、和睦、互相包容的婚姻时，我才意识到，原来我对亲密关系的理解一直很有限。 意外的访谈 这次访谈虽然在我的规划中，但又在预期之外。因本期原定受访的朋友家中有事，需要延后，遂有了这次谈话。他是我在职业访谈中的第三位受访者，是关系很好的朋友，也是我的",
+      "excerpt": "这是《人生五年V4》的访谈后记。 上一篇写他的故事，这一篇写我在听完他的故事之后，被照见的一部分。一个人讲起自己平淡、和睦、互相包容的婚姻时，我才意识到，原来我对亲密关系的理解一直很有限。 意外的访谈 这次访谈虽然在我的规划中，但又在预期之外。因本期原定受访的朋友家中有事，需要延后，遂有了这次谈话。",
       "wordCount": 2031,
-      "updatedAt": "2026-06-10T13:05:57.081Z"
+      "updatedAt": "2026-06-28T08:13:25.316Z",
+      "displayTitle": "幸福的一种模样，也照见我的阴暗面",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-bb626685cbaf",
+      "title": "人生五年v5后记——在朋友家里，看见一个家庭的支点",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "life-interview",
+      "sectionLabel": "人生五年访谈",
+      "sourcePath": "人生五年/20260613-/人生五年v5后记——在朋友家里，看见一个家庭的支点.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260613-/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4v5%E5%90%8E%E8%AE%B0%E2%80%94%E2%80%94%E5%9C%A8%E6%9C%8B%E5%8F%8B%E5%AE%B6%E9%87%8C%EF%BC%8C%E7%9C%8B%E8%A7%81%E4%B8%80%E4%B8%AA%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%94%AF%E7%82%B9.md",
+      "contentPath": "content/life-interview/life-bb626685cbaf.md",
+      "excerpt": "这次访谈很神奇。 这大约是我毕业后，第一次到城市里已经成家的朋友家中做客，并在那里进行了一次有趣的访谈。不太好的是，我也打扰到了他们。因为时间的原因，他们一家三口连晚饭都没能好好吃。 我这次访谈主要好奇的是：他们两个人的爱情，为什么能够长期保持鲜活？",
+      "wordCount": 1481,
+      "updatedAt": "2026-06-28T08:13:25.332Z",
+      "displayTitle": "在朋友家里，看见一个家庭的支点",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-501d2e48a882",
@@ -110,9 +182,12 @@
       "sourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/Yamu的故事-发布公众号等公开平台.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4/20260411-%E4%B8%8D%E8%A2%AB%E5%AE%9A%E4%B9%89%E7%9A%84%E6%96%9C%E6%9D%A000%E5%90%8E%EF%BC%8C%E6%88%90%E5%8A%9F%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%81%8C%E4%B8%9A%E8%80%85/Yamu%E7%9A%84%E6%95%85%E4%BA%8B-%E5%8F%91%E5%B8%83%E5%85%AC%E4%BC%97%E5%8F%B7%E7%AD%89%E5%85%AC%E5%BC%80%E5%B9%B3%E5%8F%B0.md",
       "contentPath": "content/life-interview/life-501d2e48a882.md",
-      "excerpt": "一个很早就开始给自己撑伞的人 Yamu是一个容易让人先看到“厉害”的人。 她是零零后，自由职业者，一人公司，连续创业者。她做过摄影、化妆工作室，也做过健康行业相关运营，如今主要做新媒体代运营。她可以自己录素材、剪视频、对接客户，也保留着过去积累下来的摄影和化妆副业。她的工作形态看起来很自由：一周两三天集中工作，剩下的时间健身、听音乐、社交、看演出、吃饭、休息",
+      "excerpt": "一个很早就开始给自己撑伞的人 Yamu是一个容易让人先看到“厉害”的人。 她是零零后，自由职业者，一人公司，连续创业者。她做过摄影、化妆工作室，也做过健康行业相关运营，如今主要做新媒体代运营。她可以自己录素材、剪视频、对接客户，也保留着过去积累下来的摄影和化妆副业。",
       "wordCount": 4973,
-      "updatedAt": "2026-06-10T13:05:57.058Z"
+      "updatedAt": "2026-06-28T08:13:25.285Z",
+      "displayTitle": "Yamu 的故事",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-c1c91ef2fd6b",
@@ -124,9 +199,12 @@
       "sourcePath": "职业访谈/教培服务咨询业/第八次访谈_心理咨询师/第八次访谈-回国后的心理咨询师.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E6%95%99%E5%9F%B9%E6%9C%8D%E5%8A%A1%E5%92%A8%E8%AF%A2%E4%B8%9A/%E7%AC%AC%E5%85%AB%E6%AC%A1%E8%AE%BF%E8%B0%88_%E5%BF%83%E7%90%86%E5%92%A8%E8%AF%A2%E5%B8%88/%E7%AC%AC%E5%85%AB%E6%AC%A1%E8%AE%BF%E8%B0%88-%E5%9B%9E%E5%9B%BD%E5%90%8E%E7%9A%84%E5%BF%83%E7%90%86%E5%92%A8%E8%AF%A2%E5%B8%88.md",
       "contentPath": "content/career-interview/career-c1c91ef2fd6b.md",
-      "excerpt": "和一位具海外经历的心理咨询师长谈：谈心理咨询师的入行门槛与行业现实，讨论“真人咨询 vs AI自助”的边界，同时延伸到社工生态、海外成长轨迹与她对人生坑点、意义与婚姻的清醒判断。 本文十分荣幸得到受访者的斧正和补充，已做加粗标记，欢迎观看。 01 访谈后我眼中的她 我是访谈开始前一天在根据她回答的职业信息问卷准备问题的，最开始的一个半小时左右我们聊的是职业相",
+      "excerpt": "和一位具海外经历的心理咨询师长谈：谈心理咨询师的入行门槛与行业现实，讨论“真人咨询 vs AI自助”的边界，同时延伸到社工生态、海外成长轨迹与她对人生坑点、意义与婚姻的清醒判断。 本文十分荣幸得到受访者的斧正和补充，已做加粗标记，欢迎观看。",
       "wordCount": 7330,
-      "updatedAt": "2026-06-10T13:05:57.406Z"
+      "updatedAt": "2026-06-28T08:13:27.639Z",
+      "displayTitle": "第八次访谈-回国后的心理咨询师",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-6c105cc20013",
@@ -138,9 +216,12 @@
       "sourcePath": "职业访谈/第九次访谈/第九次访谈-医疗行业办公室副主任.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%AC%AC%E4%B9%9D%E6%AC%A1%E8%AE%BF%E8%B0%88/%E7%AC%AC%E4%B9%9D%E6%AC%A1%E8%AE%BF%E8%B0%88-%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%89%AF%E4%B8%BB%E4%BB%BB.md",
       "contentPath": "content/career-interview/career-6c105cc20013.md",
-      "excerpt": "金融学生到院长助理：朱迪的“奇奇怪怪”入行路 我只知道：她是金融专业学生，后来做了医疗行业的办公室副主任。 和朱迪小姐姐聊天涨了很多知识，她很有趣，俏皮幽默时刻不少。 可惜录音不宜分享：吐槽了不少人和事，还有些是社会的，内容也不乏没那么积极向上的。 01 访谈起始 访谈开始前我仅知道受访者是金融专业的学生，最后做了医疗行业的办公室副主任。好奇+1，因为金融和",
+      "excerpt": "金融学生到院长助理：朱迪的“奇奇怪怪”入行路 我只知道：她是金融专业学生，后来做了医疗行业的办公室副主任。 和朱迪小姐姐聊天涨了很多知识，她很有趣，俏皮幽默时刻不少。 可惜录音不宜分享：吐槽了不少人和事，还有些是社会的，内容也不乏没那么积极向上的。",
       "wordCount": 3097,
-      "updatedAt": "2026-06-10T13:05:57.422Z"
+      "updatedAt": "2026-06-28T08:13:27.684Z",
+      "displayTitle": "第九次访谈-医疗行业办公室副主任",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-176ceaace7ff",
@@ -152,9 +233,12 @@
       "sourcePath": "职业访谈/教培服务咨询业/第七次_迦迦的艺术之路/第七次访谈-我首次了解的艺术人生（美术老师）.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E6%95%99%E5%9F%B9%E6%9C%8D%E5%8A%A1%E5%92%A8%E8%AF%A2%E4%B8%9A/%E7%AC%AC%E4%B8%83%E6%AC%A1_%E8%BF%A6%E8%BF%A6%E7%9A%84%E8%89%BA%E6%9C%AF%E4%B9%8B%E8%B7%AF/%E7%AC%AC%E4%B8%83%E6%AC%A1%E8%AE%BF%E8%B0%88-%E6%88%91%E9%A6%96%E6%AC%A1%E4%BA%86%E8%A7%A3%E7%9A%84%E8%89%BA%E6%9C%AF%E4%BA%BA%E7%94%9F%EF%BC%88%E7%BE%8E%E6%9C%AF%E8%80%81%E5%B8%88%EF%BC%89.md",
       "contentPath": "content/career-interview/career-176ceaace7ff.md",
-      "excerpt": "我的刻板印象 在我眼中艺术不说高大上，但也是离普通人很遥远的东西（虽然我想并尝试学吹笛子）。好像玩艺术的自带一股神秘气质，让我不太敢靠近，我也不知道为什么。另外或许是因为从小知道学艺术需要更多钱，因此还有个不太靠谱的认识，就是玩艺术总得有钱吧。即便知道哪吒导演的人生经历我还是有这样的想法，可能小时候留下的刻板印象真的很难消除。 受访人介绍 本次受访者是一位美",
+      "excerpt": "我的刻板印象 在我眼中艺术不说高大上，但也是离普通人很遥远的东西（虽然我想并尝试学吹笛子）。好像玩艺术的自带一股神秘气质，让我不太敢靠近，我也不知道为什么。另外或许是因为从小知道学艺术需要更多钱，因此还有个不太靠谱的认识，就是玩艺术总得有钱吧。",
       "wordCount": 2146,
-      "updatedAt": "2026-06-10T13:05:57.399Z"
+      "updatedAt": "2026-06-28T08:13:27.613Z",
+      "displayTitle": "第七次访谈-我首次了解的艺术人生（美术老师）",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-e55d54c19e17",
@@ -166,9 +250,12 @@
       "sourcePath": "职业访谈/电力/第三次访谈/第三次访谈对话AI精炼后人工修改版.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%94%B5%E5%8A%9B/%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AE%BF%E8%B0%88/%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AE%BF%E8%B0%88%E5%AF%B9%E8%AF%9DAI%E7%B2%BE%E7%82%BC%E5%90%8E%E4%BA%BA%E5%B7%A5%E4%BF%AE%E6%94%B9%E7%89%88.md",
       "contentPath": "content/career-interview/career-e55d54c19e17.md",
-      "excerpt": "本次访谈因谈话内容涉及敏感信息并同受访者沟通后不放原始音频。以下为访谈语音转录文本，大意相当，与谈话非完全一致同时做完脱敏处理。 【我】：对，你在成都干啥子？ 【小李】：我们主要做视频这块，做监控这方面。 【我】：啥子？ 【小李】：视频这方面，就监控这方面。 【我】：视频监控？ 【小李】：对，跟宁波差不多。在宁波做交警那边的项目；做完交警这边，又做变电站的。",
+      "excerpt": "本次访谈因谈话内容涉及敏感信息并同受访者沟通后不放原始音频。以下为访谈语音转录文本，大意相当，与谈话非完全一致同时做完脱敏处理。 【我】：对，你在成都干啥子？ 【小李】：我们主要做视频这块，做监控这方面。 【我】：啥子？ 【小李】：视频这方面，就监控这方面。 【我】：视频监控？",
       "wordCount": 8454,
-      "updatedAt": "2026-06-10T13:05:57.415Z"
+      "updatedAt": "2026-06-28T08:13:27.671Z",
+      "displayTitle": "第三次访谈对话AI精炼后人工修改版",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-fc4e698b8c91",
@@ -180,9 +267,12 @@
       "sourcePath": "职业访谈/第十次访谈—运营专员/第十次访谈—不做广告的运营专员.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%AC%AC%E5%8D%81%E6%AC%A1%E8%AE%BF%E8%B0%88%E2%80%94%E8%BF%90%E8%90%A5%E4%B8%93%E5%91%98/%E7%AC%AC%E5%8D%81%E6%AC%A1%E8%AE%BF%E8%B0%88%E2%80%94%E4%B8%8D%E5%81%9A%E5%B9%BF%E5%91%8A%E7%9A%84%E8%BF%90%E8%90%A5%E4%B8%93%E5%91%98.md",
       "contentPath": "content/career-interview/career-fc4e698b8c91.md",
-      "excerpt": "从职业信息来看，这是一次很失败的访谈，因为无论问卷还是访谈，都没涉及太多本职位的信息。但从访谈给我带来的反思来看这又是非常成功的一次访谈，甚至改变了访谈项目的目标。 被动选择的工作 虽然收获很大且让我转变了访谈方向，但我们还是从头讲起。受访者是从高中开始就对计算机产生朦胧兴趣的人，顺理成章的大学学了计算机专业。但他高中对于计算机的兴趣过于朦胧，且对于市场上计",
+      "excerpt": "从职业信息来看，这是一次很失败的访谈，因为无论问卷还是访谈，都没涉及太多本职位的信息。但从访谈给我带来的反思来看这又是非常成功的一次访谈，甚至改变了访谈项目的目标。 被动选择的工作 虽然收获很大且让我转变了访谈方向，但我们还是从头讲起。",
       "wordCount": 2791,
-      "updatedAt": "2026-06-10T13:05:57.430Z"
+      "updatedAt": "2026-06-28T08:13:27.724Z",
+      "displayTitle": "第十次访谈—不做广告的运营专员",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-537c5f69bc38",
@@ -194,9 +284,12 @@
       "sourcePath": "职业访谈/第十一次访谈-会计/第十一次访谈-沉浸事业的财务.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%AC%AC%E5%8D%81%E4%B8%80%E6%AC%A1%E8%AE%BF%E8%B0%88-%E4%BC%9A%E8%AE%A1/%E7%AC%AC%E5%8D%81%E4%B8%80%E6%AC%A1%E8%AE%BF%E8%B0%88-%E6%B2%89%E6%B5%B8%E4%BA%8B%E4%B8%9A%E7%9A%84%E8%B4%A2%E5%8A%A1.md",
       "contentPath": "content/career-interview/career-537c5f69bc38.md",
-      "excerpt": "这是一次有部分预期，但又超出我预料的访谈。在职业访谈项目结束前能有此次访谈真的十分荣幸。因为他除了如标题所言，是一个沉浸于事业的会计外，他还将财务的职业生涯内化为了他的人生追求，他想完全了解财务这个职业是如何运作。 留言引起的访谈 首先就本次访谈缘起做了一个简单的描述，因某次访谈中提到会计可能对于男性存在就业歧视后，他在看了文章后留言说从他的职场经历中会计甚",
+      "excerpt": "这是一次有部分预期，但又超出我预料的访谈。在职业访谈项目结束前能有此次访谈真的十分荣幸。因为他除了如标题所言，是一个沉浸于事业的会计外，他还将财务的职业生涯内化为了他的人生追求，他想完全了解财务这个职业是如何运作。",
       "wordCount": 1982,
-      "updatedAt": "2026-06-10T13:05:57.427Z"
+      "updatedAt": "2026-06-28T08:13:27.713Z",
+      "displayTitle": "第十一次访谈-沉浸事业的财务",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-c90705ad933d",
@@ -208,9 +301,12 @@
       "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/第五次访谈——六十分万岁与完美主义者的跨时代对话.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AE%BF%E8%B0%88_%E9%99%B6%E8%89%BA%E5%B7%A5%E4%BD%9C%E5%AE%A4/%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AE%BF%E8%B0%88%E2%80%94%E2%80%94%E5%85%AD%E5%8D%81%E5%88%86%E4%B8%87%E5%B2%81%E4%B8%8E%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E8%80%85%E7%9A%84%E8%B7%A8%E6%97%B6%E4%BB%A3%E5%AF%B9%E8%AF%9D.md",
       "contentPath": "content/career-interview/career-c90705ad933d.md",
-      "excerpt": "开场与访谈缘起 彦哥是七零后，我是九十后。访谈从我疑惑他是陶艺工作室的经营者，怎么职业问卷填写的是销售技术工程开始。他的回答引我走入了一场往昔峥嵘岁月的故事。他过往的职业生涯在我看来非常传奇，而正因我问卷设计的不好，导致他误解了问卷，在问卷中就显露了他对现在和过往职业生活的看法。 职业经历与行业变迁 彦哥他也是读计算机专业出身且算最早的一批，毕业时windo",
+      "excerpt": "开场与访谈缘起 彦哥是七零后，我是九十后。访谈从我疑惑他是陶艺工作室的经营者，怎么职业问卷填写的是销售技术工程开始。他的回答引我走入了一场往昔峥嵘岁月的故事。他过往的职业生涯在我看来非常传奇，而正因我问卷设计的不好，导致他误解了问卷，在问卷中就显露了他对现在和过往职业生活的看法。",
       "wordCount": 2401,
-      "updatedAt": "2026-06-10T13:05:57.375Z"
+      "updatedAt": "2026-06-28T08:13:27.520Z",
+      "displayTitle": "第五次访谈——六十分万岁与完美主义者的跨时代对话",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-3c806ba11950",
@@ -222,9 +318,12 @@
       "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/第五次访谈对话AI精炼版.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AE%BF%E8%B0%88_%E9%99%B6%E8%89%BA%E5%B7%A5%E4%BD%9C%E5%AE%A4/%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AE%BF%E8%B0%88%E5%AF%B9%E8%AF%9DAI%E7%B2%BE%E7%82%BC%E7%89%88.md",
       "contentPath": "content/career-interview/career-3c806ba11950.md",
-      "excerpt": "【说话人1】：我们先开场。你看过我发的内容吗？没看的话我就读一下。 【说话人2】：看过了，大概看过。你按流程走就行。 【说话人1】：那行，走流程。之前你在小红书说你是在做陶艺创作的，但问卷里又填成了销售。你回答的是职业预问卷，你填的行业是销售类，对吧？ 【说话人2】：可能是我误会了你的问题。因为你当时那个话题，不是说“职业的一个转向”吗？ 【说话人1】：对。",
+      "excerpt": "【说话人1】：我们先开场。你看过我发的内容吗？没看的话我就读一下。 【说话人2】：看过了，大概看过。你按流程走就行。 【说话人1】：那行，走流程。之前你在小红书说你是在做陶艺创作的，但问卷里又填成了销售。你回答的是职业预问卷，你填的行业是销售类，对吧？ 【说话人2】：可能是我误会了你的问题。",
       "wordCount": 17288,
-      "updatedAt": "2026-06-10T13:05:57.379Z"
+      "updatedAt": "2026-06-28T08:13:27.537Z",
+      "displayTitle": "第五次访谈对话AI精炼版",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-d27d506f4cfb",
@@ -238,7 +337,10 @@
       "contentPath": "content/career-interview/career-d27d506f4cfb.md",
       "excerpt": "",
       "wordCount": 0,
-      "updatedAt": "2026-06-10T13:05:57.397Z"
+      "updatedAt": "2026-06-28T08:13:27.596Z",
+      "displayTitle": "对话AI精炼版",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-0c3c846eb6b6",
@@ -250,9 +352,12 @@
       "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/二次访谈-Secur1ty0的网安人生.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AE%BF%E8%B0%88Secur1ty0%E7%9A%84%E7%BD%91%E5%AE%89%E4%BA%BA%E7%94%9F/%E4%BA%8C%E6%AC%A1%E8%AE%BF%E8%B0%88-Secur1ty0%E7%9A%84%E7%BD%91%E5%AE%89%E4%BA%BA%E7%94%9F.md",
       "contentPath": "content/career-interview/career-0c3c846eb6b6.md",
-      "excerpt": "相识 【小林】：稍等，我先开启录音。我们这次聊的内容如果不涉及敏感信息，我会把录音放到原始材料里；之前那次只有文字版，没有放录音，是因为聊到公司和吐槽内容了。如果你不介意，我后面会把录音放到github 上；如果你介意，我就不放。 【小林】：这个应该没问题吧？ 【小何】：没问题。你用 AI 转写之后放就行。不过你麦克风好像有点问题，有点噪音，像破风的感觉，听",
+      "excerpt": "相识 【小林】：稍等，我先开启录音。我们这次聊的内容如果不涉及敏感信息，我会把录音放到原始材料里；之前那次只有文字版，没有放录音，是因为聊到公司和吐槽内容了。如果你不介意，我后面会把录音放到github 上；如果你介意，我就不放。 【小林】：这个应该没问题吧？ 【小何】：没问题。",
       "wordCount": 8322,
-      "updatedAt": "2026-06-10T13:05:57.386Z"
+      "updatedAt": "2026-06-28T08:13:27.567Z",
+      "displayTitle": "二次访谈-Secur1ty0的网安人生",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-d49215cf161c",
@@ -264,9 +369,12 @@
       "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/访谈Secur1ty0的网安人生.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AE%BF%E8%B0%88Secur1ty0%E7%9A%84%E7%BD%91%E5%AE%89%E4%BA%BA%E7%94%9F/%E8%AE%BF%E8%B0%88Secur1ty0%E7%9A%84%E7%BD%91%E5%AE%89%E4%BA%BA%E7%94%9F.md",
       "contentPath": "content/career-interview/career-d49215cf161c.md",
-      "excerpt": "相识 他和我在刚毕业的时候加入了同一家网络安全公司。我和他都是因这家公司的校企合作计划进入这个公司的，或许这么一说对行业了解的人都可以猜到是那家公司了。但与我不同，他对于网安行业是怀有期待的，期望做一个黑客。自述是曾经看到过有关宣传，从而种下了一颗向往网安这个行业的种子。然后有机会他就参与这个公司的培训并来到了我们相识的公司。 相熟 本以为是再简单不过的事，",
+      "excerpt": "相识 他和我在刚毕业的时候加入了同一家网络安全公司。我和他都是因这家公司的校企合作计划进入这个公司的，或许这么一说对行业了解的人都可以猜到是那家公司了。但与我不同，他对于网安行业是怀有期待的，期望做一个黑客。自述是曾经看到过有关宣传，从而种下了一颗向往网安这个行业的种子。",
       "wordCount": 1829,
-      "updatedAt": "2026-06-10T13:05:57.389Z"
+      "updatedAt": "2026-06-28T08:13:27.572Z",
+      "displayTitle": "访谈Secur1ty0的网安人生",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-99646b9514c5",
@@ -278,9 +386,12 @@
       "sourcePath": "职业访谈/电力/第三次访谈/刚有孩子的大学好友-视频监控设备部署工程师.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%94%B5%E5%8A%9B/%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AE%BF%E8%B0%88/%E5%88%9A%E6%9C%89%E5%AD%A9%E5%AD%90%E7%9A%84%E5%A4%A7%E5%AD%A6%E5%A5%BD%E5%8F%8B-%E8%A7%86%E9%A2%91%E7%9B%91%E6%8E%A7%E8%AE%BE%E5%A4%87%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88.md",
       "contentPath": "content/career-interview/career-99646b9514c5.md",
-      "excerpt": "介绍 他是我大学室友，也是我在大学中关系最好的朋友。 他为人耿直，性格内向，做事比我更有冲劲。 虽然最后并没有闯荡成功，但现在他因人生阶段变化而趋于稳定，是没想到而又情理之中的。 因为刚毕业是在大家都在忙于找工作和适应工作之时，他先去闯荡了一阵后就产生了创业的想法。 幸而他是理性的，再加上也和那时刚毕业不久没资金的原因，他很自然的没成功。 然后兜兜转转的又开",
+      "excerpt": "介绍 他是我大学室友，也是我在大学中关系最好的朋友。 他为人耿直，性格内向，做事比我更有冲劲。 虽然最后并没有闯荡成功，但现在他因人生阶段变化而趋于稳定，是没想到而又情理之中的。 因为刚毕业是在大家都在忙于找工作和适应工作之时，他先去闯荡了一阵后就产生了创业的想法。",
       "wordCount": 2339,
-      "updatedAt": "2026-06-10T13:05:57.412Z"
+      "updatedAt": "2026-06-28T08:13:27.651Z",
+      "displayTitle": "刚有孩子的大学好友-视频监控设备部署工程师",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-648a3d115602",
@@ -292,9 +403,12 @@
       "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/个人创业者职业信息问卷-Maggie答.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E5%BD%B1%E8%A7%86%E8%A1%8C%E4%B8%9A/%E7%AC%AC%E5%85%AD%E6%AC%A1_%E8%AE%BF%E8%B0%88Maggie%EF%BC%9A%E4%BC%9A%E8%AE%A1%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%88%B6%E7%89%87%E4%BA%BA%E4%BC%A0%E5%A5%87%E4%BA%BA%E7%94%9F/%E4%B8%AA%E4%BA%BA%E5%88%9B%E4%B8%9A%E8%80%85%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E9%97%AE%E5%8D%B7-Maggie%E7%AD%94.md",
       "contentPath": "content/career-interview/career-648a3d115602.md",
-      "excerpt": "个人创业者职业信息问卷Maggie答 前言 贡献人介绍链接：https://windmoonlotus.github.io/windmoonLotus/contributors/profile.html?id=Maggie 致谢：感谢Maggie的真诚与细致分享。她把从迷茫到出国探索、从会计转向影视、再到独立承接项目与创业的关键节点讲得清晰而坦荡，也把家庭边",
+      "excerpt": "个人创业者职业信息问卷Maggie答 前言 贡献人介绍链接：https://windmoonlotus.github.io/windmoonLotus/contributors/profile.html?id=Maggie 致谢：感谢Maggie的真诚与细致分享。",
       "wordCount": 1717,
-      "updatedAt": "2026-06-10T13:05:57.370Z"
+      "updatedAt": "2026-06-28T08:13:27.510Z",
+      "displayTitle": "个人创业者职业信息问卷-Maggie答",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-a1f9eed6896c",
@@ -306,9 +420,12 @@
       "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/会计到独立制片人的传奇人生【还是M仓户外装备互助租赁管理人】.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E5%BD%B1%E8%A7%86%E8%A1%8C%E4%B8%9A/%E7%AC%AC%E5%85%AD%E6%AC%A1_%E8%AE%BF%E8%B0%88Maggie%EF%BC%9A%E4%BC%9A%E8%AE%A1%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%88%B6%E7%89%87%E4%BA%BA%E4%BC%A0%E5%A5%87%E4%BA%BA%E7%94%9F/%E4%BC%9A%E8%AE%A1%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%88%B6%E7%89%87%E4%BA%BA%E7%9A%84%E4%BC%A0%E5%A5%87%E4%BA%BA%E7%94%9F%E3%80%90%E8%BF%98%E6%98%AFM%E4%BB%93%E6%88%B7%E5%A4%96%E8%A3%85%E5%A4%87%E4%BA%92%E5%8A%A9%E7%A7%9F%E8%B5%81%E7%AE%A1%E7%90%86%E4%BA%BA%E3%80%91.md",
       "contentPath": "content/career-interview/career-a1f9eed6896c.md",
-      "excerpt": "▲ 户外的她 我眼中的Maggie：从会计到独立制片人还解锁了户外装备租赁负责人的角色 她在朋友圈与户外运动线里呈现出强执行力与生命力。 从会计起步，经历迷茫、辞职出国，再在两年里确认影视方向。 疫情期间半工半读远程转型，靠持续投入与正反馈站稳导演岗位。 经济下行与项目变故促使她独立接单，创业更像“水到渠成”。 她同时运营户外互助装备租赁“M仓”，并计划拍山",
+      "excerpt": "▲ 户外的她 我眼中的Maggie：从会计到独立制片人还解锁了户外装备租赁负责人的角色 她在朋友圈与户外运动线里呈现出强执行力与生命力。 从会计起步，经历迷茫、辞职出国，再在两年里确认影视方向。 疫情期间半工半读远程转型，靠持续投入与正反馈站稳导演岗位。",
       "wordCount": 2600,
-      "updatedAt": "2026-06-10T13:05:57.373Z"
+      "updatedAt": "2026-06-28T08:13:27.515Z",
+      "displayTitle": "会计到独立制片人的传奇人生【还是M仓户外装备互助租赁管理人】",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-0e10ddf9e1f1",
@@ -320,9 +437,12 @@
       "sourcePath": "职业访谈/互联网/首次访谈-玩了一年多的功能测试.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%BA%92%E8%81%94%E7%BD%91/%E9%A6%96%E6%AC%A1%E8%AE%BF%E8%B0%88-%E7%8E%A9%E4%BA%86%E4%B8%80%E5%B9%B4%E5%A4%9A%E7%9A%84%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.md",
       "contentPath": "content/career-interview/career-0e10ddf9e1f1.md",
-      "excerpt": "本次访谈因谈话内容涉及敏感信息并同受访者沟通后不放原始音频。以下为访谈语音转录文本，大意相当，与谈话非完全一致同时做完脱敏处理。 【小林】：你觉得你入行算简单吗？ 【小凡】：我们这边入行确实简单。 【小林】：就很简单对吧？那现在门槛是什么？有没有比较高的门槛？ 【小凡】：有门槛。现在行情不像前些年那么好，入门做软件工程师至少得懂一些理论知识。自动化这些可能实",
+      "excerpt": "本次访谈因谈话内容涉及敏感信息并同受访者沟通后不放原始音频。以下为访谈语音转录文本，大意相当，与谈话非完全一致同时做完脱敏处理。 【小林】：你觉得你入行算简单吗？ 【小凡】：我们这边入行确实简单。 【小林】：就很简单对吧？那现在门槛是什么？有没有比较高的门槛？ 【小凡】：有门槛。",
       "wordCount": 10938,
-      "updatedAt": "2026-06-10T13:05:57.395Z"
+      "updatedAt": "2026-06-28T08:13:27.589Z",
+      "displayTitle": "首次访谈-玩了一年多的功能测试",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-a4c5c67fb069",
@@ -334,9 +454,12 @@
       "sourcePath": "职业访谈/电力/第三次访谈/职业信息共享问卷_.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%94%B5%E5%8A%9B/%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AE%BF%E8%B0%88/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_.md",
       "contentPath": "content/career-interview/career-a4c5c67fb069.md",
-      "excerpt": "职业信息共享问卷 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：C 28–32 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层级:[可追溯风险:中] 答：C 省会 4. (1)籍贯: [可",
+      "excerpt": "职业信息共享问卷 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：C 28–32 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层级……",
       "wordCount": 1786,
-      "updatedAt": "2026-06-10T13:05:57.418Z"
+      "updatedAt": "2026-06-28T08:13:27.679Z",
+      "displayTitle": "职业信息共享问卷_",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-da3c7844dfe6",
@@ -348,9 +471,12 @@
       "sourcePath": "职业访谈/教培服务咨询业/第八次访谈_心理咨询师/职业信息共享问卷_第八次访谈.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E6%95%99%E5%9F%B9%E6%9C%8D%E5%8A%A1%E5%92%A8%E8%AF%A2%E4%B8%9A/%E7%AC%AC%E5%85%AB%E6%AC%A1%E8%AE%BF%E8%B0%88_%E5%BF%83%E7%90%86%E5%92%A8%E8%AF%A2%E5%B8%88/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_%E7%AC%AC%E5%85%AB%E6%AC%A1%E8%AE%BF%E8%B0%88.md",
       "contentPath": "content/career-interview/career-da3c7844dfe6.md",
-      "excerpt": "目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：C 28–32 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城市层级:[可追溯风险:中] 答：A 一线 4. (1)籍贯: [可追溯风险:中高] ",
+      "excerpt": "目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：C 28–32 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城市层级:[可追溯风险:中……",
       "wordCount": 1965,
-      "updatedAt": "2026-06-10T13:05:57.409Z"
+      "updatedAt": "2026-06-28T08:13:27.645Z",
+      "displayTitle": "职业信息共享问卷_第八次访谈",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-bf30971162a4",
@@ -362,9 +488,12 @@
       "sourcePath": "职业访谈/第十次访谈—运营专员/职业信息共享问卷_广告运营.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%AC%AC%E5%8D%81%E6%AC%A1%E8%AE%BF%E8%B0%88%E2%80%94%E8%BF%90%E8%90%A5%E4%B8%93%E5%91%98/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_%E5%B9%BF%E5%91%8A%E8%BF%90%E8%90%A5.md",
       "contentPath": "content/career-interview/career-bf30971162a4.md",
-      "excerpt": "职业信息共享问卷广告运营 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层级:[可追溯风险:中] 答：A 一线 4. (1)籍贯",
+      "excerpt": "职业信息共享问卷广告运营 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：A 男 3. 工作……",
       "wordCount": 1695,
-      "updatedAt": "2026-06-10T13:05:57.434Z"
+      "updatedAt": "2026-06-28T08:13:27.729Z",
+      "displayTitle": "职业信息共享问卷_广告运营",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-482edb01e007",
@@ -376,9 +505,12 @@
       "sourcePath": "职业访谈/教培服务咨询业/第七次_迦迦的艺术之路/职业信息共享问卷_迦迦答.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E6%95%99%E5%9F%B9%E6%9C%8D%E5%8A%A1%E5%92%A8%E8%AF%A2%E4%B8%9A/%E7%AC%AC%E4%B8%83%E6%AC%A1_%E8%BF%A6%E8%BF%A6%E7%9A%84%E8%89%BA%E6%9C%AF%E4%B9%8B%E8%B7%AF/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_%E8%BF%A6%E8%BF%A6%E7%AD%94.md",
       "contentPath": "content/career-interview/career-482edb01e007.md",
-      "excerpt": "职业信息共享问卷佳佳答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城市层级:[可追溯风险:中] 答：D 地级市 4. (1)籍贯",
+      "excerpt": "职业信息共享问卷佳佳答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城……",
       "wordCount": 1816,
-      "updatedAt": "2026-06-10T13:05:57.403Z"
+      "updatedAt": "2026-06-28T08:13:27.620Z",
+      "displayTitle": "职业信息共享问卷_佳佳答",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-e7fea33d2b5e",
@@ -390,9 +522,12 @@
       "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/职业信息共享问卷_序号5.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AE%BF%E8%B0%88_%E9%99%B6%E8%89%BA%E5%B7%A5%E4%BD%9C%E5%AE%A4/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_%E5%BA%8F%E5%8F%B75.md",
       "contentPath": "content/career-interview/career-e7fea33d2b5e.md",
-      "excerpt": "职业信息共享问卷序号5 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：F 46+ 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层级:[可追溯风险:中] 答：A 一线 4. (1)籍贯: [",
+      "excerpt": "职业信息共享问卷序号5 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：F 46+ 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层……",
       "wordCount": 1888,
-      "updatedAt": "2026-06-10T13:05:57.383Z"
+      "updatedAt": "2026-06-28T08:13:27.552Z",
+      "displayTitle": "职业信息共享问卷_序号5",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-43483aaa1c28",
@@ -404,9 +539,12 @@
       "sourcePath": "职业访谈/第九次访谈/职业信息共享问卷_序号8.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E7%AC%AC%E4%B9%9D%E6%AC%A1%E8%AE%BF%E8%B0%88/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E5%85%B1%E4%BA%AB%E9%97%AE%E5%8D%B7_%E5%BA%8F%E5%8F%B78.md",
       "contentPath": "content/career-interview/career-43483aaa1c28.md",
-      "excerpt": "职业信息共享问卷朱迪答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：保密 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城市层级:[可追溯风险:中] 答：不定 4. (1)籍贯: [可追溯风险",
+      "excerpt": "职业信息共享问卷朱迪答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：保密 2. 性别:[可追溯风险:中] 答：B 女 3. 工作城市层级:[……",
       "wordCount": 1814,
-      "updatedAt": "2026-06-10T13:05:57.425Z"
+      "updatedAt": "2026-06-28T08:13:27.691Z",
+      "displayTitle": "职业信息共享问卷_朱迪答",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-eb8cac2ec58f",
@@ -418,9 +556,12 @@
       "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/问卷问题_Secur1ty0答.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%BA%92%E8%81%94%E7%BD%91/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AE%BF%E8%B0%88Secur1ty0%E7%9A%84%E7%BD%91%E5%AE%89%E4%BA%BA%E7%94%9F/%E9%97%AE%E5%8D%B7%E9%97%AE%E9%A2%98_Secur1ty0%E7%AD%94.md",
       "contentPath": "content/career-interview/career-eb8cac2ec58f.md",
-      "excerpt": "职业信息共享问卷Secur1ty0答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：A 男 3. 工作城市层级:[可追溯风险:中] 答：B 新一线 4",
+      "excerpt": "职业信息共享问卷Secur1ty0答 目录 基本信息 教育背景 职业信息 收入与回报 资格与荣誉 社会资本与人脉 学习与成长 职业发展因素重要性评价 价值观与动机 家庭背景 流动经历与后续访谈 基本信息 1. 年龄段:[可追溯风险:中] 答：B 23–27 2. 性别:[可追溯风险:中] 答：A 男……",
       "wordCount": 1916,
-      "updatedAt": "2026-06-10T13:05:57.391Z"
+      "updatedAt": "2026-06-28T08:13:27.579Z",
+      "displayTitle": "职业信息共享问卷_Secur1ty0答",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-8526499b036c",
@@ -432,9 +573,12 @@
       "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/AI精炼对话文本.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88/%E4%B8%AA%E4%BD%93%E7%BB%8F%E8%90%A5/%E5%BD%B1%E8%A7%86%E8%A1%8C%E4%B8%9A/%E7%AC%AC%E5%85%AD%E6%AC%A1_%E8%AE%BF%E8%B0%88Maggie%EF%BC%9A%E4%BC%9A%E8%AE%A1%E5%88%B0%E7%8B%AC%E7%AB%8B%E5%88%B6%E7%89%87%E4%BA%BA%E4%BC%A0%E5%A5%87%E4%BA%BA%E7%94%9F/AI%E7%B2%BE%E7%82%BC%E5%AF%B9%E8%AF%9D%E6%96%87%E6%9C%AC.md",
       "contentPath": "content/career-interview/career-8526499b036c.md",
-      "excerpt": "说话人1：能听到吗？现在你觉得我卡吗？ 说话人2：现在不卡了。 说话人1：那应该不是你那边网卡，是我这边。我房间和客厅两个网，我刚换了一下。行，那我继续：我挺好奇，你是什么让你下定决心去创业的？我感觉很多人上班进了舒适区后，其实很难决心离开。 说话人2：我们刚认识那年工作还不错，项目一直有，生活也算平衡。但到2026年回看，我是2024年6、7、8月那段时间",
+      "excerpt": "说话人1：能听到吗？现在你觉得我卡吗？ 说话人2：现在不卡了。 说话人1：那应该不是你那边网卡，是我这边。我房间和客厅两个网，我刚换了一下。行，那我继续：我挺好奇，你是什么让你下定决心去创业的？我感觉很多人上班进了舒适区后，其实很难决心离开。",
       "wordCount": 4351,
-      "updatedAt": "2026-06-10T13:05:57.367Z"
+      "updatedAt": "2026-06-28T08:13:27.491Z",
+      "displayTitle": "AI精炼对话文本",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "life-b83ff6a8e747",
@@ -446,9 +590,12 @@
       "sourcePath": "随笔/人生遐思/吃冰淇淋被坑后能发现的经济常识.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%90%83%E5%86%B0%E6%B7%87%E6%B7%8B%E8%A2%AB%E5%9D%91%E5%90%8E%E8%83%BD%E5%8F%91%E7%8E%B0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%B8%B8%E8%AF%86.md",
       "contentPath": "content/essay/life-b83ff6a8e747.md",
-      "excerpt": "缘起 过年回家和同学约饭，饭后，在县城滨江路边散步，因过年人多滨江旁就有很多小摊贩，当然也有本次话题的主角冰淇淋小摊贩。刚好那日天气较热，饭也有点咸，遂想吃个冰淇淋解解味，然后花了十元买了个人感觉很难吃的冰淇淋。我一半都没吃完就扔了，远不如蜜雪两元的好吃，刚开始我很不爽，当然现在也得给他写下来蛐蛐。 气愤后的理解 我不平的点是凭什么这么贵的冰淇淋还不如蜜雪两",
+      "excerpt": "缘起 过年回家和同学约饭，饭后，在县城滨江路边散步，因过年人多滨江旁就有很多小摊贩，当然也有本次话题的主角冰淇淋小摊贩。刚好那日天气较热，饭也有点咸，遂想吃个冰淇淋解解味，然后花了十元买了个人感觉很难吃的冰淇淋。我一半都没吃完就扔了，远不如蜜雪两元的好吃，刚开始我很不爽，当然现在也得给他写下来蛐蛐。",
       "wordCount": 1435,
-      "updatedAt": "2026-06-10T13:05:57.145Z"
+      "updatedAt": "2026-06-28T08:13:25.398Z",
+      "displayTitle": "吃冰淇淋被坑后能发现的经济常识",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-943f1c6eca57",
@@ -460,9 +607,12 @@
       "sourcePath": "随笔/人生遐思/创意、心态、能力与团队.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%88%9B%E6%84%8F%E3%80%81%E5%BF%83%E6%80%81%E3%80%81%E8%83%BD%E5%8A%9B%E4%B8%8E%E5%9B%A2%E9%98%9F.md",
       "contentPath": "content/essay/life-943f1c6eca57.md",
-      "excerpt": "这是在各种折腾期间产生的一点点小思索，同时也是对自己好奇为什么别人能成功而自己不行的回答吧。 开头 在写这篇文章之前，我尝试做过职业科普这条路径，但因为种种原因后面改成了但最终变成了现在的人生五年访谈栏目（有兴趣可以翻历史文章）；也尝试过给自家想尝试的农家研学做引流和推广，暂时还是失败；也尝试过和朋友开淘宝店或尝试在义乌依赖人际关系做一个小型阿里巴巴，失败，",
+      "excerpt": "这是在各种折腾期间产生的一点点小思索，同时也是对自己好奇为什么别人能成功而自己不行的回答吧。 开头 在写这篇文章之前，我尝试做过职业科普这条路径，但因为种种原因后面改成了但最终变成了现在的人生五年访谈栏目（有兴趣可以翻历史文章）；也尝试过给自家想尝试的农家研学做引流和推广，暂时还是失败；也尝试过和朋……",
       "wordCount": 1094,
-      "updatedAt": "2026-06-10T13:05:57.141Z"
+      "updatedAt": "2026-06-28T08:13:25.395Z",
+      "displayTitle": "创意、心态、能力与团队",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-cdf20bf28455",
@@ -474,9 +624,12 @@
       "sourcePath": "随笔/读书笔记/读书的料与寒门贵子的感慨.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%9A%84%E6%96%99%E4%B8%8E%E5%AF%92%E9%97%A8%E8%B4%B5%E5%AD%90%E7%9A%84%E6%84%9F%E6%85%A8.md",
       "contentPath": "content/essay/life-cdf20bf28455.md",
-      "excerpt": "在看读书的料的时候作者将底层学子学业有成的的主要原因归为了，先赋性动力、道德化思维、学校化的心性品质。看书中我认为那可以是读书改变命运、家人情感上的互相扶持、对学校文化的高度接纳等词。 本书写的是读书的料，讲的的他们的成长故事以及成长中体现的文化，那是一种逆流而上，不屈服于命运的抗争中产生的文化。但我看本书的时候有种时代发展太快，以至于一个时代的文化才刚刚展",
+      "excerpt": "在看读书的料的时候作者将底层学子学业有成的的主要原因归为了，先赋性动力、道德化思维、学校化的心性品质。看书中我认为那可以是读书改变命运、家人情感上的互相扶持、对学校文化的高度接纳等词。 本书写的是读书的料，讲的的他们的成长故事以及成长中体现的文化，那是一种逆流而上，不屈服于命运的抗争中产生的文化。",
       "wordCount": 782,
-      "updatedAt": "2026-06-10T13:05:57.191Z"
+      "updatedAt": "2026-06-28T08:13:25.480Z",
+      "displayTitle": "读书的料与寒门贵子的感慨",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-53db317c156c",
@@ -488,9 +641,12 @@
       "sourcePath": "随笔/人生遐思/风水背后的话语体系.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E9%A3%8E%E6%B0%B4%E8%83%8C%E5%90%8E%E7%9A%84%E8%AF%9D%E8%AF%AD%E4%BD%93%E7%B3%BB.md",
       "contentPath": "content/essay/life-53db317c156c.md",
-      "excerpt": "我仅以自家发生的和风水有关的事情做了个小小的思索，证据和所思当有许多疏漏之处，欢迎指正，当然更欢迎大家去研究，因为这个真的很有趣，而且还能狠狠打击那些拿着风水问题去煽风点火的人，当然更能缓和无知受骗以致影响家庭和睦的迷信者的心绪。 事情的起因 其实事情很简单，就是我家修新房了，然后恰好在新房修好不久我妈就因脑干出血而卧倒病床。在我妈还在外地就医时，就有人和我",
+      "excerpt": "我仅以自家发生的和风水有关的事情做了个小小的思索，证据和所思当有许多疏漏之处，欢迎指正，当然更欢迎大家去研究，因为这个真的很有趣，而且还能狠狠打击那些拿着风水问题去煽风点火的人，当然更能缓和无知受骗以致影响家庭和睦的迷信者的心绪。",
       "wordCount": 2260,
-      "updatedAt": "2026-06-10T13:05:57.178Z"
+      "updatedAt": "2026-06-28T08:13:25.444Z",
+      "displayTitle": "风水背后的话语体系",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-1e777d39c7bb",
@@ -502,9 +658,12 @@
       "sourcePath": "随笔/人生遐思/公众号留言区言论氛围变化考.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%85%AC%E4%BC%97%E5%8F%B7%E7%95%99%E8%A8%80%E5%8C%BA%E8%A8%80%E8%AE%BA%E6%B0%9B%E5%9B%B4%E5%8F%98%E5%8C%96%E8%80%83.md",
       "contentPath": "content/essay/life-1e777d39c7bb.md",
-      "excerpt": "我先说一下是怎么样的一个事。我写了一篇文章，说部分女性太想要房子的背后，可能是想要一个属于自己的位置。文章里也能看出来我是男性，至少认真读完的人应该能看出来。 一开始留言区的氛围还可以，最多是说“想要房子就自己买”这种偏中性的内容。后来有人开始说这是洗白女性的文章，是在兜售赎罪券，再后来就有人直接假定我是女性并开喷。最后留言区开始朝着这个方向一去不复返。 这",
+      "excerpt": "我先说一下是怎么样的一个事。我写了一篇文章，说部分女性太想要房子的背后，可能是想要一个属于自己的位置。文章里也能看出来我是男性，至少认真读完的人应该能看出来。 一开始留言区的氛围还可以，最多是说“想要房子就自己买”这种偏中性的内容。",
       "wordCount": 3375,
-      "updatedAt": "2026-06-10T13:05:57.132Z"
+      "updatedAt": "2026-06-28T08:13:25.382Z",
+      "displayTitle": "公众号留言区言论氛围变化考",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-158b10f480dd",
@@ -516,9 +675,12 @@
       "sourcePath": "随笔/海南骑行记【2026-1-25至26】.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E6%B5%B7%E5%8D%97%E9%AA%91%E8%A1%8C%E8%AE%B0%E3%80%902026-1-25%E8%87%B326%E3%80%91.md",
       "contentPath": "content/essay/life-158b10f480dd.md",
-      "excerpt": "早在看到朋友出现的骑行数据时我时拒绝的，头天70km爬升四百，次日爬升400，70km，第三天100km，爬升也四百左右。但寻思最后一天不去也还行，遂在上周极限北京两日游后买了飞飞乐的机票，决定去。 然后周一后悔了，太折腾了还困。但是这个时候退票还要损失一小笔钱，想想去去也无妨。就更极限的去海南骑行了。机票是周六早，要六点多起，12点多到海口。意外的是我准备",
+      "excerpt": "早在看到朋友出现的骑行数据时我时拒绝的，头天70km爬升四百，次日爬升400，70km，第三天100km，爬升也四百左右。但寻思最后一天不去也还行，遂在上周极限北京两日游后买了飞飞乐的机票，决定去。 然后周一后悔了，太折腾了还困。但是这个时候退票还要损失一小笔钱，想想去去也无妨。",
       "wordCount": 2022,
-      "updatedAt": "2026-06-10T13:05:57.182Z"
+      "updatedAt": "2026-06-28T08:13:25.468Z",
+      "displayTitle": "海南骑行记【2026-1-25至26】",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-29de10e1fef9",
@@ -530,9 +692,12 @@
       "sourcePath": "随笔/人生遐思/回不去的农村，留不下的城市和想定居城市的女性.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%9B%9E%E4%B8%8D%E5%8E%BB%E7%9A%84%E5%86%9C%E6%9D%91%EF%BC%8C%E7%95%99%E4%B8%8D%E4%B8%8B%E7%9A%84%E5%9F%8E%E5%B8%82%E5%92%8C%E6%83%B3%E5%AE%9A%E5%B1%85%E5%9F%8E%E5%B8%82%E7%9A%84%E5%A5%B3%E6%80%A7.md",
       "contentPath": "content/essay/life-29de10e1fef9.md",
-      "excerpt": "刷到过不少“回不去的农村，留不下的城市”的帖子。 以前我对“回不去的农村”并没有太深的体感。大概是因为我从小生活在一个有爱的家庭里，农村里的人总体也还不错，所以很长一段时间里，我以为所谓回不去，更多是一种“人不能再少年”的怅惘，而不是现实里真有什么回不去的阻碍。 尤其是对男性来说，如果不缺钱，回农村似乎并不是一件多难的事。但后来发现并非如此。很多人即使不差钱",
+      "excerpt": "刷到过不少“回不去的农村，留不下的城市”的帖子。 以前我对“回不去的农村”并没有太深的体感。大概是因为我从小生活在一个有爱的家庭里，农村里的人总体也还不错，所以很长一段时间里，我以为所谓回不去，更多是一种“人不能再少年”的怅惘，而不是现实里真有什么回不去的阻碍。",
       "wordCount": 2255,
-      "updatedAt": "2026-06-10T13:05:57.150Z"
+      "updatedAt": "2026-06-28T08:13:25.406Z",
+      "displayTitle": "回不去的农村，留不下的城市和想定居城市的女性",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-457e044e879d",
@@ -544,9 +709,12 @@
       "sourcePath": "随笔/人生遐思/名为关系的迷障.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%90%8D%E4%B8%BA%E5%85%B3%E7%B3%BB%E7%9A%84%E8%BF%B7%E9%9A%9C.md",
       "contentPath": "content/essay/life-457e044e879d.md",
-      "excerpt": "我是在农村长大的，读到大专，然后从事技术行业。某种意义上，我身上有很典型的时代印记。 比如我家修房时，父亲选择了熟人来做，我当时是不太开心的。当然，我能理解一部分。农村里办事找熟人很正常，至少觉得知根知底，也好说话。但让我不太能理解的是，当那个熟人说这类房子是他第一次修时，父亲还是愿意让他尝试。 我当时心里其实很别扭。这种别扭来自哪里？大概就来自我身上的时代",
+      "excerpt": "我是在农村长大的，读到大专，然后从事技术行业。某种意义上，我身上有很典型的时代印记。 比如我家修房时，父亲选择了熟人来做，我当时是不太开心的。当然，我能理解一部分。农村里办事找熟人很正常，至少觉得知根知底，也好说话。但让我不太能理解的是，当那个熟人说这类房子是他第一次修时，父亲还是愿意让他尝试。",
       "wordCount": 3350,
-      "updatedAt": "2026-06-10T13:05:57.147Z"
+      "updatedAt": "2026-06-28T08:13:25.402Z",
+      "displayTitle": "名为关系的迷障",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-9c088323f312",
@@ -558,9 +726,12 @@
       "sourcePath": "随笔/人生遐思/农村发展的浅见-研学发展可行性？.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%86%9C%E6%9D%91%E5%8F%91%E5%B1%95%E7%9A%84%E6%B5%85%E8%A7%81-%E7%A0%94%E5%AD%A6%E5%8F%91%E5%B1%95%E5%8F%AF%E8%A1%8C%E6%80%A7%EF%BC%9F.md",
       "contentPath": "content/essay/life-9c088323f312.md",
-      "excerpt": "我看张五常的书在很多年前对于农业发展就下过断言，农业想要赚钱，就得大。即大规模的集约化农业，另一个就是投资不以盈利为目标，而是作为消费投入，这样性价比就很高。那我们看看农村发展的现状？ 农村发展现状 从农业和农村发展来看，他的断言现在也未过时。如果要大才能赚钱的话，大部分很难满足条件的农村怎么办？一个是走出去，这个很常见，如臭外地的，农民工等词都能体现出走出",
+      "excerpt": "我看张五常的书在很多年前对于农业发展就下过断言，农业想要赚钱，就得大。即大规模的集约化农业，另一个就是投资不以盈利为目标，而是作为消费投入，这样性价比就很高。那我们看看农村发展的现状？ 农村发展现状 从农业和农村发展来看，他的断言现在也未过时。如果要大才能赚钱的话，大部分很难满足条件的农村怎么办？",
       "wordCount": 1670,
-      "updatedAt": "2026-06-10T13:05:57.138Z"
+      "updatedAt": "2026-06-28T08:13:25.389Z",
+      "displayTitle": "农村发展的浅见-研学发展可行性？",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-4b2447a8be52",
@@ -572,9 +743,80 @@
       "sourcePath": "随笔/人生遐思/农家研学反思二三事.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E5%86%9C%E5%AE%B6%E7%A0%94%E5%AD%A6%E5%8F%8D%E6%80%9D%E4%BA%8C%E4%B8%89%E4%BA%8B.md",
       "contentPath": "content/essay/life-4b2447a8be52.md",
-      "excerpt": "沟通相关的失败 有了想法后直接就开始做了，但前期我在上海，要做农家的研学的是四川老家。留在老家的且能负责相关事情就只有我爸，但我开始即没和他深入沟通他的想法，也未在设想失控的时候提醒他，他需要做什么。只是在想我或许能在其他方面多做一下，或许就行了。 现在的失利，应该是我的幸运。因为我忘了，在家的能帮助事情成功的只有我爸。如果他不上心，真的有人来了，会怎样呢？",
+      "excerpt": "沟通相关的失败 有了想法后直接就开始做了，但前期我在上海，要做农家的研学的是四川老家。留在老家的且能负责相关事情就只有我爸，但我开始即没和他深入沟通他的想法，也未在设想失控的时候提醒他，他需要做什么。只是在想我或许能在其他方面多做一下，或许就行了。 现在的失利，应该是我的幸运。",
       "wordCount": 1332,
-      "updatedAt": "2026-06-10T13:05:57.135Z"
+      "updatedAt": "2026-06-28T08:13:25.386Z",
+      "displayTitle": "农家研学反思二三事",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-a18601a6df6d",
+      "title": "奇事考-华为电脑管家系统盘瘦身迁移事件",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/奇事考/奇事考-华为电脑管家系统盘瘦身迁移事件.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E5%A5%87%E4%BA%8B%E8%80%83/%E5%A5%87%E4%BA%8B%E8%80%83-%E5%8D%8E%E4%B8%BA%E7%94%B5%E8%84%91%E7%AE%A1%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%9B%98%E7%98%A6%E8%BA%AB%E8%BF%81%E7%A7%BB%E4%BA%8B%E4%BB%B6.md",
+      "contentPath": "content/essay/life-a18601a6df6d.md",
+      "excerpt": "小红书原帖：https://www.xiaohongshu.com/explore/68c9900c000000000b03f1fe 事件简述 我曾经使用过华为电脑管家的“系统盘瘦身”功能。这个功能可能会把 C 盘中的部分数据迁移到 D 盘，用来释放系统盘空间。",
+      "wordCount": 1302,
+      "updatedAt": "2026-06-28T08:13:25.448Z",
+      "displayTitle": "奇事考-华为电脑管家系统盘瘦身迁移事件",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-98ec535e133d",
+      "title": "奇事考-顺丰特快饮料无法空运事件",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/奇事考/奇事考-顺丰特快饮料无法空运事件.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E5%A5%87%E4%BA%8B%E8%80%83/%E5%A5%87%E4%BA%8B%E8%80%83-%E9%A1%BA%E4%B8%B0%E7%89%B9%E5%BF%AB%E9%A5%AE%E6%96%99%E6%97%A0%E6%B3%95%E7%A9%BA%E8%BF%90%E4%BA%8B%E4%BB%B6.md",
+      "contentPath": "content/essay/life-98ec535e133d.md",
+      "excerpt": "事件简述 我在某个城市旅行时，发现了一款保质期很短的饮料，想着寄给朋友尝鲜。于是随手下了一个顺丰特快。 第二天，快递小哥联系我，说饮料不能上飞机。但当时我正在飞机上，没有接到电话。等我发现时，原本的特快似乎已经变成了普快。我不明白为什么会这样，于是就在顺丰平台进行了投诉。",
+      "wordCount": 651,
+      "updatedAt": "2026-06-28T08:13:25.461Z",
+      "displayTitle": "奇事考-顺丰特快饮料无法空运事件",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-eddd88fa5d2c",
+      "title": "奇事考-网购坑事记",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/奇事考/奇事考-网购坑事记.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E5%A5%87%E4%BA%8B%E8%80%83/%E5%A5%87%E4%BA%8B%E8%80%83-%E7%BD%91%E8%B4%AD%E5%9D%91%E4%BA%8B%E8%AE%B0.md",
+      "contentPath": "content/essay/life-eddd88fa5d2c.md",
+      "excerpt": "京东购物榴莲净重不足 我在京东买了14斤的组合榴莲给朋友，她看到包装有一堆纸壳，觉得不对劲，就称了下发现总共就12斤出头，去找京东售后，赔了一百左右，如果我朋友没称那不久亏了三四十了嘛。她称之前我还说是14斤多，称之后我对京东的滤镜一下没了。",
+      "wordCount": 263,
+      "updatedAt": "2026-06-28T08:13:25.457Z",
+      "displayTitle": "奇事考-网购坑事记",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-97d79548e034",
+      "title": "奇事考-网约车合集",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/奇事考/奇事考-网约车合集.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E5%A5%87%E4%BA%8B%E8%80%83/%E5%A5%87%E4%BA%8B%E8%80%83-%E7%BD%91%E7%BA%A6%E8%BD%A6%E5%90%88%E9%9B%86.md",
+      "contentPath": "content/essay/life-97d79548e034.md",
+      "excerpt": "高速路口放下乘客 我朋友在某城市出差时晚上打车去机场，同司机确认收费一共四十，然后下高速路口到收费站的时候，要求加收高速，也不走平台，她也特意看了，司机收的高速费快比高德显示的贵了一半左右。她没同意司机是否就将她放高速路口，如果没谈拢送回原为或者送至一个闹市街头也比这好，机场周边总有酒店啥的吧。",
+      "wordCount": 625,
+      "updatedAt": "2026-06-28T08:13:25.452Z",
+      "displayTitle": "奇事考-网约车合集",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-d2139318e2d6",
@@ -586,9 +828,12 @@
       "sourcePath": "随笔/人生遐思/情绪经济和AI的思考.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E6%83%85%E7%BB%AA%E7%BB%8F%E6%B5%8E%E5%92%8CAI%E7%9A%84%E6%80%9D%E8%80%83.md",
       "contentPath": "content/essay/life-d2139318e2d6.md",
-      "excerpt": "最近我从生活中看到了一些事和文章，让我对情绪经济有了更多的想象，甚至认为情绪经济发展的难点不在于赚钱，而在于克制赚钱的冲动。 现在的情绪经济 一是在不久前有群友贴出宠物幼儿园的截图时，一堆人咋看不理解，讨论着讨论着还是有不少人认可宠物幼儿园的情绪和功能价值的。核心结论是在孤岛时代，很多年轻人的将情感寄托在了宠物身上，它是陪伴年轻人时间最久，也是在年轻人最失落",
+      "excerpt": "最近我从生活中看到了一些事和文章，让我对情绪经济有了更多的想象，甚至认为情绪经济发展的难点不在于赚钱，而在于克制赚钱的冲动。 现在的情绪经济 一是在不久前有群友贴出宠物幼儿园的截图时，一堆人咋看不理解，讨论着讨论着还是有不少人认可宠物幼儿园的情绪和功能价值的。",
       "wordCount": 1387,
-      "updatedAt": "2026-06-10T13:05:57.153Z"
+      "updatedAt": "2026-06-28T08:13:25.412Z",
+      "displayTitle": "情绪经济和AI的思考",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-3eaf50c3dc8b",
@@ -600,9 +845,12 @@
       "sourcePath": "随笔/人生五年访谈计划.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4%E8%AE%BF%E8%B0%88%E8%AE%A1%E5%88%92.md",
       "contentPath": "content/essay/life-3eaf50c3dc8b.md",
-      "excerpt": "我准备尝试借鉴《人生七年》的记录方式，做一个属于普通人的“人生五年”访谈计划。 初步设想是：每两周访谈一位受访者，累计记录一百多人，之后再进入循环回访。这样，一方面能看到不同个体在同一时代中的生活样貌，另一方面，也能在时间的流动中，真正记录一个人如何变化、如何坚持、又如何被生活塑造。 在此之前，我已经做过十来次访谈，最初主要是从“职业”切入，再延伸到一个人的",
+      "excerpt": "我准备尝试借鉴《人生七年》的记录方式，做一个记录不同人的“人生五年”访谈计划。 初步设想是：每两周访谈一位受访者，累计记录一百多人，之后再进入循环回访。这样，一方面能看到不同个体在同一时代中的生活样貌，另一方面，也能在时间的流动中，真正记录一个人如何变化、如何坚持、又如何被生活塑造。",
       "wordCount": 1059,
-      "updatedAt": "2026-06-10T13:05:57.116Z"
+      "updatedAt": "2026-06-28T08:13:25.365Z",
+      "displayTitle": "人生五年访谈计划",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-56e2bbf468a2",
@@ -614,9 +862,12 @@
       "sourcePath": "随笔/人生遐思/适者所需的环境和基础能力.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E9%80%82%E8%80%85%E6%89%80%E9%9C%80%E7%9A%84%E7%8E%AF%E5%A2%83%E5%92%8C%E5%9F%BA%E7%A1%80%E8%83%BD%E5%8A%9B.md",
       "contentPath": "content/essay/life-56e2bbf468a2.md",
-      "excerpt": "在所谓适者中提到了适者因为每人的需求不同，因此要满足需求的能力和环境也可能有所不同。本文中适者的需求是向上而美好的，杀戮和破坏等不在本文考虑之中。 国家带来的基础 好有了个向往美好生活的共识，那我继续向下思索。任何环境中都会有适者过的很好，只是所需要的能力不一样，且适者的广泛度不一样。譬如狩猎采集时代，碍于环境所限其注重的能力总归是少数的，且能供养的人数也是",
+      "excerpt": "在所谓适者中提到了适者因为每人的需求不同，因此要满足需求的能力和环境也可能有所不同。本文中适者的需求是向上而美好的，杀戮和破坏等不在本文考虑之中。 国家带来的基础 好有了个向往美好生活的共识，那我继续向下思索。任何环境中都会有适者过的很好，只是所需要的能力不一样，且适者的广泛度不一样。",
       "wordCount": 2486,
-      "updatedAt": "2026-06-10T13:05:57.172Z"
+      "updatedAt": "2026-06-28T08:13:25.437Z",
+      "displayTitle": "适者所需的环境和基础能力",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-5e914fa57f5b",
@@ -628,9 +879,12 @@
       "sourcePath": "随笔/人生遐思/所谓适者.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E6%89%80%E8%B0%93%E9%80%82%E8%80%85.md",
       "contentPath": "content/essay/life-5e914fa57f5b.md",
-      "excerpt": "在读张五常的千规律，万规律，经济规律仅一条时他开宗明义的指出在：“任何经济制度下，决定一个人的生活境况，富贵贫贱的因素，始终脱离不了适者生存、不适者淘汰这个原则。无论在什么制度下——不论是社会主义、共产主义、资本主义，甚至无政府主义，这原则不变。” 他说的这句话是千认同，万认同的，但什么是当前时代的适者？是胆大心黑的闯荡，还是如履薄冰的经营，亦或肆意恣睢的绽",
+      "excerpt": "在读张五常的千规律，万规律，经济规律仅一条时他开宗明义的指出在：“任何经济制度下，决定一个人的生活境况，富贵贫贱的因素，始终脱离不了适者生存、不适者淘汰这个原则。无论在什么制度下——不论是社会主义、共产主义、资本主义，甚至无政府主义，这原则不变。",
       "wordCount": 1437,
-      "updatedAt": "2026-06-10T13:05:57.162Z"
+      "updatedAt": "2026-06-28T08:13:25.423Z",
+      "displayTitle": "所谓适者",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-0d012fa32f3d",
@@ -642,9 +896,29 @@
       "sourcePath": "随笔/人生遐思/我对女权主义的迷思.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E6%88%91%E5%AF%B9%E5%A5%B3%E6%9D%83%E4%B8%BB%E4%B9%89%E7%9A%84%E8%BF%B7%E6%80%9D.md",
       "contentPath": "content/essay/life-0d012fa32f3d.md",
-      "excerpt": "网上女权的呼声很大，男女对立的思潮也很多，但我一直不明白女权主义是什么，怀着好奇的心态我在微信读书上读了看不见的女性。虽然我仍然未对女权主义有一个明确的认识，但对于微信读书上的激烈评论却有了深刻影响。 看不见的女性讲述的是什么呢？于我而言是说了女性的数据在统计学中隐身了，医学、公共交通、抗震救灾、无形劳动、历史贡献等都被忽略了，为什么呢？因为在很长的一段时间",
+      "excerpt": "网上女权的呼声很大，男女对立的思潮也很多，但我一直不明白女权主义是什么，怀着好奇的心态我在微信读书上读了看不见的女性。虽然我仍然未对女权主义有一个明确的认识，但对于微信读书上的激烈评论却有了深刻影响。 看不见的女性讲述的是什么呢？",
       "wordCount": 1794,
-      "updatedAt": "2026-06-10T13:05:57.158Z"
+      "updatedAt": "2026-06-28T08:13:25.419Z",
+      "displayTitle": "我对女权主义的迷思",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-5e393009007d",
+      "title": "我放弃进行职业访谈的原因",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/我放弃进行职业访谈的原因.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E6%88%91%E6%94%BE%E5%BC%83%E8%BF%9B%E8%A1%8C%E8%81%8C%E4%B8%9A%E8%AE%BF%E8%B0%88%E7%9A%84%E5%8E%9F%E5%9B%A0.md",
+      "contentPath": "content/essay/life-5e393009007d.md",
+      "excerpt": "最近有人问我，为什么放弃了职业访谈。 这个问题正好给了我一个契机，让我重新组织语言，说说当时为什么会停下来。 最直接、也最现实的原因，当然是流量不佳。这个项目没有积累到太高的沉没成本，所以放弃并不困难。但我对流量的追逐其实并不强烈。",
+      "wordCount": 1278,
+      "updatedAt": "2026-06-28T08:13:25.465Z",
+      "displayTitle": "我放弃进行职业访谈的原因",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-554df29ea224",
@@ -656,9 +930,12 @@
       "sourcePath": "随笔/读书笔记/县中孩子长大后的感慨（二）学习路上的误区.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%8E%BF%E4%B8%AD%E5%AD%A9%E5%AD%90%E9%95%BF%E5%A4%A7%E5%90%8E%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AD%A6%E4%B9%A0%E8%B7%AF%E4%B8%8A%E7%9A%84%E8%AF%AF%E5%8C%BA.md",
       "contentPath": "content/essay/life-554df29ea224.md",
-      "excerpt": "我相信大部分人都认可学习是需要方法的，而在读书过程中或多或少都会接触到各种有效的学习方法，或者说对于绝大数知识在社会上都用不到时，学习方法和学习到的思路反而更为重要的能力。然即便是最基本的学习方法，在县中的读书的我们又有多少人会使用呢？ 最最基本课前预习，要带着问题上课和课后复习，加强记忆巩固成果，有多少人能做到呢？是我们读书时不知道这些学习方法？是我们不如",
+      "excerpt": "我相信大部分人都认可学习是需要方法的，而在读书过程中或多或少都会接触到各种有效的学习方法，或者说对于绝大数知识在社会上都用不到时，学习方法和学习到的思路反而更为重要的能力。然即便是最基本的学习方法，在县中的读书的我们又有多少人会使用呢？",
       "wordCount": 1614,
-      "updatedAt": "2026-06-10T13:05:57.188Z"
+      "updatedAt": "2026-06-28T08:13:25.477Z",
+      "displayTitle": "县中孩子长大后的感慨（二）学习路上的误区",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-c325113c7332",
@@ -670,9 +947,12 @@
       "sourcePath": "随笔/读书笔记/县中孩子长大后的感慨（一）过往与未来.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%8E%BF%E4%B8%AD%E5%AD%A9%E5%AD%90%E9%95%BF%E5%A4%A7%E5%90%8E%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%88%E4%B8%80%EF%BC%89%E8%BF%87%E5%BE%80%E4%B8%8E%E6%9C%AA%E6%9D%A5.md",
       "contentPath": "content/essay/life-c325113c7332.md",
-      "excerpt": "我的成长轨迹 我在村小读了三年，随后在外出打工的父母带领下，转学到镇上的学校，度过了后三年的小学时光。之后，我在镇上的初中读书，复读了一年，然后在县里的普通高中就读，选择了文科。高考时，发挥不如预期，最终选择了大专的计算机网络专业，好像还是被调剂的。 学习经历简记 我的成长轨迹，或许是许多县中孩子的常见路径吧。虽然每个人的具体经历有所不同，但总体来说，差别并",
+      "excerpt": "我的成长轨迹 我在村小读了三年，随后在外出打工的父母带领下，转学到镇上的学校，度过了后三年的小学时光。之后，我在镇上的初中读书，复读了一年，然后在县里的普通高中就读，选择了文科。高考时，发挥不如预期，最终选择了大专的计算机网络专业，好像还是被调剂的。",
       "wordCount": 1412,
-      "updatedAt": "2026-06-10T13:05:57.185Z"
+      "updatedAt": "2026-06-28T08:13:25.472Z",
+      "displayTitle": "县中孩子长大后的感慨（一）过往与未来",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-89b009feb87a",
@@ -684,9 +964,12 @@
       "sourcePath": "随笔/人生遐思/意外受伤后医保结算金额遐思.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E6%84%8F%E5%A4%96%E5%8F%97%E4%BC%A4%E5%90%8E%E5%8C%BB%E4%BF%9D%E7%BB%93%E7%AE%97%E9%87%91%E9%A2%9D%E9%81%90%E6%80%9D.md",
       "contentPath": "content/essay/life-89b009feb87a.md",
-      "excerpt": "事件起于一场我给我家猫猫开罐头，然后手被易拉罐划伤，伤口蛮深的，本不想去医院，但由于不认识伤口中的脂肪，遂去医院了。首先去的是卫生服务中心，然后外科医生说你这个要缝针，我们这边只有大针，如果不留疤的话要用小针，并且要打破伤风针，我们医院也没有，遂推荐我去了二级医院。 到了二级医院后医生很好，看了我的伤口整齐后就和我说，你这个可以用组织胶水粘下，缝针的话要三针",
+      "excerpt": "事件起于一场我给我家猫猫开罐头，然后手被易拉罐划伤，伤口蛮深的，本不想去医院，但由于不认识伤口中的脂肪，遂去医院了。首先去的是卫生服务中心，然后外科医生说你这个要缝针，我们这边只有大针，如果不留疤的话要用小针，并且要打破伤风针，我们医院也没有，遂推荐我去了二级医院。",
       "wordCount": 1110,
-      "updatedAt": "2026-06-10T13:05:57.156Z"
+      "updatedAt": "2026-06-28T08:13:25.415Z",
+      "displayTitle": "意外受伤后医保结算金额遐思",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-41606f61a327",
@@ -698,9 +981,12 @@
       "sourcePath": "随笔/书籍推荐/悠然推荐的书单.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/%E6%82%A0%E7%84%B6%E6%8E%A8%E8%8D%90%E7%9A%84%E4%B9%A6%E5%8D%95.md",
       "contentPath": "content/essay/life-41606f61a327.md",
-      "excerpt": "教育相关 县中的孩子:中国县域教育生态 推荐指数：四星【县中成长的可达五星】 书如其名，但重点在于县域教育生态，而非孩子。孩子占了其中的部分篇幅，推荐原因如书所述，县中的孩子占了中国教育生态的很大一部分，或可超越百分之五十，但很少有人关注我们的成长轨迹。 我们野蛮生长，自由放肆，自以为纵情于世界，但最终却发现自己不过是一个连未来都不敢妄想的人。我们早在冰冷的",
-      "wordCount": 1529,
-      "updatedAt": "2026-06-10T13:05:57.111Z"
+      "excerpt": "教育相关 县中的孩子:中国县域教育生态 推荐指数：四星【县中成长的可达五星】 书如其名，但重点在于县域教育生态，而非孩子。孩子占了其中的部分篇幅，推荐原因如书所述，县中的孩子占了中国教育生态的很大一部分，或可超越百分之五十，但很少有人关注我们的成长轨迹。",
+      "wordCount": 1720,
+      "updatedAt": "2026-06-28T08:13:25.361Z",
+      "displayTitle": "悠然推荐的书单",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-b41dc94d2441",
@@ -712,9 +998,29 @@
       "sourcePath": "随笔/人生遐思/越追求完美和理性，越难以进入一段感情？.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E8%B6%8A%E8%BF%BD%E6%B1%82%E5%AE%8C%E7%BE%8E%E5%92%8C%E7%90%86%E6%80%A7%EF%BC%8C%E8%B6%8A%E9%9A%BE%E4%BB%A5%E8%BF%9B%E5%85%A5%E4%B8%80%E6%AE%B5%E6%84%9F%E6%83%85%EF%BC%9F.md",
       "contentPath": "content/essay/life-b41dc94d2441.md",
-      "excerpt": "首先在此声明，这是仅以个人和从几位难以脱单的朋友身边得出的想法。可能也是我母单至今的一个辩解，当然这里面也有很大部分原因是我开智晚，加没啥魅力。 我与脱单或离婚的朋友和同学聊天，他们传授我经验，说要主动，要有冲动，不要想那么多。不去尝试你怎么知道会失败呢？还有朋友说有好感就去试试，当然从理性脱单角度好像很合理。这里试试不知道指去试了就能成功，而是多去接触了解",
+      "excerpt": "首先在此声明，这是仅以个人和从几位难以脱单的朋友身边得出的想法。可能也是我母单至今的一个辩解，当然这里面也有很大部分原因是我开智晚，加没啥魅力。 我与脱单或离婚的朋友和同学聊天，他们传授我经验，说要主动，要有冲动，不要想那么多。不去尝试你怎么知道会失败呢？",
       "wordCount": 937,
-      "updatedAt": "2026-06-10T13:05:57.165Z"
+      "updatedAt": "2026-06-28T08:13:25.432Z",
+      "displayTitle": "越追求完美和理性，越难以进入一段感情？",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "id": "life-bdd4e50bca21",
+      "title": "糟糕的准备不如没有准备",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "essay",
+      "sectionLabel": "随笔",
+      "sourcePath": "随笔/人生遐思/糟糕的准备不如没有准备.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/%E7%B3%9F%E7%B3%95%E7%9A%84%E5%87%86%E5%A4%87%E4%B8%8D%E5%A6%82%E6%B2%A1%E6%9C%89%E5%87%86%E5%A4%87.md",
+      "contentPath": "content/essay/life-bdd4e50bca21.md",
+      "excerpt": "古话说得好，不打无准备的仗。我出门的时候也多少有点这种习惯，比如出去玩之前一般都会带上充电宝。因此大部分时候我都不会有什么电量焦虑。 最近一次周末出门也是如此。只是我没想到，等我真要用的时候，充电宝居然一点电都没有了。那时我手机电量已不足百分之二十（我手机电池已经不够耐用了），幸好已经在往家赶。",
+      "wordCount": 1061,
+      "updatedAt": "2026-06-28T08:13:25.429Z",
+      "displayTitle": "糟糕的准备不如没有准备",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-121edc98e399",
@@ -726,9 +1032,12 @@
       "sourcePath": "随笔/人生遐思/AI时代，我们还需要怎样学习？.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/AI%E6%97%B6%E4%BB%A3%EF%BC%8C%E6%88%91%E4%BB%AC%E8%BF%98%E9%9C%80%E8%A6%81%E6%80%8E%E6%A0%B7%E5%AD%A6%E4%B9%A0%EF%BC%9F.md",
       "contentPath": "content/essay/life-121edc98e399.md",
-      "excerpt": "我曾认为，在AI时代，知识技能相关的学习或许只需要掌握原理就够了。至于具体实现、细节处理、方案落地，都可以交给AI去完成。 学习之要 但果真如此？让我们看看在一系列非常美好的假设下，“只懂原理就够了”成立吗？ 首先，AI模型提供商不会因为成本限制，而是会对用户的每一个问题都进行充分、全面、深入的思考。其次，AI不会胡编乱造，不会给出看似合理但实际错误的答案。",
+      "excerpt": "我曾认为，在AI时代，知识技能相关的学习或许只需要掌握原理就够了。至于具体实现、细节处理、方案落地，都可以交给AI去完成。 学习之要 但果真如此？让我们看看在一系列非常美好的假设下，“只懂原理就够了”成立吗？ 首先，AI模型提供商不会因为成本限制，而是会对用户的每一个问题都进行充分、全面、深入的思考。",
       "wordCount": 3183,
-      "updatedAt": "2026-06-10T13:05:57.128Z"
+      "updatedAt": "2026-06-28T08:13:25.378Z",
+      "displayTitle": "AI时代，我们还需要怎样学习？",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-0ba7311f3f8d",
@@ -740,9 +1049,12 @@
       "sourcePath": "随笔/人生遐思/AI时代的避风塘和对未来的遐思.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/AI%E6%97%B6%E4%BB%A3%E7%9A%84%E9%81%BF%E9%A3%8E%E5%A1%98%E5%92%8C%E5%AF%B9%E6%9C%AA%E6%9D%A5%E7%9A%84%E9%81%90%E6%80%9D.md",
       "contentPath": "content/essay/life-0ba7311f3f8d.md",
-      "excerpt": "在AI带来无数焦虑的时代，我也想蹭蹭AI的流量。我要说的话题也是我在访谈中经常会问到的问题，虽然经过十次访谈了，但我确实不知道未来路在何方。不过我至少知道了一点，即AI时代也会有一些位置，更像避风塘。 我在本文主要说说我所认识的AI时代避风塘，如有错误或有其他见解欢迎留言指正或补充。 可能的避风塘？ 一、单人独岗，往往比看起来更稳 首先对于AI时代最受冲击的",
+      "excerpt": "在AI带来无数焦虑的时代，我也想蹭蹭AI的流量。我要说的话题也是我在访谈中经常会问到的问题，虽然经过十次访谈了，但我确实不知道未来路在何方。不过我至少知道了一点，即AI时代也会有一些位置，更像避风塘。 我在本文主要说说我所认识的AI时代避风塘，如有错误或有其他见解欢迎留言指正或补充。 可能的避风塘？",
       "wordCount": 1936,
-      "updatedAt": "2026-06-10T13:05:57.120Z"
+      "updatedAt": "2026-06-28T08:13:25.369Z",
+      "displayTitle": "AI时代的避风塘和对未来的遐思",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-30cbcd191ec2",
@@ -754,9 +1066,12 @@
       "sourcePath": "随笔/人生遐思/AI时代阅读过时了吗？.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/%E4%BA%BA%E7%94%9F%E9%81%90%E6%80%9D/AI%E6%97%B6%E4%BB%A3%E9%98%85%E8%AF%BB%E8%BF%87%E6%97%B6%E4%BA%86%E5%90%97%EF%BC%9F.md",
       "contentPath": "content/essay/life-30cbcd191ec2.md",
-      "excerpt": "对于读书我没有太多的功利心，因此AI在这方面对我的冲击不大 阅读之美之绝 虽说我对于阅读没什么功利心，甚至还认为读书要慎读，不然可能无益，反而有害。但如果能为阅读正名，岂不美哉？尤其是快阅读时代，AI大纲、读书博主、速读概念层出不穷的在当下。 我阅读了一些书后，结合我过往的经历是有些模糊认识的，即知晓和认同在多的道理，但不在内心深处扎根就是没什么用的，如果恰",
+      "excerpt": "对于读书我没有太多的功利心，因此AI在这方面对我的冲击不大 阅读之美之绝 虽说我对于阅读没什么功利心，甚至还认为读书要慎读，不然可能无益，反而有害。但如果能为阅读正名，岂不美哉？尤其是快阅读时代，AI大纲、读书博主、速读概念层出不穷的在当下。",
       "wordCount": 1135,
-      "updatedAt": "2026-06-10T13:05:57.123Z"
+      "updatedAt": "2026-06-28T08:13:25.372Z",
+      "displayTitle": "AI时代阅读过时了吗？",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-fba91e31d586",
@@ -768,9 +1083,12 @@
       "sourcePath": "随笔/windmoon-Lotus访谈复盘.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E9%9A%8F%E7%AC%94/windmoon-Lotus%E8%AE%BF%E8%B0%88%E5%A4%8D%E7%9B%98.md",
       "contentPath": "content/essay/life-fba91e31d586.md",
-      "excerpt": "首次访谈受访者流年 问题 1. 准备的问题在聊的过程中出现了交叉，但未及时确认那些问题已结束 优化方式 短期使用excel，及时确认访谈完成问题，如存在录音可大致写下在多少分钟 2. 未和受访者确认访谈相关事项 “未说明：若录音，是否可公开发布/放出，闲聊中涉及部分敏感信息【在争取同意并做了相关处理之后，受访者不愿也可提前确认，这样可以适当调整问题】 未说明",
+      "excerpt": "首次访谈受访者流年 问题 1. 准备的问题在聊的过程中出现了交叉，但未及时确认那些问题已结束 优化方式 短期使用excel，及时确认访谈完成问题，如存在录音可大致写下在多少分钟 2. 未和受访者确认访谈相关事项 “未说明：若录音，是否可公开发布/放出，闲聊中涉及部分敏感信息【在争取同意并做了相关处理……",
       "wordCount": 2030,
-      "updatedAt": "2026-06-10T13:05:57.108Z"
+      "updatedAt": "2026-06-28T08:13:25.357Z",
+      "displayTitle": "windmoon-Lotus访谈复盘",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-949b34bca9d0",
@@ -782,9 +1100,12 @@
       "sourcePath": "人生话题/婚姻观.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E8%AF%9D%E9%A2%98/%E5%A9%9A%E5%A7%BB%E8%A7%82.md",
       "contentPath": "content/topic/life-949b34bca9d0.md",
-      "excerpt": "关于“结婚的目的”——一段聊天记录整理 话题：男性觉得结婚的目的是什么？ 提问者：朋友 记录形式：对话摘录 + 观点归纳 朋友的疑问 朋友： 男性觉得结婚的目的是什么嘞？我到现在都搞不清为啥要结婚。 众人的回答 茗淏： 我只是想，能有个人一起陪着走下去。共同去经历生活的美好也罢，苦难也罢，让生活变得更有趣、更有意义。 一个人太独立久了之后，懂得太多了之后，如",
+      "excerpt": "关于“结婚的目的”——一段聊天记录整理 话题：男性觉得结婚的目的是什么？ 提问者：朋友 记录形式：对话摘录 + 观点归纳 朋友的疑问 朋友： 男性觉得结婚的目的是什么嘞？我到现在都搞不清为啥要结婚。 众人的回答 茗淏： 我只是想，能有个人一起陪着走下去。",
       "wordCount": 785,
-      "updatedAt": "2026-06-10T13:05:57.100Z"
+      "updatedAt": "2026-06-28T08:13:25.347Z",
+      "displayTitle": "婚姻观",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-3b54229e647f",
@@ -796,9 +1117,12 @@
       "sourcePath": "人生话题/人生的意义.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E8%AF%9D%E9%A2%98/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89.md",
       "contentPath": "content/topic/life-3b54229e647f.md",
-      "excerpt": "和朋友闲聊人生的意义是什么，都不知道，但我本人不纠结，如果可以我觉得再活五百年慢慢的去追寻也无妨。不过既然如此我还是微微尝试总结下，我访谈中感觉到对方的人生意义，但我不确定正确，后续待追问。 第一次访谈：拿了大礼包热爱游戏功能测试工程师 我猜他可能追求的人生意义：有了小钱后和朋友或喜欢的人一起过平淡而又幸福的人生。 第二次访谈：渗透测试工程师 我猜他可能追求",
+      "excerpt": "和朋友闲聊人生的意义是什么，都不知道，但我本人不纠结，如果可以我觉得再活五百年慢慢的去追寻也无妨。不过既然如此我还是微微尝试总结下，我访谈中感觉到对方的人生意义，但我不确定正确，后续待追问。",
       "wordCount": 680,
-      "updatedAt": "2026-06-10T13:05:57.095Z"
+      "updatedAt": "2026-06-28T08:13:25.343Z",
+      "displayTitle": "人生的意义",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-e0117be55e4a",
@@ -810,9 +1134,12 @@
       "sourcePath": "人生话题/人生几道坑.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E8%AF%9D%E9%A2%98/%E4%BA%BA%E7%94%9F%E5%87%A0%E9%81%93%E5%9D%91.md",
       "contentPath": "content/topic/life-e0117be55e4a.md",
-      "excerpt": "这个话题其实是和朋友闲聊的时候偶然想到的，可能大家都遇到过不少坑，但久久难以忘怀的可以说说，避免遇到。 悠然： 家人突发大病重病 和朋友聊天的突然想到之前看的农村出身的硕士：https://mp.weixin.qq.com/s/pmvU06dS6PAf6bqvkkYg5Q ，那时是我妈脑干出血后不久，看到医保不覆盖的大病重病和其花费时真感觉狠狠的吓到了。 后",
+      "excerpt": "这个话题其实是和朋友闲聊的时候偶然想到的，可能大家都遇到过不少坑，但久久难以忘怀的可以说说，避免遇到。 悠然： 家人突发大病重病 和朋友聊天的突然想到之前看的农村出身的硕士：https://mp.weixin.qq.com/s/pmvU06dS6PAf6bqvkkYg5Q ，那时是我妈脑干出血后不久……",
       "wordCount": 1071,
-      "updatedAt": "2026-06-10T13:05:57.093Z"
+      "updatedAt": "2026-06-28T08:13:25.339Z",
+      "displayTitle": "人生几道坑",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-7117914dcec7",
@@ -824,9 +1151,12 @@
       "sourcePath": "共创专区/模板/创业者问卷.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E6%A8%A1%E6%9D%BF/%E5%88%9B%E4%B8%9A%E8%80%85%E9%97%AE%E5%8D%B7.md",
       "contentPath": "content/template/career-7117914dcec7.md",
-      "excerpt": "项目目标：帮助每一个希望走出迷茫的人，通过接触、了解与聆听多元人生故事（观察、阅读、交流、访谈等），逐步厘清自身价值取向与可能的长期方向。 项目定位：职业/创业信息共享与公众传播（材料将公开发布）。 公开原则：“最小必要公开”：对业务/职业信息尽量充分，对个人可识别信息尽量克制。对可能导致身份可追溯的字段统一标注 [可追溯风险]，并采用“仅内部留存/公开前二",
+      "excerpt": "项目目标：帮助每一个希望走出迷茫的人，通过接触、了解与聆听多元人生故事（观察、阅读、交流、访谈等），逐步厘清自身价值取向与可能的长期方向。 项目定位：职业/创业信息共享与公众传播（材料将公开发布）。 公开原则：“最小必要公开”：对业务/职业信息尽量充分，对个人可识别信息尽量克制。",
       "wordCount": 4313,
-      "updatedAt": "2026-06-10T13:05:57.284Z"
+      "updatedAt": "2026-06-28T08:13:27.020Z",
+      "displayTitle": "创业者问卷",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-5c9d066796f8",
@@ -840,7 +1170,10 @@
       "contentPath": "content/template/career-5c9d066796f8.md",
       "excerpt": "职业问卷/创业问卷/商业问卷 访谈提纲",
       "wordCount": 19,
-      "updatedAt": "2026-06-10T13:05:57.294Z"
+      "updatedAt": "2026-06-28T08:13:27.053Z",
+      "displayTitle": "访谈报告模板-初版",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-41ab193efb53",
@@ -852,9 +1185,12 @@
       "sourcePath": "共创专区/模板/职业百科模板.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E6%A8%A1%E6%9D%BF/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91%E6%A8%A1%E6%9D%BF.md",
       "contentPath": "content/template/career-41ab193efb53.md",
-      "excerpt": "岗位名称: 必填 行业: 必填 典型入门学历: 必填 常见从业背景: 必填 薪资范围: 必填 内容状态: 必填 发展方向: 行业未来: 贡献者: 更新时间: 一、职业速写 核心价值：用1句话定义该职业的社会价值（例：”通过维护风机保障清洁能源稳定供应“）。 二、真实工作全景 ▋ 典型工作场景 可待补充（可图表可文字） ▋ 工作日常 可待补充 ▋ 核心职责 必",
+      "excerpt": "岗位名称: 必填 行业: 必填 典型入门学历: 必填 常见从业背景: 必填 薪资范围: 必填 内容状态: 必填 发展方向: 行业未来: 贡献者: 更新时间: 一、职业速写 核心价值：用1句话定义该职业的社会价值（例：”通过维护风机保障清洁能源稳定供应“）。",
       "wordCount": 323,
-      "updatedAt": "2026-06-10T13:05:57.291Z"
+      "updatedAt": "2026-06-28T08:13:27.049Z",
+      "displayTitle": "职业百科模板",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-7716852fb93e",
@@ -866,9 +1202,12 @@
       "sourcePath": "共创专区/模板/职业信息问卷与访谈提纲.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E6%A8%A1%E6%9D%BF/%E8%81%8C%E4%B8%9A%E4%BF%A1%E6%81%AF%E9%97%AE%E5%8D%B7%E4%B8%8E%E8%AE%BF%E8%B0%88%E6%8F%90%E7%BA%B2.md",
       "contentPath": "content/template/career-7716852fb93e.md",
-      "excerpt": "职业信息问卷与访谈提纲 项目目标：帮助每一个希望走出迷茫的人，通过接触、了解与聆听多元人生故事（观察、阅读、交流、访谈等），逐步厘清自身的价值取向与可能的长期方向；即使最终未找到“可追寻一生的目标”，也能在看见更多人生路径之后，以更笃定、更平和、更幸福的心态完成一生的生活选择。如果您觉得问卷有优化空间欢迎您的建议。 项目定位：职业信息共享与公众传播，因此材料",
+      "excerpt": "项目目标：帮助每一个希望走出迷茫的人，通过接触、了解与聆听多元人生故事（观察、阅读、交流、访谈等），逐步厘清自身的价值取向与可能的长期方向；即使最终未找到“可追寻一生的目标”，也能在看见更多人生路径之后，以更笃定、更平和、更幸福的心态完成一生的生活选择。如果您觉得问卷有优化空间欢迎您的建议。",
       "wordCount": 4536,
-      "updatedAt": "2026-06-10T13:05:57.288Z"
+      "updatedAt": "2026-06-28T08:13:27.036Z",
+      "displayTitle": "职业信息问卷与访谈提纲",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-1016b7037fb6",
@@ -880,9 +1219,12 @@
       "sourcePath": "职业百科/互联网/安服工程师（甲方）.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E4%BA%92%E8%81%94%E7%BD%91/%E5%AE%89%E6%9C%8D%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88%E7%94%B2%E6%96%B9%EF%BC%89.md",
       "contentPath": "content/encyclopedia/career-1016b7037fb6.md",
-      "excerpt": "岗位名称: 安服工程师（甲方） 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 815k/月 35年 1530k/月（待多方验证） 内容状态: 待确认 发展方向: 技术路线：渗透专长、代码审计、安全开发、合规工程师等；管理路线：项目经理；安全负责人等 行业未来: 赚不了大钱，且多是",
+      "excerpt": "岗位名称: 安服工程师（甲方） 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 815k/月 35年 1530k/月（待多方验证） 内容状态: 待确认 发展方向: 技术路线：渗透专长、代码审计、安全开发、合规工程师等；管理……",
       "wordCount": 2150,
-      "updatedAt": "2026-06-10T13:05:57.349Z"
+      "updatedAt": "2026-06-28T08:13:27.406Z",
+      "displayTitle": "安服工程师（甲方）",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-c4b97525f8e1",
@@ -894,9 +1236,12 @@
       "sourcePath": "职业百科/互联网/产品运营.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E4%BA%92%E8%81%94%E7%BD%91/%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5.md",
       "contentPath": "content/encyclopedia/career-c4b97525f8e1.md",
-      "excerpt": "岗位名称: 产品运营 行业: 互联网 典型入门学历: 大学本科及以上学历 常见从业背景: 专业不限，通常要求具备较强的逻辑思维、数据分析能力及项目执行能力 薪资范围: 根据不同地区和经验差异较大，可在boss直聘，智联等平台参考；如上海825都有，有经验后应该是1525？ 内容状态: 待确认 发展方向: 向运营专家、产品经理或运营管理岗位发展；转岗 行业未来",
+      "excerpt": "岗位名称: 产品运营 行业: 互联网 典型入门学历: 大学本科及以上学历 常见从业背景: 专业不限，通常要求具备较强的逻辑思维、数据分析能力及项目执行能力 薪资范围: 根据不同地区和经验差异较大，可在boss直聘，智联等平台参考；如上海825都有，有经验后应该是1525？",
       "wordCount": 2832,
-      "updatedAt": "2026-06-10T13:05:57.342Z"
+      "updatedAt": "2026-06-28T08:13:27.387Z",
+      "displayTitle": "产品运营",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-5e1b0f281598",
@@ -908,9 +1253,12 @@
       "sourcePath": "职业百科/互联网/功能测试.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E4%BA%92%E8%81%94%E7%BD%91/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95.md",
       "contentPath": "content/encyclopedia/career-5e1b0f281598.md",
-      "excerpt": "岗位名称: 功能测试 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 815k；35年 1025k (待多方验证) 内容状态: 待完善 发展方向: 自动化测试；测试经理等 行业未来: 待完善 贡献者: 流年 更新时间: 20250901T00:06:00 一、职业速写 核心价值：保",
+      "excerpt": "岗位名称: 功能测试 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 815k；35年 1025k (待多方验证) 内容状态: 待完善 发展方向: 自动化测试；测试经理等 行业未来: 待完善 贡献者: 流年 更新时间: 2……",
       "wordCount": 846,
-      "updatedAt": "2026-06-10T13:05:57.346Z"
+      "updatedAt": "2026-06-28T08:13:27.400Z",
+      "displayTitle": "功能测试",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-c6c1460f8c13",
@@ -924,7 +1272,10 @@
       "contentPath": "content/encyclopedia/career-c6c1460f8c13.md",
       "excerpt": "行业: 互联网 互联网行业职业索引",
       "wordCount": 17,
-      "updatedAt": "2026-06-10T13:05:57.340Z"
+      "updatedAt": "2026-06-28T08:13:27.370Z",
+      "displayTitle": "互联网行业职业索引",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-fde81d13bab9",
@@ -938,7 +1289,10 @@
       "contentPath": "content/encyclopedia/career-fde81d13bab9.md",
       "excerpt": "行业: 制造业 互联网行业职业索引",
       "wordCount": 17,
-      "updatedAt": "2026-06-10T13:05:57.360Z"
+      "updatedAt": "2026-06-28T08:13:27.449Z",
+      "displayTitle": "互联网行业职业索引",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-c7c105039bac",
@@ -950,9 +1304,12 @@
       "sourcePath": "职业百科/制造业/汽车总装技师.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E5%88%B6%E9%80%A0%E4%B8%9A/%E6%B1%BD%E8%BD%A6%E6%80%BB%E8%A3%85%E6%8A%80%E5%B8%88.md",
       "contentPath": "content/encyclopedia/career-c7c105039bac.md",
-      "excerpt": "岗位名称: 汽车总装工程师 行业: 制造业 典型入门学历: 高中、职中及以上 常见从业背景: 待补充 薪资范围: 上海 10k左右 (待多方验证) 内容状态: 待完善 发展方向: 维修主管/经理；生产管理；高级维修技师；设备工程师 行业未来: 待完善 更新时间: 贡献者: 无言 一、职业速写 核心价值：汽车整车拆装并对总装设备进行检查和保养，保障交付车辆安全",
+      "excerpt": "岗位名称: 汽车总装工程师 行业: 制造业 典型入门学历: 高中、职中及以上 常见从业背景: 待补充 薪资范围: 上海 10k左右 (待多方验证) 内容状态: 待完善 发展方向: 维修主管/经理；生产管理；高级维修技师；设备工程师 行业未来: 待完善 更新时间: 贡献者: 无言 一、职业速写 核心价……",
       "wordCount": 485,
-      "updatedAt": "2026-06-10T13:05:57.363Z"
+      "updatedAt": "2026-06-28T08:13:27.466Z",
+      "displayTitle": "汽车总装技师",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-e60f594c3360",
@@ -964,9 +1321,12 @@
       "sourcePath": "职业百科/互联网/网络管理员.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E4%BA%92%E8%81%94%E7%BD%91/%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86%E5%91%98.md",
       "contentPath": "content/encyclopedia/career-e60f594c3360.md",
-      "excerpt": "岗位名称: 网络管理员 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 515k；35年 1025k (待多方验证) 内容状态: 待完善 发展方向: 运维工程师；安全运维；it负责人等 行业未来: 待完善 贡献者: 匿名 更新时间: 20250901T00:06:00 一、职业速写",
+      "excerpt": "岗位名称: 网络管理员 行业: 互联网 典型入门学历: 大专，要求逐渐向本科过渡中 常见从业背景: 计算机专业 信通专业等 薪资范围: 上海 13年 515k；35年 1025k (待多方验证) 内容状态: 待完善 发展方向: 运维工程师；安全运维；it负责人等 行业未来: 待完善 贡献者: 匿名………",
       "wordCount": 914,
-      "updatedAt": "2026-06-10T13:05:57.352Z"
+      "updatedAt": "2026-06-28T08:13:27.413Z",
+      "displayTitle": "网络管理员",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-ee7e4f84444a",
@@ -978,9 +1338,12 @@
       "sourcePath": "职业百科/制造业/义乌制衣厂普工.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E5%88%B6%E9%80%A0%E4%B8%9A/%E4%B9%89%E4%B9%8C%E5%88%B6%E8%A1%A3%E5%8E%82%E6%99%AE%E5%B7%A5.md",
       "contentPath": "content/encyclopedia/career-ee7e4f84444a.md",
-      "excerpt": "岗位名称: 制衣厂普工 行业: 制造业 典型入门学历: 不限学历 常见从业背景: 农民工 薪资范围: 义乌 59k左右 按件计薪和效率以及工厂单量有关 内容状态: 待完善 发展方向: 质检；车间管理等 行业未来: 待完善 更新时间: 贡献者: 快乐每一天 一、职业速写 核心价值：虽是制衣流水线上的一环，但为国为家都有不菲贡献。 二、真实工作全景 ▋ 典型工作",
+      "excerpt": "岗位名称: 制衣厂普工 行业: 制造业 典型入门学历: 不限学历 常见从业背景: 农民工 薪资范围: 义乌 59k左右 按件计薪和效率以及工厂单量有关 内容状态: 待完善 发展方向: 质检；车间管理等 行业未来: 待完善 更新时间: 贡献者: 快乐每一天 一、职业速写 核心价值：虽是制衣流水线上的一……",
       "wordCount": 653,
-      "updatedAt": "2026-06-10T13:05:57.355Z"
+      "updatedAt": "2026-06-28T08:13:27.417Z",
+      "displayTitle": "义乌制衣厂普工",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-75a749ef21f2",
@@ -992,9 +1355,12 @@
       "sourcePath": "职业百科/制造业/义乌制衣厂质检.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E7%99%BE%E7%A7%91/%E5%88%B6%E9%80%A0%E4%B8%9A/%E4%B9%89%E4%B9%8C%E5%88%B6%E8%A1%A3%E5%8E%82%E8%B4%A8%E6%A3%80.md",
       "contentPath": "content/encyclopedia/career-75a749ef21f2.md",
-      "excerpt": "岗位名称: 制衣厂质检 行业: 制造业 典型入门学历: 不限学历 常见从业背景: 农民工 薪资范围: 义乌 69k左右 内容状态: 待完善 发展方向: 质检；车间管理等 行业未来: 待完善 更新时间: 贡献者: 快乐每一天 一、职业速写 核心价值：衣服成品质量保证核心环节。 二、真实工作全景 ▋ 典型工作场景 待补充 ▋ 工作日常 早晨七点左右起床收拾洗漱并",
+      "excerpt": "岗位名称: 制衣厂质检 行业: 制造业 典型入门学历: 不限学历 常见从业背景: 农民工 薪资范围: 义乌 69k左右 内容状态: 待完善 发展方向: 质检；车间管理等 行业未来: 待完善 更新时间: 贡献者: 快乐每一天 一、职业速写 核心价值：衣服成品质量保证核心环节。",
       "wordCount": 512,
-      "updatedAt": "2026-06-10T13:05:57.358Z"
+      "updatedAt": "2026-06-28T08:13:27.445Z",
+      "displayTitle": "义乌制衣厂质检",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-18de9f711ded",
@@ -1006,9 +1372,12 @@
       "sourcePath": "探索工具/行业和公司认识工具（长期更新，欢迎大家进行接力）.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E6%8E%A2%E7%B4%A2%E5%B7%A5%E5%85%B7/%E8%A1%8C%E4%B8%9A%E5%92%8C%E5%85%AC%E5%8F%B8%E8%AE%A4%E8%AF%86%E5%B7%A5%E5%85%B7%EF%BC%88%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E8%BF%9B%E8%A1%8C%E6%8E%A5%E5%8A%9B%EF%BC%89.md",
       "contentPath": "content/tool/career-18de9f711ded.md",
-      "excerpt": "一、公众号 打工没有自由 公众号介绍 分享具体公司职场内幕 据称已有十万粉丝 欢迎大家对内容真实度进行探讨 飞跑的鹿 公众号介绍 分享产业链文章名多以一天吃透产业链：xxxx为名 欢迎大家对内容真实度进行探讨 二、ima知识库 腾讯新出ai知识库工具：以下是从中找的和行业有关的报告信息，部分为公众号资源文章，该知识库有个好处，即会使用ai对知识库内容进行解析",
+      "excerpt": "一、公众号 打工没有自由 公众号介绍 分享具体公司职场内幕 据称已有十万粉丝 欢迎大家对内容真实度进行探讨 飞跑的鹿 公众号介绍 分享产业链文章名多以一天吃透产业链：xxxx为名 欢迎大家对内容真实度进行探讨 二、ima知识库 腾讯新出ai知识库工具：以下是从中找的和行业有关的报告信息，部分为公众号……",
       "wordCount": 663,
-      "updatedAt": "2026-06-10T13:05:57.329Z"
+      "updatedAt": "2026-06-28T08:13:27.335Z",
+      "displayTitle": "行业和公司认识工具（长期更新，欢迎大家进行接力）",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-2a42c763734b",
@@ -1020,9 +1389,12 @@
       "sourcePath": "探索工具/自我和方向性认知工具（长期更新，欢迎大家进行接力）.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E6%8E%A2%E7%B4%A2%E5%B7%A5%E5%85%B7/%E8%87%AA%E6%88%91%E5%92%8C%E6%96%B9%E5%90%91%E6%80%A7%E8%AE%A4%E7%9F%A5%E5%B7%A5%E5%85%B7%EF%BC%88%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E8%BF%9B%E8%A1%8C%E6%8E%A5%E5%8A%9B%EF%BC%89.md",
       "contentPath": "content/tool/career-2a42c763734b.md",
-      "excerpt": "一、公众号 职业科普张学姐 公众号介绍 有知识星球和付费相关合集 职业科普，对行业岗位职业以及职业规划可进行方向性引导 如果对职业有规划或认识足够可以不考虑看付费内容，道理毕竟是通用的，但如果对全职业大概有兴趣了解的话可以看看，当然欢迎有其他资源推荐 初步付费不涉及具体职业信息，但可咨询试试，做职业科普很久，应该人脉以及对不少行业和职业了解程度不错 二、网站",
+      "excerpt": "一、公众号 职业科普张学姐 公众号介绍 有知识星球和付费相关合集 职业科普，对行业岗位职业以及职业规划可进行方向性引导 如果对职业有规划或认识足够可以不考虑看付费内容，道理毕竟是通用的，但如果对全职业大概有兴趣了解的话可以看看，当然欢迎有其他资源推荐 初步付费不涉及具体职业信息，但可咨询试试，做职业……",
       "wordCount": 750,
-      "updatedAt": "2026-06-10T13:05:57.326Z"
+      "updatedAt": "2026-06-28T08:13:27.315Z",
+      "displayTitle": "自我和方向性认知工具（长期更新，欢迎大家进行接力）",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-862400f649c3",
@@ -1034,9 +1406,12 @@
       "sourcePath": "探索工具/IMA知识库更新.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E6%8E%A2%E7%B4%A2%E5%B7%A5%E5%85%B7/IMA%E7%9F%A5%E8%AF%86%E5%BA%93%E6%9B%B4%E6%96%B0.md",
       "contentPath": "content/tool/career-862400f649c3.md",
-      "excerpt": "![[Pasted image 20251126235032.png]] ![[Pasted image 20251126235143.png]] ![[Pasted image 20251126235214.png]] ![[Pasted image 20251126235240.png]] 以上是我将www.careerplanwiki.com资料部分转",
+      "excerpt": "![[Pasted image 20251126235032.png]] ![[Pasted image 20251126235143.png]] ![[Pasted image 20251126235214.png]] ![[Pasted image 20251126235240.png]] 以上……",
       "wordCount": 922,
-      "updatedAt": "2026-06-10T13:05:57.324Z"
+      "updatedAt": "2026-06-28T08:13:27.202Z",
+      "displayTitle": "IMA知识库更新",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "life-1298443b716a",
@@ -1048,9 +1423,12 @@
       "sourcePath": "访谈准备资料/人生五年项目规划书.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E8%AE%BF%E8%B0%88%E5%87%86%E5%A4%87%E8%B5%84%E6%96%99/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92%E4%B9%A6.md",
       "contentPath": "content/project/life-1298443b716a.md",
-      "excerpt": "「人生五年」项目规划书 悠然与 yamu 内部确认版 一、项目基本情况 「人生五年」是由悠然发起并主导的人物访谈项目。 项目目前以真实人物访谈为主要内容形式，后续可根据内容发展情况，形成文字、音频、视频等不同载体。 目前项目已有前两期人物方向： 第一期：00后连续创业女性。 第二期：85后，在保险行业中找到自身价值的高端白领女性。 后续项目将继续围绕不同年龄",
+      "excerpt": "悠然与 yamu 内部确认版 一、项目基本情况 「人生五年」是由悠然发起并主导的人物访谈项目。 项目目前以真实人物访谈为主要内容形式，后续可根据内容发展情况，形成文字、音频、视频等不同载体。 目前项目已有前两期人物方向： 第一期：00后连续创业女性。",
       "wordCount": 4973,
-      "updatedAt": "2026-06-10T13:05:57.104Z"
+      "updatedAt": "2026-06-28T08:13:25.352Z",
+      "displayTitle": "「人生五年」项目规划书",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-3e8256aafb91",
@@ -1062,9 +1440,12 @@
       "sourcePath": "项目故事/大事记的意义.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%85%E4%BA%8B/%E5%A4%A7%E4%BA%8B%E8%AE%B0%E7%9A%84%E6%84%8F%E4%B9%89.md",
       "contentPath": "content/project/career-3e8256aafb91.md",
-      "excerpt": "2025年5月 最初尝试职业信息共创。 开始萌生并实践与“职业信息共创”相关的想法，项目进入最早期探索阶段。 2025年8月底至9月初 重新设想项目形态。 在初期尝试之后，开始重新思考这个项目应该以什么形式存在，以及它真正适合承载什么内容。 2025年10月至11月 陷入“半成品困境”，受到信息体量冲击。 随着积累的内容变多，项目逐渐面临结构不清、完成度不足",
+      "excerpt": "2025年5月 最初尝试职业信息共创。 开始萌生并实践与“职业信息共创”相关的想法，项目进入最早期探索阶段。 2025年8月底至9月初 重新设想项目形态。 在初期尝试之后，开始重新思考这个项目应该以什么形式存在，以及它真正适合承载什么内容。",
       "wordCount": 1168,
-      "updatedAt": "2026-06-10T13:05:57.440Z"
+      "updatedAt": "2026-06-28T08:13:27.769Z",
+      "displayTitle": "大事记的意义",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-4f5f4ebd60e8",
@@ -1076,9 +1457,12 @@
       "sourcePath": "项目故事/项目发展历程.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%85%E4%BA%8B/%E9%A1%B9%E7%9B%AE%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B.md",
       "contentPath": "content/project/career-4f5f4ebd60e8.md",
-      "excerpt": "项目大事记 2025年5月：最初尝试职业信息共创。 2025年8月底—9月初：重新设想项目形态。 2025年10月—11月：陷入半成品困境，受到信息体量冲击。 2025年11月底—12月初：重新找到项目意义。 2025年12月13日：开始思索“激励”背后的现实问题。 2025年12月28日：开启首次访谈。 2026年1月10日：第二次访谈，首次拿到完整公开录",
+      "excerpt": "项目大事记 2025年5月：最初尝试职业信息共创。 2025年8月底—9月初：重新设想项目形态。 2025年10月—11月：陷入半成品困境，受到信息体量冲击。 2025年11月底—12月初：重新找到项目意义。 2025年12月13日：开始思索“激励”背后的现实问题。",
       "wordCount": 2265,
-      "updatedAt": "2026-06-10T13:05:57.444Z"
+      "updatedAt": "2026-06-28T08:13:27.783Z",
+      "displayTitle": "项目发展历程",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-8c69cb97e77c",
@@ -1090,9 +1474,12 @@
       "sourcePath": "共创专区/进行中的项目/创业构思和实践.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E5%88%9B%E4%B8%9A%E6%9E%84%E6%80%9D%E5%92%8C%E5%AE%9E%E8%B7%B5.md",
       "contentPath": "content/lab/career-8c69cb97e77c.md",
-      "excerpt": "AI保险推荐指南【往解决合约焦虑方面发展】 思路：通过收集市面主流保险产品，然后使用AI分析优劣，以及提取核心报销流程辅助用户做好相关工作。 营利：以会员费或按次购买的综合保险推荐优劣分析费 生活指北 做过一个生活指北小程序，学知识星球，给热爱探店、评测、带玩的博主一个切实的变现渠道，可做周末去哪玩；节俭小妙招；达人也可以随机抽取附带协助购物 解决问题：不知",
+      "excerpt": "AI保险推荐指南【往解决合约焦虑方面发展】 思路：通过收集市面主流保险产品，然后使用AI分析优劣，以及提取核心报销流程辅助用户做好相关工作。",
       "wordCount": 1750,
-      "updatedAt": "2026-06-10T13:05:57.312Z"
+      "updatedAt": "2026-06-28T08:13:27.152Z",
+      "displayTitle": "创业构思和实践",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-662792e818d3",
@@ -1104,9 +1491,12 @@
       "sourcePath": "共创专区/进行中的项目/公众号宣传.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%AE%A3%E4%BC%A0.md",
       "contentPath": "content/lab/career-662792e818d3.md",
-      "excerpt": "给孩子一块地，给你们一段真正一起完成的时光 一季六周·12日亲子农家研学 每个孩子认领一块10㎡以内责任田 很多亲子活动，结束得很快。 拍几张照片，体验一两个项目，一天就过去了。 但孩子真正记住的，往往不是“那天玩了什么”， 而是自己有没有认真拥有过什么， 有没有为一件事真正负责过， 有没有和父母一起完成过一段完整的过程。 所以，我们设计了这套 亲子农家研学",
+      "excerpt": "一季六周·12日亲子农家研学 每个孩子认领一块10㎡以内责任田 很多亲子活动，结束得很快。 拍几张照片，体验一两个项目，一天就过去了。 但孩子真正记住的，往往不是“那天玩了什么”， 而是自己有没有认真拥有过什么， 有没有为一件事真正负责过， 有没有和父母一起完成过一段完整的过程。",
       "wordCount": 4518,
-      "updatedAt": "2026-06-10T13:05:57.300Z"
+      "updatedAt": "2026-06-28T08:13:27.095Z",
+      "displayTitle": "给孩子一块地，给你们一段真正一起完成的时光",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-9316284badd0",
@@ -1118,9 +1508,12 @@
       "sourcePath": "共创专区/进行中的项目/家长讲义.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E5%AE%B6%E9%95%BF%E8%AE%B2%E4%B9%89.md",
       "contentPath": "content/lab/career-9316284badd0.md",
-      "excerpt": "一块责任田里的亲子成长课 一、课程目标 它像是一套 在真实田地里展开的亲子带学指南。 孩子会拥有一块属于自己的责任田。家长要做的，不是替孩子完成任务，而是陪孩子一起： 先定目标 再开始行动 在变化中判断 在问题中想办法 在结束时做总结 田地不是教室，农业也不是按课表发生的。 天气会变，土壤会变，作物状态会变，孩子的兴趣和体力也会变。 所以这套课程最重要的，不",
+      "excerpt": "一块责任田里的亲子成长课 一、课程目标 它像是一套 在真实田地里展开的亲子带学指南。 孩子会拥有一块属于自己的责任田。家长要做的，不是替孩子完成任务，而是陪孩子一起： 先定目标 再开始行动 在变化中判断 在问题中想办法 在结束时做总结 田地不是教室，农业也不是按课表发生的。",
       "wordCount": 4827,
-      "updatedAt": "2026-06-10T13:05:57.315Z"
+      "updatedAt": "2026-06-28T08:13:27.160Z",
+      "displayTitle": "模块一：目标与计划",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-21c20f95253d",
@@ -1132,9 +1525,12 @@
       "sourcePath": "共创专区/进行中的项目/农家研学课程体系设计.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E5%86%9C%E5%AE%B6%E7%A0%94%E5%AD%A6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1.md",
       "contentPath": "content/lab/career-21c20f95253d.md",
-      "excerpt": "课程目标：培养孩子思索如何根据目标完成任务的能力；更重要的让孩子学会在如何应对农业生产的不确定性，在失败之前做好充分的准备【可以引申农业史】，在失败的时候坦然面对并思索如何才能将损失降到最小；在仍有余力的过程中可以引导孩子对于所学知识的兴趣。兴趣可以是引导孩子渡过漫长人生指路明灯，而兴趣可能是各种各样的，在有机会的情况下能尝试引向更能使人的成长方向，何乐而不",
+      "excerpt": "课程目标：培养孩子思索如何根据目标完成任务的能力；更重要的让孩子学会在如何应对农业生产的不确定性，在失败之前做好充分的准备【可以引申农业史】，在失败的时候坦然面对并思索如何才能将损失降到最小；在仍有余力的过程中可以引导孩子对于所学知识的兴趣。",
       "wordCount": 762,
-      "updatedAt": "2026-06-10T13:05:57.309Z"
+      "updatedAt": "2026-06-28T08:13:27.123Z",
+      "displayTitle": "农家研学课程体系设计",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-240ac88ea2f1",
@@ -1146,9 +1542,12 @@
       "sourcePath": "共创专区/进行中的项目/生活指北（达人信任订阅平台）V1.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E7%94%9F%E6%B4%BB%E6%8C%87%E5%8C%97%EF%BC%88%E8%BE%BE%E4%BA%BA%E4%BF%A1%E4%BB%BB%E8%AE%A2%E9%98%85%E5%B9%B3%E5%8F%B0%EF%BC%89V1.md",
       "contentPath": "content/lab/career-240ac88ea2f1.md",
-      "excerpt": "商业报告：生活指北（达人信任订阅平台）V1 1. 项目概述 项目定位：以“达人信任”为核心资产的订阅型小程序平台。 核心主张：用户不是为“点评内容”付费，而是为“跟对达人、做出更少踩雷的生活决策”付费。 边界约束（战略纪律）： 不接商家、不做券、不做导购分佣、不卖排名/置顶 单一达人订阅为主（用户订人，而非订平台大杂烩） 平台提供发现/索引/验证/权限分层等",
+      "excerpt": "1. 项目概述 项目定位：以“达人信任”为核心资产的订阅型小程序平台。 核心主张：用户不是为“点评内容”付费，而是为“跟对达人、做出更少踩雷的生活决策”付费。",
       "wordCount": 2884,
-      "updatedAt": "2026-06-10T13:05:57.317Z"
+      "updatedAt": "2026-06-28T08:13:27.169Z",
+      "displayTitle": "商业报告：生活指北（达人信任订阅平台）V1",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-0a36a5782a3f",
@@ -1160,9 +1559,12 @@
       "sourcePath": "共创专区/进行中的项目/书知转绘本.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E4%B9%A6%E7%9F%A5%E8%BD%AC%E7%BB%98%E6%9C%AC.md",
       "contentPath": "content/lab/career-0a36a5782a3f.md",
-      "excerpt": "中文版序 它呈现在各种社会关系的表层，它无论在哪里，都会让言说交流在形式上划分角色，将人分为下令者和服从者，并且也分为指导者和跟随者、劝诱者和共识者、告知者和获知者、世界状况的讲解者和这套讲解的接受者。 讲解中的秩序 但现在有人要对他开展那正式的教育。这等于认为他用之前同样的智力再也学不到什么，也让学习和检验(apprentissage et vérific",
+      "excerpt": "中文版序 它呈现在各种社会关系的表层，它无论在哪里，都会让言说交流在形式上划分角色，将人分为下令者和服从者，并且也分为指导者和跟随者、劝诱者和共识者、告知者和获知者、世界状况的讲解者和这套讲解的接受者。 讲解中的秩序 但现在有人要对他开展那正式的教育。",
       "wordCount": 2490,
-      "updatedAt": "2026-06-10T13:05:57.297Z"
+      "updatedAt": "2026-06-28T08:13:27.087Z",
+      "displayTitle": "书知转绘本",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-627b874cd81d",
@@ -1174,9 +1576,12 @@
       "sourcePath": "共创专区/进行中的项目/农家研学构思AI完善板_最终补全版.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%85%B1%E5%88%9B%E4%B8%93%E5%8C%BA/%E8%BF%9B%E8%A1%8C%E4%B8%AD%E7%9A%84%E9%A1%B9%E7%9B%AE/%E5%86%9C%E5%AE%B6%E7%A0%94%E5%AD%A6%E6%9E%84%E6%80%9DAI%E5%AE%8C%E5%96%84%E6%9D%BF_%E6%9C%80%E7%BB%88%E8%A1%A5%E5%85%A8%E7%89%88.md",
       "contentPath": "content/lab/career-627b874cd81d.md",
-      "excerpt": "一、你要卖的产品（固定下来） 1) 季度营（12周） 基础档 2999/人/季（不含餐） 6次必修（12周内完成） 每次必修当晚：免费1间两床房（需预约+盖章） 必修夜加开第二间：补差99/晚 白天不限次免费回访（需预约） 个人试验田编号 + 田野观察手册 进阶档 3999/人/季（不含餐） 含2999全部 每月一次线上评审（固定有）：家长交模板→你返“评审",
+      "excerpt": "1) 季度营（12周） 基础档 2999/人/季（不含餐） 6次必修（12周内完成） 每次必修当晚：免费1间两床房（需预约+盖章） 必修夜加开第二间：补差99/晚 白天不限次免费回访（需预约） 个人试验田编号 + 田野观察手册 进阶档 3999/人/季（不含餐） 含2999全部 每月一次线上评审（固……",
       "wordCount": 13709,
-      "updatedAt": "2026-06-10T13:05:57.306Z"
+      "updatedAt": "2026-06-28T08:13:27.118Z",
+      "displayTitle": "一、你要卖的产品（固定下来）",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-adb92ddc92c7",
@@ -1188,9 +1593,12 @@
       "sourcePath": "趣味知识/每个人的经济学：五种失业模式和失业统计小知识.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%B6%A3%E5%91%B3%E7%9F%A5%E8%AF%86/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%EF%BC%9A%E4%BA%94%E7%A7%8D%E5%A4%B1%E4%B8%9A%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%A4%B1%E4%B8%9A%E7%BB%9F%E8%AE%A1%E5%B0%8F%E7%9F%A5%E8%AF%86.md",
       "contentPath": "content/knowledge/career-adb92ddc92c7.md",
-      "excerpt": "以下所有内容摘抄自《每个人的经济学》 五类失业 处在两份工作之间的人：摩擦性失业 失业至少有五种。第一种，“自然”发生的失业。在企业诞生、发展、萎缩、死亡的过程中，总有工作出现或消失。此外，劳动者也会因为各种原因而换工作，比如对现在的工作不满，或决定搬到另一个城镇住，原因可能是为了照顾父母或想跟新伴侣住在一起。因此，很多时候，换工作是很自然的。 问题就在于，",
+      "excerpt": "以下所有内容摘抄自《每个人的经济学》 五类失业 处在两份工作之间的人：摩擦性失业 失业至少有五种。第一种，“自然”发生的失业。在企业诞生、发展、萎缩、死亡的过程中，总有工作出现或消失。",
       "wordCount": 2676,
-      "updatedAt": "2026-06-10T13:05:57.437Z"
+      "updatedAt": "2026-06-28T08:13:27.760Z",
+      "displayTitle": "每个人的经济学：五种失业模式和失业统计小知识",
+      "status": "published",
+      "featured": false
     },
     {
       "id": "career-84326e003763",
@@ -1202,9 +1610,29 @@
       "sourcePath": "管理规范/内容贡献协议.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E7%AE%A1%E7%90%86%E8%A7%84%E8%8C%83/%E5%86%85%E5%AE%B9%E8%B4%A1%E7%8C%AE%E5%8D%8F%E8%AE%AE.md",
       "contentPath": "content/policy/career-84326e003763.md",
-      "excerpt": "TODO",
+      "excerpt": "",
       "wordCount": 4,
-      "updatedAt": "2026-06-10T13:05:57.333Z"
+      "updatedAt": "2026-06-28T08:13:27.345Z",
+      "displayTitle": "TODO",
+      "status": "draft",
+      "featured": false
+    },
+    {
+      "id": "life-d76ff5920631",
+      "title": "2026-0613 REAPER 听改记录",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "about",
+      "sectionLabel": "项目说明",
+      "sourcePath": "2026-0613_REAPER听改记录.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/2026-0613_REAPER%E5%90%AC%E6%94%B9%E8%AE%B0%E5%BD%95.md",
+      "contentPath": "content/about/life-d76ff5920631.md",
+      "excerpt": "20260613 REAPER 听改记录 工程：20260613同事家访谈单集完整版REAPER精剪工程.rpp 听的时候优先记这几类问题： 漏掉的人名、孩子昵称、具体地名、公司/学校线索。 静默遮罩太突兀，需要改成短音效或整句重剪。 片段之间转场太硬，需要补停顿、音乐或重排顺序。",
+      "wordCount": 243,
+      "updatedAt": "2026-06-28T08:13:25.266Z",
+      "displayTitle": "2026-0613 REAPER 听改记录",
+      "status": "draft",
+      "featured": false
     },
     {
       "id": "career-8ec9a00bfd09",
@@ -1216,9 +1644,12 @@
       "sourcePath": "README.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/README.md",
       "contentPath": "content/about/career-8ec9a00bfd09.md",
-      "excerpt": "多元人生图鉴 一个以真实访谈与结构化沉淀为核心的「人生路径样本库」：帮助迷茫的人通过看见更多人生选择，逐步厘清自己的价值取向与长期方向。 这是什么 “多元人生图鉴”收集并整理来自不同行业、地域、家庭背景、教育路径与人生选择的职业故事，通过访谈/观察/阅读/交流等方式获得素材，再以统一模板沉淀为： 可阅读的 报告文章（故事报告 / 主题报告） 可检索对比的 结",
+      "excerpt": "一个以真实访谈与结构化沉淀为核心的「人生路径样本库」：帮助迷茫的人通过看见更多人生选择，逐步厘清自己的价值取向与长期方向。",
       "wordCount": 2089,
-      "updatedAt": "2026-06-10T13:05:57.279Z"
+      "updatedAt": "2026-06-28T08:13:27.010Z",
+      "displayTitle": "多元人生图鉴",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "life-dc77440009a6",
@@ -1230,23 +1661,12 @@
       "sourcePath": "人生五年访谈计划.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/%E4%BA%BA%E7%94%9F%E4%BA%94%E5%B9%B4%E8%AE%BF%E8%B0%88%E8%AE%A1%E5%88%92.md",
       "contentPath": "content/about/life-dc77440009a6.md",
-      "excerpt": "我准备尝试借鉴《人生七年》的记录方式，做一个属于普通人的“人生五年”访谈计划。 初步设想是：每两周访谈一位受访者，累计记录一百多人，之后再进入循环回访。这样，一方面能看到不同个体在同一时代中的生活样貌，另一方面，也能在时间的流动中，真正记录一个人如何变化、如何坚持、又如何被生活塑造。 在此之前，我已经做过十来次访谈，最初主要是从“职业”切入，再延伸到一个人的",
+      "excerpt": "我准备尝试借鉴《人生七年》的记录方式，做一个记录不同人的“人生五年”访谈计划。 初步设想是：每两周访谈一位受访者，累计记录一百多人，之后再进入循环回访。这样，一方面能看到不同个体在同一时代中的生活样貌，另一方面，也能在时间的流动中，真正记录一个人如何变化、如何坚持、又如何被生活塑造。",
       "wordCount": 1059,
-      "updatedAt": "2026-06-10T13:05:57.088Z"
-    },
-    {
-      "id": "life-8ec9a00bfd09",
-      "title": "人生五年访谈计划 (Five Years of Life)",
-      "sourceProject": "life",
-      "sourceProjectLabel": "人生五年",
-      "section": "about",
-      "sectionLabel": "项目说明",
-      "sourcePath": "README.md",
-      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/README.md",
-      "contentPath": "content/about/life-8ec9a00bfd09.md",
-      "excerpt": "人生五年访谈计划 (Five Years of Life) 记录普通人的变化、坚持，以及如何被生活塑造。 项目简介 “人生五年”访谈计划是一个尝试借鉴纪录片《人生七年》（Seven Up!）的记录方式，专注于记录普通人真实生命轨迹的长期访谈项目。 在变化越来越快的今天，我们很难找到一个稳定不变的支点。即使是曾经被视为人生重心的“职业”，也可能会随着时代、环境",
-      "wordCount": 1127,
-      "updatedAt": "2026-06-10T13:05:57.049Z"
+      "updatedAt": "2026-06-28T08:13:25.335Z",
+      "displayTitle": "人生五年访谈计划",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-fd8436fe362a",
@@ -1258,9 +1678,12 @@
       "sourcePath": "职业人生故事征集.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E8%81%8C%E4%B8%9A%E4%BA%BA%E7%94%9F%E6%95%85%E4%BA%8B%E5%BE%81%E9%9B%86.md",
       "contentPath": "content/about/career-fd8436fe362a.md",
-      "excerpt": "导语 还记得曾经的你是如何选择专业，又是如何踏入职场的嘛？亦或曾有过想转行的念头，或者行动嘛？又或者产生过对于非本职职业的好奇嘛？不知您的答案是什么，但如果有过迷茫，有过好奇，有过行动，那可以看看这个为对曾经解惑的知识空间嘛？看了后能提出对于职业百科而言还缺少那些信息嘛？若为曾经和未来触动，那您可以参与这个知识空间的共创嘛？ 正文 起初想建立这个知识空间正如",
+      "excerpt": "导语 还记得曾经的你是如何选择专业，又是如何踏入职场的嘛？亦或曾有过想转行的念头，或者行动嘛？又或者产生过对于非本职职业的好奇嘛？不知您的答案是什么，但如果有过迷茫，有过好奇，有过行动，那可以看看这个为对曾经解惑的知识空间嘛？看了后能提出对于职业百科而言还缺少那些信息嘛？",
       "wordCount": 1054,
-      "updatedAt": "2026-06-10T13:05:57.336Z"
+      "updatedAt": "2026-06-28T08:13:27.362Z",
+      "displayTitle": "职业人生故事征集",
+      "status": "archive",
+      "featured": false
     },
     {
       "id": "career-a78fd22da2e0",
@@ -1272,9 +1695,29 @@
       "sourcePath": "图片/剪辑说明.md",
       "sourceUrl": "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main/%E5%9B%BE%E7%89%87/%E5%89%AA%E8%BE%91%E8%AF%B4%E6%98%8E.md",
       "contentPath": "content/about/career-a78fd22da2e0.md",
-      "excerpt": "主题级剪辑说明 原始素材：0311 2026年职业访谈：小众行业从业者接受与转型实录（20260311 203054） 来源文本：fileciteturn0file0 剪辑原则 按主题拆分，每条音频只保留一个核心主题 优先保留受访者的关键观点、结论、经验判断 删除明显无效寒暄、项目介绍、打断、回消息等低信息密度内容 对表达尚未完成的主题，不强行截断，尽",
+      "excerpt": "原始素材：0311 2026年职业访谈：小众行业从业者接受与转型实录（20260311 203054） 来源文本：fileciteturn0file0 剪辑原则 按主题拆分，每条音频只保留一个核心主题 优先保留受访者的关键观点、结论、经验判断 删除明显无效寒暄、项目介绍、打断、回消息等低信息密……",
       "wordCount": 1017,
-      "updatedAt": "2026-06-10T13:05:57.321Z"
+      "updatedAt": "2026-06-28T08:13:27.193Z",
+      "displayTitle": "主题级剪辑说明",
+      "status": "draft",
+      "featured": false
+    },
+    {
+      "id": "life-8ec9a00bfd09",
+      "title": "README",
+      "sourceProject": "life",
+      "sourceProjectLabel": "人生五年",
+      "section": "about",
+      "sectionLabel": "项目说明",
+      "sourcePath": "README.md",
+      "sourceUrl": "https://github.com/windmoon-Lotus/life5years/blob/main/README.md",
+      "contentPath": "content/about/life-8ec9a00bfd09.md",
+      "excerpt": "人生五年访谈计划 (Five Years of Life) 记录不同的人如何生活、选择、坚持，以及如何被时间改变。 项目简介 “人生五年”访谈计划是一个尝试借鉴纪录片《人生七年》（Seven Up!）的记录方式，专注于记录不同个体真实生命轨迹的长期访谈项目。",
+      "wordCount": 1133,
+      "updatedAt": "2026-06-28T08:13:25.279Z",
+      "displayTitle": "README",
+      "status": "archive",
+      "featured": false
     }
   ]
 }

@@ -77,6 +77,7 @@ function card(person) {
       </a>
       <div class="person-project">${esc(projectBadge(person))}</div>
       <p>${esc(person.headline || person.bio)}</p>
+      ${currentWorkBlock(person, true)}
       <div class="person-tags">${(person.tags || []).slice(0, 4).map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>
       <a class="person-cta" href="${personUrl(person.id)}">进入人物介绍</a>
     </article>
@@ -100,6 +101,24 @@ function contactLinks(person) {
     return `<span class="contact-empty">暂未公开联系方式</span>`;
   }
   return links.map((link) => `<a href="${esc(link.url)}" target="_blank" rel="noreferrer">${esc(link.label)}</a>`).join("");
+}
+
+function currentWorkBlock(person, compact = false) {
+  if (!person.currentWork) return "";
+  if (compact) {
+    return `<div class="person-current"><strong>正在做</strong><span>${esc(person.currentWork)}</span></div>`;
+  }
+  return `
+    <section class="person-info-card person-work-card">
+      <h2>TA 正在做的事</h2>
+      <p>${esc(person.currentWork)}</p>
+      <div class="person-contact person-work-links">
+        <strong>公开入口</strong>
+        <div>${contactLinks(person)}</div>
+      </div>
+      <p class="person-contact-note">${esc(person.collaboration || "如果你读完故事，也想了解 TA 正在做的事，请先尊重本人公开边界。")}</p>
+    </section>
+  `;
 }
 
 async function bootPeopleList() {
@@ -197,6 +216,8 @@ async function bootPersonProfile() {
               ${primaryArticle ? `<a class="button primary" href="${articleUrl(primaryArticle.id)}">阅读代表故事</a>` : ""}
             </div>
           </section>
+
+          ${currentWorkBlock(person)}
 
           <section class="person-info-card">
             <h2>基本信息</h2>

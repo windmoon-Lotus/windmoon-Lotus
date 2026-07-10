@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
-import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { enrichArticle } from "./content-policy.mjs";
 
 const siteRoot = path.resolve("F:/笔记汇总/git/windmoon-Lotus");
 const sources = [
@@ -109,11 +110,12 @@ async function main() {
       const outputPath = path.join(outputDir, `${id}.md`);
       const text = stripMarkdown(markdown);
       const title = titleFromMarkdown(markdown, fullPath);
+      const sourceStat = await stat(fullPath);
 
       await mkdir(outputDir, { recursive: true });
       await writeFile(outputPath, markdown, "utf8");
 
-      articles.push({
+      articles.push(enrichArticle({
         id,
         title,
         sourceProject: source.key,
@@ -125,8 +127,8 @@ async function main() {
         contentPath: normalizeSlash(path.relative(siteRoot, outputPath)),
         excerpt: text.slice(0, 180),
         wordCount: text.length,
-        updatedAt: new Date().toISOString()
-      });
+        updatedAt: sourceStat.mtime.toISOString()
+      }));
     }
   }
 

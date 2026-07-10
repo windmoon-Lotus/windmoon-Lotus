@@ -1,4 +1,11 @@
 const rootPrefix = document.documentElement.dataset.root || ".";
+const pageSize = 12;
+
+const statusLabels = {
+  published: "公开阅读",
+  archive: "资料归档",
+  draft: "内部草稿"
+};
 
 const sectionConfig = {
   "life-interview": { title: "人生五年访谈", intro: "以长期追踪为目标的人物访谈主线。", href: `${rootPrefix}/life/` },
@@ -35,6 +42,25 @@ function articleUrl(id) {
   return `${rootPrefix}/articles/view.html?id=${encodeURIComponent(id)}`;
 }
 
+function articleTitle(article) {
+  return article.displayTitle || article.title;
+}
+
+function readingMinutes(article) {
+  return Math.max(1, Math.round((article.wordCount || 0) / 500));
+}
+
+function formatDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(date);
+}
+
 function sourceLink(article) {
   if (!article.sourceUrl) return "";
   return `<a class="reader-source-link" href="${escapeHtml(article.sourceUrl)}" target="_blank" rel="noreferrer">查看 GitHub 原始素材</a>`;
@@ -46,15 +72,16 @@ function renderArticleCard(article) {
     : "";
 
   return `
-    <article class="library-card">
+    <article class="library-card${article.featured ? " is-featured" : ""}">
       <div class="library-meta">
         <span>${escapeHtml(article.sectionLabel)}</span>
         <span>${escapeHtml(article.sourceProjectLabel)}</span>
+        ${article.featured ? "<span>编辑精选</span>" : ""}
       </div>
-      <h3><a href="${articleUrl(article.id)}">${escapeHtml(article.title)}</a></h3>
+      <h3><a href="${articleUrl(article.id)}">${escapeHtml(articleTitle(article))}</a></h3>
       <p>${escapeHtml(article.excerpt || "暂无摘要。")}</p>
       <div class="library-card-foot">
-        <span>${Math.max(1, Math.round((article.wordCount || 0) / 500))} 分钟读完</span>
+        <span>${readingMinutes(article)} 分钟读完</span>
         <div class="library-card-actions">
           <a href="${articleUrl(article.id)}">阅读文章</a>
           ${rawLink}
@@ -68,14 +95,16 @@ function renderEmpty(target, message) {
   target.innerHTML = `<div class="library-empty">${escapeHtml(message)}</div>`;
 }
 
-function filterArticles(articles, sectionList, query) {
+function filterArticles(articles, { sectionList, query, status, category }) {
   const sections = sectionList.filter(Boolean);
   const normalizedQuery = query.trim().toLowerCase();
   return articles.filter((article) => {
     const sectionMatched = sections.length === 0 || sections.includes(article.section);
     if (!sectionMatched) return false;
+    if (status && article.status !== status) return false;
+    if (category && article.section !== category) return false;
     if (!normalizedQuery) return true;
-    return [article.title, article.excerpt, article.sectionLabel, article.sourcePath]
+    return [articleTitle(article), article.title, article.excerpt, article.sectionLabel, article.sourcePath]
       .join(" ")
       .toLowerCase()
       .includes(normalizedQuery);
@@ -88,25 +117,81 @@ async function bootArticleList() {
 
   const countTarget = document.querySelector("[data-article-count]");
   const searchInput = document.querySelector("[data-article-search]");
+  const categorySelect = document.querySelector("[data-article-category]");
+  const sortSelect = document.querySelector("[data-article-sort]");
+  const statusButtons = [...document.querySelectorAll("[data-status-filter]")];
   const sections = (document.documentElement.dataset.sections || "")
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
+  const allowedStatuses = (document.documentElement.dataset.statuses || "published")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+  let selectedStatus = statusButtons.find((button) => button.classList.contains("active"))?.dataset.statusFilter
+    || allowedStatuses[0]
+    || "published";
+  let visibleCount = pageSize;
+
+  const loadMore = document.createElement("button");
+  loadMore.type = "button";
+  loadMore.className = "button button-secondary library-load-more";
+  loadMore.textContent = "加载更多";
+  target.insertAdjacentElement("afterend", loadMore);
 
   try {
     const articles = await loadArticles();
 
-    const render = () => {
-      const visible = filterArticles(articles, sections, searchInput?.value || "");
-      if (countTarget) countTarget.textContent = `${visible.length} 篇`;
+    const render = ({ reset = false } = {}) => {
+      if (reset) visibleCount = pageSize;
+      const status = statusButtons.length ? selectedStatus : null;
+      const category = categorySelect?.value || "";
+      const visible = filterArticles(articles, {
+        sectionList: sections,
+        query: searchInput?.value || "",
+        status,
+        category
+      })
+        .filter((article) => status || allowedStatuses.includes(article.status || "published"))
+        .sort((a, b) => {
+          if (sortSelect?.value === "title") {
+            return articleTitle(a).localeCompare(articleTitle(b), "zh-CN");
+          }
+          if (sortSelect?.value === "newest") {
+            return new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0);
+          }
+          return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+        });
+      if (countTarget) {
+        countTarget.textContent = `${visible.length} 篇${selectedStatus ? ` · ${statusLabels[selectedStatus] || ""}` : ""}`;
+      }
       if (visible.length === 0) {
         renderEmpty(target, "没有找到匹配的文章。");
+        loadMore.hidden = true;
         return;
       }
-      target.innerHTML = visible.map(renderArticleCard).join("");
+      target.innerHTML = visible.slice(0, visibleCount).map(renderArticleCard).join("");
+      loadMore.hidden = visibleCount >= visible.length;
     };
 
-    searchInput?.addEventListener("input", render);
+    searchInput?.addEventListener("input", () => render({ reset: true }));
+    categorySelect?.addEventListener("change", () => render({ reset: true }));
+    sortSelect?.addEventListener("change", () => render({ reset: true }));
+    statusButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedStatus = button.dataset.statusFilter;
+        statusButtons.forEach((item) => {
+          const active = item === button;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        render({ reset: true });
+      });
+    });
+    loadMore.addEventListener("click", () => {
+      visibleCount += pageSize;
+      render();
+    });
     render();
   } catch (error) {
     renderEmpty(target, error.message);
@@ -219,17 +304,42 @@ async function bootArticleView() {
       return;
     }
 
-    document.title = `${article.title} | 人生五年`;
-    document.querySelector("[data-article-title]").textContent = article.title;
+    const displayTitle = articleTitle(article);
+    document.title = `${displayTitle} | 人生五年`;
+    document.querySelector("[data-article-title]").textContent = displayTitle;
     document.querySelector("[data-article-source]").textContent = article.sourceProjectLabel;
     document.querySelector("[data-article-section]").textContent = article.sectionLabel;
     document.querySelector("[data-article-path]").textContent = article.sourcePath;
     document.querySelector("[data-article-source-link]").innerHTML = sourceLink(article);
+    const description = article.excerpt || `${displayTitle}，来自人生五年长期访谈计划。`;
+    document.querySelector("[data-article-summary]").textContent = description;
+    document.querySelector("[data-article-reading-time]").textContent = `${readingMinutes(article)} 分钟阅读`;
+    document.querySelector("[data-article-updated]").textContent = formatDate(article.updatedAt);
+    document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", displayTitle);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
 
     const response = await fetch(`${rootPrefix}/${article.contentPath}`, { cache: "no-store" });
     if (!response.ok) throw new Error("文章内容加载失败");
     const markdown = await response.text();
     target.innerHTML = markdownToHtml(markdown);
+
+    const relatedTarget = document.querySelector("[data-related-articles]");
+    const related = articles
+      .filter((item) => item.id !== article.id && item.status === "published" && item.section === article.section)
+      .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+      .slice(0, 3);
+    if (relatedTarget) {
+      relatedTarget.innerHTML = related.length
+        ? related.map((item) => `
+          <a class="reader-related-card" href="${articleUrl(item.id)}">
+            <span>${escapeHtml(item.sectionLabel)}</span>
+            <strong>${escapeHtml(articleTitle(item))}</strong>
+            <small>${readingMinutes(item)} 分钟阅读</small>
+          </a>
+        `).join("")
+        : "";
+    }
   } catch (error) {
     renderEmpty(target, error.message);
   }
