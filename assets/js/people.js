@@ -84,6 +84,39 @@ function card(person) {
   `;
 }
 
+function lifeIndexRow(person, articlesById) {
+  const order = String(person.lifeOrder || "").padStart(2, "0");
+  const articleLinks = (person.lifeArticles || [])
+    .map(({ id, label }) => {
+      const article = articlesById.get(id);
+      if (!article) return "";
+      return `
+        <a class="life-person-article" href="${articleUrl(article.id)}">
+          <span>${esc(label)}</span>
+          <strong>${esc(article.displayTitle || article.title)}</strong>
+        </a>
+      `;
+    })
+    .filter(Boolean)
+    .join("");
+
+  return `
+    <article class="life-person-row">
+      <a class="life-person-identity" href="${personUrl(person.id)}">
+        <span class="life-person-order">${esc(order)}</span>
+        <span>
+          <strong>${esc(person.displayName)}</strong>
+          <em>${esc(person.role)}</em>
+        </span>
+      </a>
+      <div class="life-person-tags">
+        ${(person.tags || []).slice(0, 3).map((tag) => `<span>${esc(tag)}</span>`).join("")}
+      </div>
+      <div class="life-person-articles">${articleLinks}</div>
+    </article>
+  `;
+}
+
 function infoRows(person, articles) {
   return [
     ["姓名", person.displayName],
@@ -129,34 +162,122 @@ async function bootPeopleList() {
   const search = document.querySelector("[data-people-search]");
 
   try {
-    const { people } = await loadJson("data/people.json");
+    const [{ people }, articleData] = await Promise.all([
+      loadJson("data/people.json"),
+      loadJson("data/articles.json")
+    ]);
+    const articlesById = new Map(articleData.articles.map((article) => [article.id, article]));
+    const peoplePageSize = 12;
+    const pageState = {
+      lifeInterviewee: 1,
+      careerInterviewee: 1,
+      contributor: 1
+    };
+
+    const paginate = (group, rows) => {
+      const totalPages = Math.max(1, Math.ceil(rows.length / peoplePageSize));
+      const currentPage = Math.min(pageState[group] || 1, totalPages);
+      pageState[group] = currentPage;
+      const start = (currentPage - 1) * peoplePageSize;
+      return {
+        rows: rows.slice(start, start + peoplePageSize),
+        currentPage,
+        totalPages
+      };
+    };
+
+    const pagination = (group, currentPage, totalPages) => {
+      if (totalPages <= 1) return "";
+      return `
+        <nav class="people-pagination" aria-label="${esc(groupTitle(group))}分页">
+          <button type="button" data-people-page="${group}" data-page-step="-1"${currentPage === 1 ? " disabled" : ""}>上一页</button>
+          <span>第 ${currentPage} / ${totalPages} 页</span>
+          <button type="button" data-people-page="${group}" data-page-step="1"${currentPage === totalPages ? " disabled" : ""}>下一页</button>
+        </nav>
+      `;
+    };
 
     const render = () => {
       const query = (search?.value || "").trim().toLowerCase();
       const visible = people.filter((person) => {
         if (!query) return true;
-        return [person.displayName, person.role, person.headline, person.bio, ...(person.tags || [])]
+        const articleTitles = (person.articleIds || [])
+          .map((id) => articlesById.get(id))
+          .filter(Boolean)
+          .flatMap((article) => [article.title, article.displayTitle]);
+        return [person.displayName, person.role, person.headline, person.bio, ...(person.tags || []), ...articleTitles]
           .join(" ")
           .toLowerCase()
           .includes(query);
       });
 
-      if (count) count.textContent = `${visible.length} 人`;
+      const lifeRows = visible
+        .filter((person) => personBucket(person) === "lifeInterviewee")
+        .sort((a, b) => (a.lifeOrder || 999) - (b.lifeOrder || 999));
+      const careerRows = visible.filter((person) => personBucket(person) === "careerInterviewee");
+      const contributorRows = visible.filter((person) => personBucket(person) === "contributor");
 
-      const groups = ["lifeInterviewee", "careerInterviewee", "contributor"];
-      target.innerHTML = groups.map((group) => {
-        const rows = visible.filter((person) => personBucket(person) === group);
+      if (count) {
+        count.textContent = query
+          ? `${visible.length} 个匹配结果`
+          : `${people.length} 人 · ${lifeRows.length} 位人生五年受访者`;
+      }
+
+      if (!visible.length) {
+        target.innerHTML = `<div class="library-empty">没有找到匹配的人物或文章。</div>`;
+        return;
+      }
+
+      const secondaryGroup = (group, rows) => {
         if (!rows.length) return "";
+        const page = paginate(group, rows);
         return `
-          <section class="people-group">
-            <h2>${groupTitle(group)}</h2>
-            <div class="people-grid">${rows.map(card).join("")}</div>
+          <section class="people-group people-secondary-group" data-people-group="${group}">
+            <div class="people-group-heading">
+              <h2>${groupTitle(group)}</h2>
+              <p>${rows.length} 人</p>
+            </div>
+            <div class="people-grid">${page.rows.map(card).join("")}</div>
+            ${pagination(group, page.currentPage, page.totalPages)}
           </section>
         `;
-      }).join("") || `<div class="library-empty">没有找到匹配的人物。</div>`;
+      };
+
+      const lifePage = paginate("lifeInterviewee", lifeRows);
+      target.innerHTML = `
+        ${lifeRows.length ? `
+          <section class="people-group people-life-group" data-people-group="lifeInterviewee">
+            <div class="people-group-heading">
+              <div>
+                <p class="eyebrow">Life in Five Years</p>
+                <h2>人生五年受访者</h2>
+              </div>
+              <p>按受访顺序排列，直接进入人物故事与访谈后记。</p>
+            </div>
+            <div class="life-people-index">${lifePage.rows.map((person) => lifeIndexRow(person, articlesById)).join("")}</div>
+            ${pagination("lifeInterviewee", lifePage.currentPage, lifePage.totalPages)}
+          </section>
+        ` : ""}
+        ${secondaryGroup("careerInterviewee", careerRows)}
+        ${secondaryGroup("contributor", contributorRows)}
+      `;
+
+      target.querySelectorAll("[data-people-page]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const group = button.dataset.peoplePage;
+          pageState[group] += Number(button.dataset.pageStep);
+          render();
+          target.querySelector(`[data-people-group="${group}"]`)?.scrollIntoView({ block: "start" });
+        });
+      });
     };
 
-    search?.addEventListener("input", render);
+    search?.addEventListener("input", () => {
+      Object.keys(pageState).forEach((group) => {
+        pageState[group] = 1;
+      });
+      render();
+    });
     render();
   } catch (error) {
     target.innerHTML = `<div class="library-empty">${esc(error.message)}</div>`;
@@ -237,7 +358,7 @@ async function bootPersonProfile() {
               ${articles.length ? articles.map((article) => `
                 <article class="person-article">
                   <span>${esc(article.sectionLabel)}</span>
-                  <strong><a href="${articleUrl(article.id)}">${esc(article.title)}</a></strong>
+                  <strong><a href="${articleUrl(article.id)}">${esc(article.displayTitle || article.title)}</a></strong>
                   <em>${esc(article.excerpt || "")}</em>
                   <small>${sourceUrl(article)}</small>
                 </article>

@@ -1,6 +1,7 @@
 const profiles = {
   yamu: {
     order: "01",
+    tabTopic: "自由职业 / 一人公司",
     topic: "自由职业 / 一人公司 / 连续创业",
     name: "Yamu",
     hook: "她看起来很自由，但这份自由不是轻飘飘的。",
@@ -33,6 +34,7 @@ const profiles = {
   },
   liujinbu: {
     order: "02",
+    tabTopic: "保险代理 / 职业转型",
     topic: "保险代理 / 基建投资 / 职业转型",
     name: "刘进步",
     hook: "她曾经相信努力会有明确回报，后来学着在变化里重新站稳。",
@@ -65,6 +67,7 @@ const profiles = {
   },
   liunian: {
     order: "03",
+    tabTopic: "离职两年后 / 生活暂停",
     topic: "离职两年后 / 游戏 / 生活暂停",
     name: "流年",
     hook: "他离开工作两年多，没有把生活讲成失败，也没有急着励志翻盘。",
@@ -103,6 +106,7 @@ const profiles = {
   },
   haoxiangyangli: {
     order: "04",
+    tabTopic: "异地婚姻 / 年轻父亲",
     topic: "异地婚姻 / 年轻父亲 / 回乡愿望",
     name: "好想养李",
     hook: "他长期在外做项目，也在学着把钱、家和未来一起撑住。",
@@ -142,6 +146,7 @@ const profiles = {
 
   happyfamily: {
     order: "05",
+    tabTopic: "家庭 / 爱情 / 共同生活",
     topic: "家庭 / 爱情 / 共同生活",
     name: "一个幸福的家庭（暂定）",
     hook: "这一期不只记录某个人，而是记录一个家如何被两个人慢慢种出来。",
@@ -178,9 +183,88 @@ const profiles = {
       }
     ]
   },
+  lingzi: {
+    order: "06",
+    tabTopic: "美术教师 / 重新创作",
+    topic: "美术教师 / 女性成长 / 重新创作",
+    name: "重新成为创作者的她",
+    hook: "她用十年攒出不到两年的自由，想重新成为创作者。",
+    kicker: "第六期人物",
+    summary:
+      "从农村女孩、艺考生、美术教师到母亲，她一直在完成生活的责任，也在为年轻时没有完成的作品争取时间。",
+    line: "我想给自己一个交代。",
+    promo:
+      "用十年换两年，看一个普通人怎样从生活里重新挤出创作的空间。",
+    offer: "整理旧作，尝试插画、漫画、剧本与分镜创作。",
+    offerUrl: "articles/view.html?id=life-aff7e01fd6d0",
+    offerLabel: "读她重新创作的故事",
+    tags: ["美术教师", "女性成长", "重新创作", "婚育与家庭"],
+    question: "她会拿出怎样的作品？又会怎样介绍重新成为创作者的自己？",
+    personUrl: "people/profile.html?id=%E7%AC%AC%E5%85%AD%E6%9C%9F%E5%8F%97%E8%AE%BF%E8%80%85",
+    articles: [
+      {
+        type: "人物故事",
+        title: "用十年换两年：一个美术教师重新成为创作者",
+        desc: "第六期人物故事，从艺考、美术教育、家庭责任写到她重新为创作争取时间。",
+        url: "articles/view.html?id=life-aff7e01fd6d0"
+      },
+      {
+        type: "访谈后记",
+        title: "她完成了世俗对女人的期待，我却听见了难过",
+        desc: "访谈后的自我回望，讨论期待、情绪、家庭边界，以及她真正想要的创作生活。",
+        url: "articles/view.html?id=life-0bad2f00e4d4"
+      }
+    ]
+  },
+  xiaoyu: {
+    order: "07",
+    tabTopic: "心理学 / 读博 / 迷茫",
+    topic: "高校教师 / 心理学博士 / 寻找方向",
+    name: "小鱼",
+    hook: "旧目标已经完成，她仍在为下一段人生寻找方向。",
+    kicker: "第七期人物",
+    summary:
+      "从心理学本科、西班牙留学到高校任教，她曾经很少怀疑下一站在哪里。再次读博，是她不愿在迷茫中停下的一次行动。",
+    line: "我希望五年后的自己，重新成为一个有坚定目标的人。",
+    promo:
+      "从《迷茫没有让她停下》读起，看一个目标明确的人如何面对目标过期后的空白。",
+    offer: "在西班牙攻读心理学博士，也继续寻找下一阶段更坚定的方向。",
+    offerUrl: "articles/view.html?id=life-018155f04bad",
+    offerLabel: "读小鱼的人物故事",
+    tags: ["心理学", "高校教师", "读博", "迷茫与方向"],
+    question: "五年后，她会找到新的坚定方向吗？读博带来的变化，会把她带到哪里？",
+    personUrl: "people/profile.html?id=%E5%B0%8F%E9%B1%BC",
+    articles: [
+      {
+        type: "人物故事",
+        title: "迷茫没有让她停下",
+        desc: "第七期人物故事，记录小鱼从目标清晰到重新寻找方向的过程。",
+        url: "articles/view.html?id=life-018155f04bad"
+      },
+      {
+        type: "访谈后记",
+        title: "博士生也迷茫",
+        desc: "访谈后的回望：当过去的目标到期以后，我们仍然需要重新寻找生活的方向。",
+        url: "articles/view.html?id=life-14ee83830b0b"
+      }
+    ]
+  },
 };
 
 const profileCard = document.querySelector("[data-profile-card]");
+const profileTabsContainer = document.querySelector("[data-profile-tabs]");
+const profileEntries = Object.entries(profiles)
+  .sort(([, left], [, right]) => Number(right.order) - Number(left.order));
+
+if (profileTabsContainer) {
+  profileTabsContainer.innerHTML = profileEntries.map(([id, profile], index) => `
+    <button class="profile-tab${index === 0 ? " active" : ""}" type="button" data-profile="${id}" role="tab" aria-selected="${index === 0 ? "true" : "false"}">
+      <span>${profile.order}</span>
+      <div><strong>${profile.name}</strong><em>${profile.tabTopic || profile.topic}</em></div>
+    </button>
+  `).join("");
+}
+
 const profileTabs = document.querySelectorAll("[data-profile]");
 
 function renderProfileArticle(profile, articleIndex = 0) {
@@ -272,6 +356,8 @@ profileTabs.forEach((tab, index) => {
     activateProfileTab(profileTabs[nextIndex], { focus: true });
   });
 });
+
+if (profileEntries.length) renderProfile(profileEntries[0][0]);
 
 const filterButtons = document.querySelectorAll("[data-filter]");
 const essayCards = document.querySelectorAll("[data-category]");

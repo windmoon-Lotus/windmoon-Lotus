@@ -4,7 +4,8 @@ const titleOverrides = new Map([
   ["人生五年V3-感觉不上班真养人的流年", "流年：不上班真的养人吗？"],
   ["人生五年V4-幸福的一种模样和我的阴暗面", "幸福的一种模样，也照见我的阴暗面"],
   ["人生五年v5后记——在朋友家里，看见一个家庭的支点", "在朋友家里，看见一个家庭的支点"],
-  ["Yamu的故事-发布公众号等公开平台", "Yamu 的故事"]
+  ["Yamu的故事-发布公众号等公开平台", "Yamu 的故事"],
+  ["人生五年V6-她说自己完成了世俗对女人的期待我却听见了难过", "她完成了世俗对女人的期待，我却听见了难过"]
 ]);
 
 const featuredIds = new Set([
@@ -13,7 +14,9 @@ const featuredIds = new Set([
   "life-e60f5bd3bbb1",
   "life-67e5e130a54f",
   "life-cc8cf6a30eb1",
-  "life-a3c5298224a1"
+  "life-a3c5298224a1",
+  "life-0bad2f00e4d4",
+  "life-aff7e01fd6d0"
 ]);
 
 const draftPattern = /(^|[\\/_\s-])todo([\\/_.\s-]|$)|听改记录|主题级剪辑说明/i;

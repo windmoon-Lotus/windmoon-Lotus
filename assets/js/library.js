@@ -321,8 +321,16 @@ async function bootArticleView() {
 
     const response = await fetch(`${rootPrefix}/${article.contentPath}`, { cache: "no-store" });
     if (!response.ok) throw new Error("文章内容加载失败");
-    const markdown = await response.text();
-    target.innerHTML = markdownToHtml(markdown);
+    const sourceText = await response.text();
+    if (article.contentFormat === "html") {
+      const parsed = new DOMParser().parseFromString(sourceText, "text/html");
+      const imported = parsed.querySelector("main > section") || parsed.querySelector("main") || parsed.body;
+      imported.querySelectorAll("script, style").forEach((node) => node.remove());
+      target.classList.add("reader-imported-html");
+      target.innerHTML = imported.innerHTML;
+    } else {
+      target.innerHTML = markdownToHtml(sourceText);
+    }
 
     const relatedTarget = document.querySelector("[data-related-articles]");
     const related = articles
