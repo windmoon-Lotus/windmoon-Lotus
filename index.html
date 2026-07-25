@@ -3,294 +3,272 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>人生五年 | 悠然的长期访谈计划</title>
-    <meta name="description" content="人生五年是一个记录不同的人如何生活、如何选择、如何被时间改变的长期访谈计划。">
+    <title>人生五年 | 记录不同的人，如何走过自己的五年</title>
+    <meta name="description" content="人生五年是一个长期人物访谈计划：记下一个人此刻的回答，五年后再去问一次。读别人的，或写下你自己的。">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="home.css">
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="回到首页">
-        <span class="brand-mark">五</span>
-        <span>人生五年</span>
+    <a class="skip-link" href="#stories">跳到正文</a>
+
+    <header class="topbar">
+      <a class="topbar-brand" href="#top">
+        <span class="rec-dot" aria-hidden="true"></span>
+        <span class="topbar-name">人生五年</span>
+        <span class="topbar-tag">长期访谈计划</span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="#interviewees">读故事</a>
-        <a href="articles/">文章</a>
+      <nav class="topbar-nav" aria-label="主导航">
+        <a href="#stories">读故事</a>
+        <a href="do.html">写你的五年</a>
+        <a href="#essays">随笔</a>
+        <a href="articles/">文章库</a>
         <a href="people/">人物</a>
-        <a href="#about">关于</a>
-        <a href="#participate">投稿</a>
+        <a href="about.html">关于</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Five Years of Life</p>
-          <h1>人生五年</h1>
-          <p class="lead">记录不同的人，如何走过自己的五年。</p>
-          <p class="hero-text">这是悠然发起的长期人物访谈计划。它不急着用职业、收入或标签概括一个人，而是从生活、关系、工作、过往与未来里，慢慢看见一个人如何选择、失去、坚持，也如何被时间改变。</p>
-          <p class="hero-note">他们不是案例，也不是标签。只是一些正在生活、选择、犹豫、坚持的人。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#interviewees">读一个人的五年</a>
-            <a class="button ghost" href="#participate">留下你的五年</a>
+      <!-- 开场：一段访谈节选 -->
+      <section class="stage" aria-label="访谈节选">
+        <div class="stage-ghost" data-stage-ghost aria-hidden="true">07</div>
+        <div class="stage-inner">
+          <p class="stage-meta">
+            <span class="rec-dot rec-dot--live" aria-hidden="true"></span>
+            <span class="mono" data-stage-issue>第七期访谈</span>
+            <span class="stage-meta-sep" aria-hidden="true">·</span>
+            <span class="mono">节选</span>
+          </p>
+          <blockquote class="stage-quote" data-stage-quote-wrap>
+            <p data-stage-quote>我希望五年后的自己，重新成为一个有坚定目标的人。</p>
+          </blockquote>
+          <p class="stage-byline">
+            <strong data-stage-name>小鱼</strong>
+            <span data-stage-situation>高校教师 · 心理学博士在读 · 第七期</span>
+          </p>
+          <p class="stage-invite">读一个人的五年，或者——写下你自己的。</p>
+          <div class="stage-actions">
+            <a class="btn btn--solid" data-stage-link href="articles/view.html?id=life-018155f04bad">读她的故事</a>
+            <a class="btn btn--ghost" href="do.html">写你的五年</a>
+            <button class="btn btn--ghost" type="button" data-stage-next>换一段节选</button>
           </div>
+          <div class="stage-ticks" data-stage-ticks aria-label="选择节选" role="tablist"></div>
         </div>
-        <figure class="hero-media">
-          <img src="assets/interview-notes.png" alt="桌面上的访谈笔记、录音笔和热茶" width="1024" height="1024" fetchpriority="high">
-          <figcaption>访谈从一次具体的倾听开始。</figcaption>
-        </figure>
+        <a class="stage-scroll" href="#stories">往下，读他们的故事<span class="stage-scroll-arrow" aria-hidden="true">↓</span></a>
       </section>
 
-      <section class="section" id="interviewees" aria-labelledby="interviewees-title">
-        <div class="section-heading">
-          <p class="eyebrow">Start Reading</p>
-          <h2 id="interviewees-title">先读最新一期人生五年</h2>
-          <p>这里按最新一期倒序展示访谈入口。先从一个人、一个家庭或一段共同生活开始，再进入人物档案查看完整名单。</p>
+      <!-- 处境索引 -->
+      <section class="section" id="stories" aria-labelledby="stories-title">
+        <div class="section-head" data-reveal>
+          <p class="kicker mono">Index · 处境索引</p>
+          <h2 id="stories-title">你正在经历哪一种？</h2>
+          <p class="section-lede">不按期号，按你此刻正在经历的事。点进去，读一个和你站在相似路口的人。</p>
         </div>
-        <div class="profile-layout">
-          <div class="profile-tabs" role="tablist" aria-label="访谈对象选择" data-profile-tabs></div>
-          <article class="profile-card" data-profile-card>
-            <div class="profile-meta">
-              <span data-profile-order>07</span>
-              <span data-profile-topic>高校教师 / 心理学博士 / 寻找方向</span>
-            </div>
-            <p class="profile-kicker" data-profile-kicker>第七期人物</p>
-            <h3 data-profile-name>小鱼</h3>
-            <p class="profile-hook" data-profile-hook>旧目标已经完成，她仍在为下一段人生寻找方向。</p>
-            <p class="profile-summary" data-profile-summary>从心理学本科、西班牙留学到高校任教，她曾经很少怀疑下一站在哪里。再次读博，是她不愿在迷茫中停下的一次行动。</p>
-            <div class="quote-block">
-              <p data-profile-line>我希望五年后的自己，重新成为一个有坚定目标的人。</p>
-            </div>
-            <div class="profile-promo">
-              <span>从这里读起</span>
-              <p data-profile-promo>从《迷茫没有让她停下》读起，看一个目标明确的人如何面对目标过期后的空白。</p>
-            </div>
-            <div class="profile-offer">
-              <span>TA 正在做</span>
-              <p data-profile-offer>在西班牙攻读心理学博士，也继续寻找下一阶段更坚定的方向。</p>
-              <a class="text-link" href="articles/view.html?id=life-018155f04bad" data-profile-offer-link>读小鱼的人物故事</a>
-            </div>
-            <ul class="tag-list" data-profile-tags>
-              <li>心理学</li>
-              <li>高校教师</li>
-              <li>读博</li>
-              <li>迷茫与方向</li>
-            </ul>
-            <div class="profile-question">
-              <span>五年后追问</span>
-              <p data-profile-question>五年后，她会找到新的坚定方向吗？读博带来的变化，会把她带到哪里？</p>
-            </div>
-            <div class="profile-articles" aria-label="关联文章">
-              <div class="profile-article-tabs" data-profile-article-list></div>
-              <div class="profile-article-current">
-                <span data-profile-article-type>人物故事</span>
-                <h4 data-profile-article-title>迷茫没有让她停下</h4>
-                <p data-profile-article-desc>第七期人物故事，记录小鱼从目标清晰到重新寻找方向的过程。</p>
-                <a class="text-link" href="articles/view.html?id=life-018155f04bad" data-profile-link>阅读这篇文章</a>
-              </div>
-            </div>
-            <div class="profile-actions">
-              <a class="button primary" href="people/profile.html?id=%E5%B0%8F%E9%B1%BC" data-profile-person-link>进入人物介绍</a>
-              <a class="button ghost" href="people/">查看全部人物</a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="intro" id="about" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow">About</p>
-          <h2 id="intro-title">从职业信息，走向更完整的人</h2>
-          <p>悠然 / windmoon-Lotus，网安从业者，也是一个带点理想主义的记录者。早期项目从「百家职业共享」出发，后来慢慢意识到：职业只是入口，真正值得留下来的，是一个人如何生活。</p>
-        </div>
-        <div class="intro-principles" aria-label="项目原则">
-          <article>
-            <span>01</span>
-            <h3>先看见人</h3>
-            <p>职业、收入、身份只是切面，访谈先回到一个人的具体生活。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>记录变化</h3>
-            <p>每隔五年回访一次，让时间参与回答当下的问题。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>真实克制</h3>
-            <p>尊重授权与边界，把受访者的确认、修改和撤回权放在前面。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section participate" id="participate" aria-labelledby="participate-title">
-        <div>
-          <p class="eyebrow">Participate</p>
-          <h2 id="participate-title">欢迎你留下自己记录的人生五年</h2>
-        </div>
-        <div class="participate-card">
-          <p>你可以成为受访者，讲述此刻的生活；也可以投稿你正在记录的人生五年，或推荐一个值得被听见的人。项目遵守授权、脱敏、真实与克制原则，受访者保留确认、修改和撤回权。</p>
-          <p>投稿或联系：公众号 / 小红书搜索「事象记录」。</p>
-          <a class="button primary" href="https://github.com/windmoon-Lotus" target="_blank" rel="noreferrer">查看 GitHub 项目</a>
-        </div>
-      </section>
-
-      <section class="section article-modules" id="reading" aria-labelledby="modules-title">
-        <div class="section-heading">
-          <p class="eyebrow">More Reading</p>
-          <h2 id="modules-title">继续阅读</h2>
-          <p>读完一个人之后，也可以按访谈、人物、随笔和旧项目材料继续往下走。</p>
-        </div>
-        <div class="module-grid">
-          <a class="module-card" href="life/"><span>Life</span><h3>人生五年访谈</h3><p>受访者主线与五年后回访入口。</p></a>
-          <a class="module-card" href="people/"><span>People</span><h3>人物档案</h3><p>受访者、贡献人和相关访谈的聚合页。</p></a>
-          <a class="module-card" href="career/"><span>Career</span><h3>职业访谈</h3><p>职业共享阶段的人物和岗位材料。</p></a>
-          <a class="module-card" href="essays/"><span>Essays</span><h3>随笔</h3><p>阅读、教育、AI、生活实践与项目复盘。</p></a>
-          <a class="module-card" href="templates/"><span>Templates</span><h3>共创模板</h3><p>问卷、访谈报告与职业百科模板。</p></a>
-        </div>
-      </section>
-
-      <section class="section section-band" id="repositories" aria-labelledby="repositories-title">
-        <div class="section-heading">
-          <p class="eyebrow">Project Archive</p>
-          <h2 id="repositories-title">原始资料库</h2>
-          <p>网站负责阅读与浏览，GitHub 保留可追溯的原始材料、模板、规则和项目沉淀。</p>
-        </div>
-        <div class="module-grid">
-          <a class="module-card" href="https://github.com/windmoon-Lotus/life5years" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <h3>人生五年素材库</h3>
-            <p>长期人物访谈计划的原始文本、项目说明和后续整理材料。</p>
-          </a>
-          <a class="module-card" href="https://github.com/windmoon-Lotus/Career-Information-Sharing" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <h3>百家职业共享资料库</h3>
-            <p>职业访谈、职业百科、共创模板、管理规范和允许公开的原始材料。</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="section section-band" id="essays" aria-labelledby="essays-title">
-        <div class="section-heading">
-          <p class="eyebrow">Notes</p>
-          <h2 id="essays-title">随笔是问题意识</h2>
-          <p>这些文字解释了访谈为什么会问到教育、AI、关系、农村、金钱和生活选择，也保留项目一路转向的痕迹。</p>
-        </div>
-        <div class="filter-bar" aria-label="随笔筛选">
-          <button class="filter-button active" type="button" data-filter="all">全部</button>
-          <button class="filter-button" type="button" data-filter="growth">成长与教育</button>
-          <button class="filter-button" type="button" data-filter="era">时代与能力</button>
-          <button class="filter-button" type="button" data-filter="life">生活实践</button>
-        </div>
-        <div class="essay-grid">
-          <article class="essay-card" data-category="growth">
-            <span>成长与教育</span>
-            <h3>县中孩子长大后的感慨</h3>
-            <p>从村小、镇校、县中到计算机网络专业，回望普通县中路径里的误区、局限与可能。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-          <article class="essay-card" data-category="growth">
-            <span>成长与教育</span>
-            <h3>读书的料与寒门贵子的感慨</h3>
-            <p>借阅读理解底层学子逆流而上的文化，也追问时代变化后旧路径还能留下什么。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-          <article class="essay-card" data-category="era">
-            <span>时代与能力</span>
-            <h3>AI时代，我们还需要怎样学习？</h3>
-            <p>在工具快速变化的时期，重新思考学习、阅读、判断力与人的长期能力。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-          <article class="essay-card" data-category="era">
-            <span>时代与能力</span>
-            <h3>情绪经济和AI的思考</h3>
-            <p>从生活观察切入，讨论情绪价值、克制、陪伴和AI进入日常后的边界。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-          <article class="essay-card" data-category="life">
-            <span>生活实践</span>
-            <h3>海南骑行记</h3>
-            <p>一场极限骑行，把身体、计划、后悔、出发和普通快乐写成可触摸的经历。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-          <article class="essay-card" data-category="life">
-            <span>生活实践</span>
-            <h3>农家研学反思二三事</h3>
-            <p>从一次项目推进的失利里，反思沟通、家庭协作、真实责任和农村实践。</p>
-            <a href="essays/">查看随笔</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="timeline" aria-labelledby="timeline-title">
-        <div class="section-heading">
-          <p class="eyebrow">Project Path</p>
-          <h2 id="timeline-title">从职业共享到人生五年</h2>
-          <p>职业信息共享提供了方法、模板和共创经验；人生五年把镜头继续拉近，回到人的生活、选择与变化。</p>
-        </div>
-        <ol class="timeline">
-          <li>
-            <time>2025.05</time>
-            <div>
-              <h3>最初尝试职业信息共创</h3>
-              <p>希望把真实职业经验沉淀成可公开、可检索、可对照的路径样本。</p>
-            </div>
+        <ol class="index" data-reveal>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-018155f04bad">
+              <span class="index-top">
+                <span class="index-sit">目标用完了，下一站还没来</span>
+                <span class="index-who mono">小鱼 · 第七期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「我希望五年后的自己，重新成为一个有坚定目标的人。」</span>
+            </a>
           </li>
-          <li>
-            <time>2025.12</time>
-            <div>
-              <h3>开启第一批职业访谈</h3>
-              <p>功能测试、网安、电力、陶艺、影视、美术、心理咨询等样本逐渐出现。</p>
-            </div>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-4c03b7637a91">
+              <span class="index-top">
+                <span class="index-sit">不上班的日子，怎么过</span>
+                <span class="index-who mono">流年 · 第三期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「不上班是为了什么？肯定不是为了委屈自己。」</span>
+            </a>
           </li>
-          <li>
-            <time>2026.03</time>
-            <div>
-              <h3>项目方向发生转折</h3>
-              <p>单纯记录岗位信息已不够，人的处境、选择、关系和长期变化同样重要。</p>
-            </div>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-a3c5298224a1">
+              <span class="index-top">
+                <span class="index-sit">换了赛道，想重新站稳</span>
+                <span class="index-who mono">刘进步 · 第二期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「一生努力，一生被爱。」</span>
+            </a>
           </li>
-          <li>
-            <time>2026.04</time>
-            <div>
-              <h3>「人生五年」形成</h3>
-              <p>计划每隔五年回访受访者，记录一个人在时间跨度里的变化。</p>
-            </div>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-e473fc8264e0">
+              <span class="index-top">
+                <span class="index-sit">一个人撑着钱、家和回乡</span>
+                <span class="index-who mono">好想养李 · 第四期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「人生并不总是在一个人想清楚以后才开始。」</span>
+            </a>
+          </li>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-cc8cf6a30eb1">
+              <span class="index-top">
+                <span class="index-sit">自由职业，自由不轻</span>
+                <span class="index-who mono">Yamu · 第一期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「相信人生的意义藏在风、雨、阳光和每一餐饭里。」</span>
+            </a>
+          </li>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-aff7e01fd6d0">
+              <span class="index-top">
+                <span class="index-sit">用十年换两年，重新创作</span>
+                <span class="index-who mono">重新成为创作者的她 · 第六期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「我想给自己一个交代。」</span>
+            </a>
+          </li>
+          <li class="index-row">
+            <a href="articles/view.html?id=life-f5136c0f1784">
+              <span class="index-top">
+                <span class="index-sit">两个人，把一个家种出来</span>
+                <span class="index-who mono">一个幸福的家庭 · 第五期</span>
+                <span class="index-arrow" aria-hidden="true">→</span>
+              </span>
+              <span class="index-quote">「幸福不是被讲出来的，而是在一顿饭、一次接住、一个家里长出来的。」</span>
+            </a>
           </li>
         </ol>
       </section>
 
-      <section class="section section-band" id="thanks" aria-labelledby="thanks-title">
-        <div class="section-heading">
-          <p class="eyebrow">Trust</p>
-          <h2 id="thanks-title">贡献者是信任来源</h2>
-          <p>这些人用访谈、建议、模板、审校和反馈，把项目从一个想法推向可以继续生长的行动。</p>
+      <!-- 五年机制 -->
+      <section class="band band--method" id="fiveyears" aria-labelledby="fy-title">
+        <div class="band-inner" data-reveal>
+          <p class="kicker mono kicker--light">Method · 五年机制</p>
+          <h2 id="fy-title">同一个问题，<br>我们会问两次。</h2>
+          <p class="band-lede">「人生五年」不是一次性访谈。我们先记下一个人此刻的回答，五年后再去问一次。</p>
+          <div class="track">
+            <div class="track-node">
+              <span class="mono track-year">2026</span>
+              <strong>第一次访谈</strong>
+              <p>「五年后，你会在哪里？」</p>
+            </div>
+            <div class="track-line" aria-hidden="true"><span class="track-dot"></span></div>
+            <div class="track-node">
+              <span class="mono track-year">2031</span>
+              <strong>回访</strong>
+              <p>「2026 年你说过的话，我们还给你留着。」</p>
+            </div>
+          </div>
+          <p class="band-note">第七期留下的追问是：<em>「五年后，她会找到新的坚定方向吗？」</em>——答案交给时间。</p>
         </div>
-        <div class="thanks-grid">
-          <article>
-            <span>受访者</span>
-            <h3>流年、Secur1ty0、Maggie、Lc、六零等</h3>
-            <p>提供职业与人生的真实样本，让项目能从抽象问题进入具体生活。</p>
-            <a class="text-link" href="people/">查看人物档案</a>
-          </article>
-          <article>
-            <span>项目建议</span>
-            <h3>Secur1ty0、路过的好心人、琼楠</h3>
-            <p>帮助澄清目标用户、贡献机制、访谈流程和项目定位。</p>
-          </article>
-          <article>
-            <span>模板与审校</span>
-            <h3>第二个路过的好心人</h3>
-            <p>评审访谈模板，提出模块重构建议，让访谈更自然也更可执行。</p>
-          </article>
+      </section>
+
+      <!-- 随笔 -->
+      <section class="section" id="essays" aria-labelledby="essays-title">
+        <div class="section-head" data-reveal>
+          <p class="kicker mono">Notes · 随笔</p>
+          <h2 id="essays-title">访谈之外，<br>还有这些思考。</h2>
+          <p class="section-lede">教育、AI、农村、金钱、关系——这些随笔解释了访谈为什么会问到那些问题，也保留项目一路转向的痕迹。</p>
+        </div>
+        <div class="essays" data-reveal>
+          <a class="essay-feature" href="articles/view.html?id=life-c325113c7332">
+            <span class="mono essay-tag">成长与教育</span>
+            <h3>县中孩子长大后的感慨</h3>
+            <p>从村小、镇校、县中到计算机网络专业，回望普通县中路径里的误区、局限与可能。</p>
+            <span class="essay-more">读这篇<span class="essay-more-arrow" aria-hidden="true">→</span></span>
+          </a>
+          <ul class="essay-list">
+            <li><a href="articles/view.html?id=life-121edc98e399"><span class="mono essay-list-tag">时代与能力</span><strong>AI 时代，我们还需要怎样学习？</strong></a></li>
+            <li><a href="articles/view.html?id=life-cdf20bf28455"><span class="mono essay-list-tag">成长与教育</span><strong>读书的料与寒门贵子的感慨</strong></a></li>
+            <li><a href="articles/view.html?id=life-29de10e1fef9"><span class="mono essay-list-tag">生活实践</span><strong>回不去的农村，留不下的城市</strong></a></li>
+            <li><a href="articles/view.html?id=life-d2139318e2d6"><span class="mono essay-list-tag">时代与能力</span><strong>情绪经济和 AI 的思考</strong></a></li>
+            <li><a href="articles/view.html?id=life-158b10f480dd"><span class="mono essay-list-tag">生活实践</span><strong>海南骑行记</strong></a></li>
+            <li><a href="articles/view.html?id=life-4b2447a8be52"><span class="mono essay-list-tag">生活实践</span><strong>农家研学反思二三事</strong></a></li>
+          </ul>
+        </div>
+        <p class="section-foot" data-reveal><a class="text-link" href="essays/">全部随笔<span aria-hidden="true">→</span></a></p>
+      </section>
+
+      <!-- 关于（精简） -->
+      <section class="section section--about" id="about" aria-labelledby="about-title">
+        <div class="about" data-reveal>
+          <div class="about-copy">
+            <p class="kicker mono">About · 关于</p>
+            <h2 id="about-title">记录的人，<br>是悠然。</h2>
+            <p>悠然 / windmoon-Lotus，网安从业者，也是一个带点理想主义的记录者。早期项目从「百家职业共享」出发，后来慢慢意识到：职业只是入口，真正值得留下来的，是一个人如何生活。</p>
+            <div class="about-links">
+              <a class="text-link" href="people/">全部人物<span aria-hidden="true">→</span></a>
+              <a class="text-link" href="articles/">文章库<span aria-hidden="true">→</span></a>
+              <a class="text-link" href="about.html">项目原则与来路<span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <ol class="about-principles">
+            <li>
+              <span class="mono">01</span>
+              <div><h3>先看见人</h3><p>职业、收入、身份只是切面，访谈先回到一个人的具体生活。</p></div>
+            </li>
+            <li>
+              <span class="mono">02</span>
+              <div><h3>记录变化</h3><p>每隔五年回访一次，让时间参与回答当下的问题。</p></div>
+            </li>
+            <li>
+              <span class="mono">03</span>
+              <div><h3>真实克制</h3><p>尊重授权与边界，把受访者的确认、修改和撤回权放在前面。</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 参与：开放三路径 -->
+      <section class="band band--join" id="join" aria-labelledby="join-title">
+        <div class="band-inner" data-reveal>
+          <p class="kicker mono kicker--light">Participate · 参与</p>
+          <h2 id="join-title">你也正在走过<br>自己的五年。</h2>
+          <p class="band-lede">我们希望汇集一份由许多人共同写下的人生记录，让不同的五年在这里相遇。三种方式，开始你的五年。</p>
+          <div class="join-paths">
+            <article class="join-card">
+              <span class="mono join-num">01</span>
+              <h3>在你自己的平台上写</h3>
+              <p>小红书、抖音、公众号，形式不限。带上 #我的人生五年，拿一张引子卡当封面，它就连成一片。</p>
+            </article>
+            <article class="join-card">
+              <span class="mono join-num">02</span>
+              <h3>先写给自己，也行</h3>
+              <p>还没准备好公开？写下来，留一句给五年后的自己。承诺是你的，不在我们这儿。</p>
+            </article>
+            <article class="join-card">
+              <span class="mono join-num">03</span>
+              <h3>想留一份在大本营</h3>
+              <p>发过之后，把稿子发给事象记录，我们用同一套版式收录，尊重你的确认与撤回权。</p>
+            </article>
+          </div>
+          <p class="join-trust mono">写你自己 · 形式不限 · 渠道不限 · 随时可改可撤</p>
+          <div class="join-actions" id="join-cta">
+            <a class="btn btn--solid" href="do.html">看怎么写 · 拿引子卡</a>
+            <span class="join-contact mono">收录 / 联系：公众号「事象记录」</span>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>人生五年 / Five Years of Life</p>
-      <p>记录现在，眺望未来，立足当下，回首当年。</p>
+    <footer class="footer">
+      <div class="footer-top">
+        <p class="footer-brand"><span class="rec-dot" aria-hidden="true"></span>人生五年 <span class="mono">/ Five Years of Life</span></p>
+        <nav class="footer-nav" aria-label="页脚导航">
+          <a href="do.html">写你的五年</a>
+          <a href="articles/">文章库</a>
+          <a href="people/">人物</a>
+          <a href="life/">人生五年访谈</a>
+          <a href="career/">职业访谈</a>
+          <a href="essays/">随笔</a>
+          <a href="templates/">共创模板</a>
+          <a href="about.html">关于</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>记录现在，眺望未来，立足当下，回首当年。</p>
+        <p class="mono">© 2026 人生五年 · windmoon-Lotus</p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>

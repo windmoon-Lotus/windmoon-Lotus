@@ -1,0 +1,445 @@
+/* ============================================================
+   人生五年 · 共享皮肤 site.css
+   作用：把整站（首页 + 所有子页）拉进同一套暖土色设计语言。
+   - 暖色 token（覆盖旧 styles.css 的冷色变量）
+   - 衬线标题 / 等宽标签 / 系统字体（国内零依赖）
+   - 旧顶栏 .site-header / 旧页脚 .site-footer 重染为暖咖深色条
+   - 旧标签 / 卡片 / 按钮 暖化
+   - 共享新模块：band / 参与三路径 / btn / kicker
+   - 滚动显现 / 跳过链接 / 录音点 / 降低动态
+   加载顺序：子页 = styles.css 之后；首页 = home.css 之前。
+   ============================================================ */
+
+:root {
+  --paper: #f6ecd6;
+  --paper-2: #efe1c6;
+  --surface: #fbf3e2;
+  --card: #fcf5e4;
+
+  --ink: #2b2118;
+  --ink-soft: #574a3b;
+  --muted: #8a7a63;
+  --line: #e3d4b4;
+
+  --green: #4a6b43;        /* 仅子页遗留绿色元素用，作暖土互补色 */
+  --green-dark: #3a5436;
+
+  --rust: #b1542c;
+  --rust-deep: #8d3f1d;
+  --gold: #cf9a3f;
+  --amber: #d98a3a;        /* 高光 / 录音点 / 活元素 */
+
+  --olive: #3a4521;        /* 五年机制带：土绿 */
+  --olive-deep: #2c3519;
+
+  --night: #241813;        /* 暖咖深色：开场 / 页脚 / 顶栏 */
+  --night-2: #2e2017;
+
+  --cream: #f6ecd6;
+  --cream-dim: rgba(246, 236, 214, 0.62);
+
+  --shadow: 0 24px 60px rgba(43, 33, 24, 0.16);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --serif: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC",
+    "Source Han Serif CN", "SimSun", "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei",
+    "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", "Consolas",
+    "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body { -webkit-font-smoothing: antialiased; }
+
+:where(a, button):focus-visible {
+  outline: 3px solid rgba(217, 138, 58, 0.55);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.mono { font-family: var(--mono); }
+
+/* ---------- 衬线标题 / 等宽标签（覆盖旧无衬线） ---------- */
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+/* ---------- 录音点（暖琥珀，非红灯） ---------- */
+.rec-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--amber);
+  animation: rec-pulse 2.4s ease-out infinite;
+}
+@keyframes rec-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(217, 138, 58, 0.5); }
+  70% { box-shadow: 0 0 0 9px rgba(217, 138, 58, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(217, 138, 58, 0); }
+}
+
+/* ============================================================
+   旧顶栏 .site-header → 暖咖深色条（子页沿用旧标记）
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px clamp(18px, 5vw, 64px);
+  background: rgba(36, 24, 19, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(246, 236, 214, 0.1);
+  color: var(--cream);
+}
+
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--cream);
+}
+/* 把旧的绿色「五」圆变成暖琥珀脉动点 */
+.site-header .brand-mark {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  animation: rec-pulse 2.4s ease-out infinite;
+}
+.site-header .brand::after {
+  content: "长期访谈计划";
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: var(--cream-dim);
+  padding: 3px 8px;
+  border: 1px solid rgba(246, 236, 214, 0.22);
+  border-radius: 999px;
+}
+
+.site-header .site-nav {
+  display: flex;
+  gap: clamp(14px, 2.4vw, 28px);
+  font-size: 14px;
+  color: var(--cream-dim);
+}
+.site-header .site-nav a {
+  position: relative;
+  padding: 6px 0;
+  border-bottom: 0;
+  transition: color 0.25s;
+}
+.site-header .site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+}
+.site-header .site-nav a:hover,
+.site-header .site-nav a.active { color: var(--cream); }
+.site-header .site-nav a:hover::after,
+.site-header .site-nav a.active::after { transform: scaleX(1); }
+
+/* ============================================================
+   旧页脚 .site-footer → 暖咖深色（仅 about 等带旧页脚的页面）
+   ============================================================ */
+.site-footer {
+  background: var(--night);
+  color: var(--cream-dim);
+  border-top: 1px solid rgba(246, 236, 214, 0.1);
+}
+
+/* ============================================================
+   旧组件暖化：白卡 → 暖卡；绿标签 → 暖沙标签；绿按钮 → 陶土
+   ============================================================ */
+.module-card,
+.library-card,
+.person-card,
+.reader-shell,
+.person-intro-card,
+.person-info-card,
+.person-sidebar,
+.person-article,
+.reader-related-card,
+.thanks-grid article,
+.library-empty {
+  background: var(--card);
+}
+
+.tag-list li,
+.future-list span,
+.life-person-tags span,
+.library-meta span,
+.reader-meta span,
+.person-tags span,
+.person-links a {
+  background: #f1e4cb;
+  color: var(--rust-deep);
+  border-color: #e0cba2;
+}
+
+.person-current,
+.person-work-card {
+  border-color: #e0cba2;
+  background: #f7f0df;
+}
+
+.person-contact a {
+  border-color: #e0cba2;
+  background: #f1e4cb;
+  color: var(--rust-deep);
+}
+.contact-empty {
+  border-color: #e0cba2;
+  background: var(--surface);
+}
+
+.button.primary {
+  background: var(--rust);
+  border-color: var(--rust);
+}
+.button.primary:hover { background: var(--rust-deep); }
+.button.ghost {
+  color: var(--rust-deep);
+  border-color: var(--rust);
+}
+
+.text-link { color: var(--rust-deep); }
+
+.library-status-filter button.active,
+.library-status-filter button:hover {
+  background: var(--rust);
+  border-color: var(--rust);
+}
+.people-pagination button { color: var(--rust-deep); }
+.people-pagination button:hover:not(:disabled) {
+  background: var(--rust);
+  border-color: var(--rust);
+}
+
+/* ============================================================
+   共享新模块：kicker / band / 参与三路径 / btn
+   ============================================================ */
+.kicker {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin: 0 0 18px;
+}
+.kicker--light { color: var(--amber); }
+
+.band {
+  position: relative;
+  padding: clamp(76px, 11vw, 140px) clamp(20px, 7vw, 96px);
+  color: var(--cream);
+}
+.band h2 { color: var(--cream); }
+.band-lede {
+  margin: 20px 0 0;
+  max-width: 640px;
+  font-size: 17px;
+  color: var(--cream-dim);
+}
+.band-note {
+  margin: clamp(34px, 5vw, 48px) 0 0;
+  max-width: 680px;
+  font-size: 16px;
+  color: var(--cream-dim);
+}
+.band-note em {
+  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--amber);
+}
+
+.band--join {
+  background:
+    radial-gradient(900px 500px at 8% 100%, rgba(217, 138, 58, 0.2), transparent 55%),
+    repeating-linear-gradient(
+      to bottom, transparent 0, transparent 46px,
+      rgba(246, 236, 214, 0.03) 46px, rgba(246, 236, 214, 0.03) 47px
+    ),
+    linear-gradient(150deg, #a8542b, var(--rust-deep) 62%);
+}
+
+.band-inner { max-width: 1040px; }
+
+/* 参与三路径 */
+.join-paths {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: clamp(36px, 5vw, 52px);
+}
+.join-card {
+  padding: clamp(22px, 3vw, 30px);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 16px 40px rgba(43, 33, 24, 0.22);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s;
+}
+.join-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 26px 56px rgba(43, 33, 24, 0.3);
+}
+.join-num {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--rust);
+  margin-bottom: 14px;
+}
+.join-card h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.join-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+.join-trust {
+  margin: clamp(26px, 4vw, 36px) 0 0;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--cream-dim);
+}
+
+.join-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 22px;
+}
+.join-contact {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--cream-dim);
+}
+
+/* 按钮（深色背景上） */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 11px 26px;
+  border-radius: 3px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.25s var(--ease), background 0.25s, color 0.25s,
+    border-color 0.25s, box-shadow 0.25s;
+}
+.btn--solid { background: var(--cream); color: var(--night); }
+.btn--solid:hover {
+  background: var(--amber);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--cream);
+  border-color: rgba(246, 236, 214, 0.35);
+}
+.btn--ghost:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   滚动显现 / 跳过链接
+   ============================================================ */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+[data-reveal].is-in { opacity: 1; transform: none; }
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 60;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 14px;
+  border-radius: 0 0 6px 6px;
+  transition: top 0.25s var(--ease);
+}
+.skip-link:focus { top: 0; }
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 900px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .site-header .site-nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .join-paths { grid-template-columns: 1fr; }
+}
+
+/* ---------- 降低动态 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-reveal] { opacity: 1; transform: none; }
+}
