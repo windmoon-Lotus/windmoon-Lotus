@@ -1,0 +1,131 @@
+{
+  "issues": [
+    {
+      "order": 1,
+      "name": "Yamu",
+      "indexTitle": "自由职业，自由不轻",
+      "stageSituation": "自由职业 · 一人公司 · 第一期",
+      "quote": "相信人生的意义藏在风、雨、阳光和每一餐饭里。",
+      "question": "五年后，她会怎样理解自由与生活？",
+      "storySourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/Yamu的故事-发布公众号等公开平台.md",
+      "afterwordSourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/人生五年V1——破茧成蝶的自由职业者Yamu.md",
+      "readLabel": "读她的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 2,
+      "name": "刘进步",
+      "indexTitle": "换了赛道，想重新站稳",
+      "stageSituation": "保险代理 · 前基建投资 · 第二期",
+      "quote": "一生努力，一生被爱。",
+      "question": "五年后，他会在新的职业道路上站稳吗？",
+      "storySourcePath": "人生五年/20260425-访谈保险代理人刘进步/刘进步的故事.md",
+      "afterwordSourcePath": "人生五年/20260425-访谈保险代理人刘进步/人生五年V2——访谈保险代理人刘进步-发布公众号等公开平台.md",
+      "readLabel": "读他的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 3,
+      "name": "流年",
+      "indexTitle": "不上班的日子，怎么过",
+      "stageSituation": "离职两年 · 功能测试出身 · 第三期",
+      "quote": "不上班是为了什么？肯定不是为了委屈自己。",
+      "question": "五年后，他会回到职场，还是找到另一种生活？",
+      "storySourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/流年的故事.md",
+      "afterwordSourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/人生五年V3-感觉不上班真养人的流年.md",
+      "readLabel": "读他的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 4,
+      "name": "好想养李",
+      "indexTitle": "一个人撑着钱、家和回乡",
+      "stageSituation": "视频监控部署工程师 · 年轻父亲 · 第四期",
+      "quote": "人生并不总是在一个人想清楚以后才开始。",
+      "question": "五年后，他能回到家人身边生活吗？",
+      "storySourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-顾家的人也在找路-受访者的故事.md",
+      "afterwordSourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-幸福的一种模样和我的阴暗面.md",
+      "readLabel": "读他的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 5,
+      "name": "一个家庭的支点",
+      "indexTitle": "两个人，把一个家种出来",
+      "stageSituation": "爱情 · 共同生活 · 第五期",
+      "quote": "幸福不是被讲出来的，而是在一顿饭、一次接住、一个家里长出来的。",
+      "question": "五年后，这个家会长成什么模样？",
+      "storySourcePath": "人生五年/20260613-从电影情节般的爱情，到她亲手种下的真实/2026-0613_从电影情节般的爱情，到她亲手种下的真实.md",
+      "afterwordSourcePath": "人生五年/20260613-从电影情节般的爱情，到她亲手种下的真实/人生五年v5后记——在朋友家里，看见一个家庭的支点.md",
+      "readLabel": "读这个家的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 6,
+      "name": "重新成为创作者的她",
+      "indexTitle": "用十年换两年，重新创作",
+      "stageSituation": "美术教师 · 母亲 · 第六期",
+      "quote": "我想给自己一个交代。",
+      "question": "五年后，她会拿出属于自己的作品吗？",
+      "storySourcePath": "人生五年/20260628/用十年换两年：一个美术教师重新成为创作者-受访者故事.md",
+      "afterwordSourcePath": "人生五年/20260628/人生五年V6-她说自己完成了世俗对女人的期待我却听见了难过.md",
+      "readLabel": "读她的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 7,
+      "name": "小鱼",
+      "indexTitle": "目标用完了，下一站还没来",
+      "stageSituation": "高校教师 · 心理学博士在读 · 第七期",
+      "quote": "我希望五年后的自己，重新成为一个有坚定目标的人。",
+      "question": "五年后，她会找到新的坚定方向吗？",
+      "storySourcePath": "人生五年/20260712-小鱼/迷茫没有让她停下-公众号排版.html",
+      "afterwordSourcePath": "人生五年/20260712-小鱼/博士生也迷茫：当目标过期以后-访谈后记-公众号排版.html",
+      "readLabel": "读她的故事",
+      "visibility": "published"
+    },
+    {
+      "order": 8,
+      "name": "第八期受访者",
+      "indexTitle": "五年后，再决定是否公开",
+      "stageSituation": "准大学生 · 第八期",
+      "quote": "她不是某一段痛苦，也不是某一个标签，她还一直在拼命地向上。",
+      "question": "五年后，她是否愿意让世界看到这段记录？",
+      "storySourcePath": "人生五年/第八期/公开文章.md",
+      "storyLabel": "访谈文章",
+      "readLabel": "读这期文章",
+      "visibility": "published",
+      "profile": {
+        "id": "life-08-interviewee",
+        "role": "人生五年第八期受访者",
+        "headline": "一位即将进入大学、仍在认真走向未来的年轻人。",
+        "bio": "文章记录了访谈者在这次相遇后的观察与反思；访谈音频不公开，人物信息继续保持克制与匿名。",
+        "tags": ["准大学生", "成长", "尊重边界"],
+        "notes": ["第八期文章公开，访谈音频不公开。", "完整访谈是否进一步公开，五年后再由受访者决定。"],
+        "collaboration": "本期不开放音频与受访者联系方式。"
+      }
+    },
+    {
+      "order": 9,
+      "name": "i747",
+      "indexTitle": "稳定的工作，也要留住自己的生活",
+      "stageSituation": "基层公务员 · 健身与游戏 · 第九期",
+      "quote": "我不太适合特别忙的部门。我宁愿有自己的生活。",
+      "question": "五年后，他是否仍能按自己的节奏向前走？",
+      "storySourcePath": "人生五年/20260808-i747/第九期/公众号HTML与封面/从网吧足球到基层工作-人物正传.md",
+      "afterwordSourcePath": "人生五年/20260808-i747/第九期/公众号HTML与封面/我为什么想采访一名基层公务员-访谈后记.md",
+      "readLabel": "读他的故事",
+      "visibility": "published",
+      "profile": {
+        "id": "life-09-i747",
+        "role": "人生五年第九期受访者",
+        "headline": "一名重视生活边界、也在寻找更合适平台的年轻基层公务员。",
+        "bio": "从网吧、足球和计算机专业走到基层工作，他认可稳定与公共服务的价值，也不愿让工作挤走健身、朋友、游戏和自己的生活。",
+        "tags": ["基层公务员", "生活边界", "稳定与上进", "健身"],
+        "notes": ["第九期公开内容保持匿名，不展示具体地区与单位。"],
+        "currentWork": "在基层工作，同时准备下一次考试，并维持健身、做饭和朋友之间的日常。",
+        "collaboration": "暂未公开联系方式；推荐先阅读人物故事与访谈后记。"
+      }
+    }
+  ]
+}

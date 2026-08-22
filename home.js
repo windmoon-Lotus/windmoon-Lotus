@@ -7,71 +7,26 @@ const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").mat
 
 /* ---------- 访谈摘录轮换（手动） ---------- */
 
-const voices = [
-  {
-    order: "07",
-    issue: "第七期访谈",
-    name: "小鱼",
-    situation: "高校教师 · 心理学博士在读 · 第七期",
-    quote: "我希望五年后的自己，重新成为一个有坚定目标的人。",
-    url: "articles/view.html?id=life-018155f04bad",
-    read: "读她的故事",
-  },
-  {
-    order: "03",
-    issue: "第三期访谈",
-    name: "流年",
-    situation: "离职两年 · 功能测试出身 · 第三期",
-    quote: "不上班是为了什么？肯定不是为了委屈自己。",
-    url: "articles/view.html?id=life-4c03b7637a91",
-    read: "读他的故事",
-  },
-  {
-    order: "06",
-    issue: "第六期访谈",
-    name: "重新成为创作者的她",
-    situation: "美术教师 · 母亲 · 第六期",
-    quote: "我想给自己一个交代。",
-    url: "articles/view.html?id=life-aff7e01fd6d0",
-    read: "读她的故事",
-  },
-  {
-    order: "04",
-    issue: "第四期访谈",
-    name: "好想养李",
-    situation: "视频监控部署工程师 · 年轻父亲 · 第四期",
-    quote: "人生并不总是在一个人想清楚以后才开始。",
-    url: "articles/view.html?id=life-e473fc8264e0",
-    read: "读他的故事",
-  },
-  {
-    order: "02",
-    issue: "第二期访谈",
-    name: "刘进步",
-    situation: "保险代理 · 前基建投资 · 第二期",
-    quote: "一生努力，一生被爱。",
-    url: "articles/view.html?id=life-a3c5298224a1",
-    read: "读她的故事",
-  },
-  {
-    order: "05",
-    issue: "第五期访谈",
-    name: "一个幸福的家庭",
-    situation: "爱情 · 共同生活 · 第五期",
-    quote: "幸福不是被讲出来的，而是在一顿饭、一次接住、一个家里长出来的。",
-    url: "articles/view.html?id=life-f5136c0f1784",
-    read: "读这个家的故事",
-  },
-  {
-    order: "01",
-    issue: "第一期访谈",
-    name: "Yamu",
-    situation: "自由职业 · 一人公司 · 第一期",
-    quote: "相信人生的意义藏在风、雨、阳光和每一餐饭里。",
-    url: "articles/view.html?id=life-cc8cf6a30eb1",
-    read: "读她的故事",
-  },
-];
+let voices = [];
+
+const chineseOrders = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+
+function issueLabel(order) {
+  return `第${chineseOrders[order] || order}期`;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function articleUrl(article) {
+  return `articles/view.html?id=${encodeURIComponent(article.id)}`;
+}
 
 const el = {
   ghost: document.querySelector("[data-stage-ghost]"),
@@ -109,6 +64,7 @@ function markTicks() {
 
 function apply(index) {
   const voice = voices[index];
+  if (!voice) return;
   el.ghost.textContent = voice.order;
   el.issue.textContent = voice.issue;
   el.quote.textContent = voice.quote;
@@ -120,6 +76,7 @@ function apply(index) {
 }
 
 function show(index) {
+  if (!voices.length) return;
   current = (index + voices.length) % voices.length;
   if (prefersReduced) {
     apply(current);
@@ -134,10 +91,82 @@ function show(index) {
   }, 380);
 }
 
+function renderLifeIndex(issues, articlesBySource) {
+  const target = document.querySelector("[data-life-index]");
+  if (!target) return;
+
+  target.innerHTML = [...issues]
+    .sort((a, b) => b.order - a.order)
+    .map((issue) => {
+      const article = articlesBySource.get(issue.storySourcePath);
+      const quote = issue.quote || issue.publicNote || "这期记录仍在等待合适的公开时刻。";
+      const content = `
+        <span class="index-top">
+          <span class="index-sit">${escapeHtml(issue.indexTitle)}</span>
+          <span class="index-who mono">${escapeHtml(issue.name)} · ${escapeHtml(issueLabel(issue.order))}</span>
+          <span class="index-arrow" aria-hidden="true">→</span>
+        </span>
+        <span class="index-quote">「${escapeHtml(quote)}」</span>`;
+
+      return article && article.status === "published"
+        ? `<li class="index-row"><a href="${articleUrl(article)}">${content}</a></li>`
+        : `<li class="index-row index-row--withheld"><div class="index-entry">${content}</div></li>`;
+    })
+    .join("");
+}
+
+async function bootLifeIssues() {
+  try {
+    const [issueResponse, articleResponse] = await Promise.all([
+      fetch("data/life-issues.json", { cache: "no-store" }),
+      fetch("data/articles.json", { cache: "no-store" })
+    ]);
+    if (!issueResponse.ok || !articleResponse.ok) throw new Error("访谈索引加载失败");
+
+    const [{ issues }, articleData] = await Promise.all([
+      issueResponse.json(),
+      articleResponse.json()
+    ]);
+    const articlesBySource = new Map(
+      (articleData.articles || []).map((article) => [article.sourcePath, article])
+    );
+    const publishedIssues = issues
+      .filter((issue) => issue.visibility === "published")
+      .map((issue) => ({ issue, article: articlesBySource.get(issue.storySourcePath) }))
+      .filter(({ issue, article }) => issue.quote && article?.status === "published")
+      .sort((a, b) => b.issue.order - a.issue.order);
+
+    voices = publishedIssues.map(({ issue, article }) => ({
+      order: String(issue.order).padStart(2, "0"),
+      issue: `${issueLabel(issue.order)}访谈`,
+      name: issue.name,
+      situation: issue.stageSituation,
+      quote: issue.quote,
+      url: articleUrl(article),
+      read: issue.readLabel || "读这期故事"
+    }));
+
+    renderLifeIndex(issues, articlesBySource);
+    const latest = publishedIssues[0]?.issue;
+    if (latest) {
+      document.querySelector("[data-latest-issue]").textContent = issueLabel(latest.order);
+      document.querySelector("[data-latest-question]").textContent = `「${latest.question}」`;
+    }
+
+    if (el.quote && voices.length) {
+      current = 0;
+      buildTicks();
+      apply(current);
+    }
+  } catch (error) {
+    const target = document.querySelector("[data-life-index]");
+    if (target) target.innerHTML = `<li class="index-row index-row--loading">${escapeHtml(error.message)}</li>`;
+  }
+}
+
 if (el.quote) {
-  buildTicks();
-  apply(current);
   if (el.next) el.next.addEventListener("click", () => show(current + 1));
+  bootLifeIssues();
 }
 
 /* ---------- 滚动显现 ---------- */

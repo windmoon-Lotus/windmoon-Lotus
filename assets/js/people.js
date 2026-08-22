@@ -23,6 +23,42 @@ function articleUrl(id) {
   return `${peopleRoot}/articles/view.html?id=${encodeURIComponent(id)}`;
 }
 
+function mergeLifeIssuePeople(people, issues, articles) {
+  const articlesBySource = new Map(articles.map((article) => [article.sourcePath, article]));
+  const peopleById = new Map(people.map((person) => [person.id, person]));
+
+  for (const issue of issues) {
+    const existing = people.find((person) => person.lifeOrder === issue.order);
+    if (!existing && !issue.profile) continue;
+    const sources = [
+      [issue.storySourcePath, issue.storyLabel || "人物故事"],
+      [issue.afterwordSourcePath, issue.afterwordLabel || "访谈后记"]
+    ].filter(([sourcePath]) => sourcePath);
+    const lifeArticles = sources
+      .map(([sourcePath, label]) => {
+        const article = articlesBySource.get(sourcePath);
+        return article ? { id: article.id, label } : null;
+      })
+      .filter(Boolean);
+    const generated = {
+      ...existing,
+      ...issue.profile,
+      id: issue.profile?.id || existing.id,
+      displayName: issue.name || existing.displayName,
+      group: "interviewee",
+      lifeOrder: issue.order,
+      lifeArticles,
+      articleIds: [
+        ...(existing?.articleIds || []).filter((id) => !id.startsWith("life-")),
+        ...lifeArticles.map((item) => item.id)
+      ]
+    };
+    peopleById.set(generated.id, { ...peopleById.get(generated.id), ...generated });
+  }
+
+  return [...peopleById.values()];
+}
+
 function sourceUrl(article) {
   return article.sourceUrl
     ? `<a href="${esc(article.sourceUrl)}" target="_blank" rel="noreferrer">原始素材</a>`
@@ -162,10 +198,12 @@ async function bootPeopleList() {
   const search = document.querySelector("[data-people-search]");
 
   try {
-    const [{ people }, articleData] = await Promise.all([
+    const [peopleData, articleData, issueData] = await Promise.all([
       loadJson("data/people.json"),
-      loadJson("data/articles.json")
+      loadJson("data/articles.json"),
+      loadJson("data/life-issues.json")
     ]);
+    const people = mergeLifeIssuePeople(peopleData.people, issueData.issues || [], articleData.articles || []);
     const articlesById = new Map(articleData.articles.map((article) => [article.id, article]));
     const peoplePageSize = 12;
     const pageState = {
@@ -295,10 +333,12 @@ async function bootPersonProfile() {
   }
 
   try {
-    const [{ people }, articleData] = await Promise.all([
+    const [peopleData, articleData, issueData] = await Promise.all([
       loadJson("data/people.json"),
-      loadJson("data/articles.json")
+      loadJson("data/articles.json"),
+      loadJson("data/life-issues.json")
     ]);
+    const people = mergeLifeIssuePeople(peopleData.people, issueData.issues || [], articleData.articles || []);
     const person = people.find((item) => item.id === id);
     if (!person) {
       target.innerHTML = `<div class="library-empty">没有找到这个人物。</div>`;

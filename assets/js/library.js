@@ -206,7 +206,10 @@ function inlineMarkdown(text) {
 }
 
 function markdownToHtml(markdown) {
-  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const lines = markdown
+    .replace(/^>\s*.*内部初稿.*(?:\r?\n|$)/gm, "")
+    .replace(/\r\n/g, "\n")
+    .split("\n");
   const html = [];
   let paragraph = [];
   let list = [];
@@ -250,6 +253,13 @@ function markdownToHtml(markdown) {
     if (!trimmed) {
       flushParagraph();
       flushList();
+      continue;
+    }
+
+    if (/^(?:-{3,}|_{3,}|\*{3,})$/.test(trimmed)) {
+      flushParagraph();
+      flushList();
+      html.push("<hr>");
       continue;
     }
 

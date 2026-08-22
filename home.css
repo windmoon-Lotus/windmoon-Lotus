@@ -274,10 +274,15 @@ h2 {
   border-top: 1px solid var(--line);
 }
 .index-row { border-bottom: 1px solid var(--line); }
-.index-row a {
+.index-row a,
+.index-entry {
   display: block;
   padding: 6px 10px;
   transition: background 0.3s var(--ease);
+}
+.index-row--loading {
+  padding: 26px 10px;
+  color: var(--muted);
 }
 .index-top {
   display: flex;

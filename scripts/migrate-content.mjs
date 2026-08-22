@@ -1,20 +1,27 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { enrichArticle } from "./content-policy.mjs";
 
-const siteRoot = path.resolve("F:/笔记汇总/git/windmoon-Lotus");
+const scriptRoot = path.dirname(fileURLToPath(import.meta.url));
+const siteRoot = path.resolve(scriptRoot, "..");
+const workspaceRoot = path.resolve(siteRoot, "..");
 const sources = [
   {
     key: "life",
     label: "人生五年",
-    root: path.resolve("F:/笔记汇总/git/人生五年"),
+    root: process.env.LIFE5_SOURCE_ROOT
+      ? path.resolve(process.env.LIFE5_SOURCE_ROOT)
+      : path.resolve(workspaceRoot, "人生五年"),
     sourceBaseUrl: "https://github.com/windmoon-Lotus/life5years/blob/main"
   },
   {
     key: "career",
     label: "百家职业共享",
-    root: path.resolve("F:/笔记汇总/git/百家职业共享大全"),
+    root: process.env.CAREER_SOURCE_ROOT
+      ? path.resolve(process.env.CAREER_SOURCE_ROOT)
+      : path.resolve(workspaceRoot, "百家职业共享大全"),
     sourceBaseUrl: "https://github.com/windmoon-Lotus/Career-Information-Sharing/blob/main"
   }
 ];
@@ -38,10 +45,36 @@ function stripMarkdown(markdown) {
     .trim();
 }
 
+function decodeHtml(value) {
+  return String(value || "")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)));
+}
+
+function stripHtml(html) {
+  return decodeHtml(html)
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function titleFromMarkdown(markdown, filePath) {
   const heading = markdown.match(/^#\s+(.+)$/m);
   if (heading) return heading[1].trim();
   return path.basename(filePath, ".md");
+}
+
+function titleFromHtml(html, filePath) {
+  const title = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]
+    || html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1];
+  return title ? stripHtml(title) : path.basename(filePath, path.extname(filePath));
 }
 
 function sectionFor(sourceKey, relativePath) {
@@ -66,15 +99,43 @@ function sectionFor(sourceKey, relativePath) {
   return ["about", "项目说明"];
 }
 
-async function listMarkdownFiles(dir) {
+function shouldIncludeFile(sourceKey, fullPath, sourceRoot) {
+  const extension = path.extname(fullPath).toLowerCase();
+  if (extension === ".md") return true;
+  if (extension !== ".html" || sourceKey !== "life") return false;
+
+  // 仅兼容直接放在单期目录中的公众号定稿；嵌套的排版稿通常已有同名 Markdown。
+  const relativePath = normalizeSlash(path.relative(sourceRoot, fullPath));
+  return /^人生五年\/[^/]+\/[^/]+\.html$/i.test(relativePath);
+}
+
+function isSupersededSource(relativePath) {
+  return /人生五年\/20260722-[^/]+\/第八期-暂不公开的一期访谈\.md$/i.test(relativePath);
+}
+
+function publicSourceInfo(relativePath, source) {
+  if (/人生五年\/20260722-[^/]+\/第八期-五年后在决定是否公开的一场访谈\.md$/i.test(relativePath)) {
+    return {
+      sourcePath: "人生五年/第八期/公开文章.md",
+      sourceUrl: null
+    };
+  }
+  return {
+    sourcePath: relativePath,
+    sourceUrl: githubSourceUrl(source, relativePath)
+  };
+}
+
+async function listContentFiles(source) {
+  const dir = source.root;
   const entries = await readdir(dir, { withFileTypes: true });
   const files = [];
 
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      files.push(...await listMarkdownFiles(fullPath));
-    } else if (entry.isFile() && entry.name.toLowerCase().endsWith(".md")) {
+      files.push(...await listContentFiles({ ...source, root: fullPath, sourceRoot: source.sourceRoot || dir }));
+    } else if (entry.isFile() && shouldIncludeFile(source.key, fullPath, source.sourceRoot || dir)) {
       files.push(fullPath);
     }
   }
@@ -98,22 +159,29 @@ async function main() {
   const articles = [];
 
   for (const source of sources) {
-    const files = await listMarkdownFiles(source.root);
+    const files = await listContentFiles({ ...source, sourceRoot: source.root });
 
     for (const fullPath of files) {
       const relativePath = path.relative(source.root, fullPath);
       const normalizedRelative = normalizeSlash(relativePath);
-      const markdown = await readFile(fullPath, "utf8");
+      if (isSupersededSource(normalizedRelative)) continue;
+
+      const sourceText = await readFile(fullPath, "utf8");
+      const extension = path.extname(fullPath).toLowerCase();
+      const contentFormat = extension === ".html" ? "html" : "markdown";
       const [section, sectionLabel] = sectionFor(source.key, normalizedRelative);
       const id = makeId(source.key, normalizedRelative);
       const outputDir = path.join(contentRoot, section);
-      const outputPath = path.join(outputDir, `${id}.md`);
-      const text = stripMarkdown(markdown);
-      const title = titleFromMarkdown(markdown, fullPath);
+      const outputPath = path.join(outputDir, `${id}${extension}`);
+      const text = contentFormat === "html" ? stripHtml(sourceText) : stripMarkdown(sourceText);
+      const title = contentFormat === "html"
+        ? titleFromHtml(sourceText, fullPath)
+        : titleFromMarkdown(sourceText, fullPath);
       const sourceStat = await stat(fullPath);
+      const publicSource = publicSourceInfo(normalizedRelative, source);
 
       await mkdir(outputDir, { recursive: true });
-      await writeFile(outputPath, markdown, "utf8");
+      await writeFile(outputPath, sourceText, "utf8");
 
       articles.push(enrichArticle({
         id,
@@ -122,12 +190,13 @@ async function main() {
         sourceProjectLabel: source.label,
         section,
         sectionLabel,
-        sourcePath: normalizedRelative,
-        sourceUrl: githubSourceUrl(source, normalizedRelative),
+        sourcePath: publicSource.sourcePath,
+        sourceUrl: publicSource.sourceUrl,
         contentPath: normalizeSlash(path.relative(siteRoot, outputPath)),
         excerpt: text.slice(0, 180),
         wordCount: text.length,
-        updatedAt: sourceStat.mtime.toISOString()
+        updatedAt: sourceStat.mtime.toISOString(),
+        contentFormat
       }));
     }
   }
@@ -156,7 +225,7 @@ async function main() {
     "utf8"
   );
 
-  console.log(`Migrated ${articles.length} markdown articles into ${contentRoot}`);
+  console.log(`Migrated ${articles.length} articles into ${contentRoot}`);
 }
 
 main().catch((error) => {
