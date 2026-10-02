@@ -1,1 +1,3 @@
 .gbrain/brain.pglite/
+.playwright-cli/
+output/playwright/

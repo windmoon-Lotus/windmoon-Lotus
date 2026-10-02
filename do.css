@@ -494,6 +494,16 @@
   text-align: center;
 }
 
+.submit-steps {
+  max-width: 42em;
+  margin-top: 28px;
+  padding-left: 1.5em;
+  color: var(--cream-dim);
+  line-height: 1.9;
+  scroll-margin-top: 130px;
+}
+.submit-steps li + li { margin-top: 10px; }
+
 /* ============================================================
    响应式
    ============================================================ */

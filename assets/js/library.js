@@ -294,6 +294,36 @@ function markdownToHtml(markdown) {
   return html.join("\n");
 }
 
+function resolveContentLinks(target, article, articles) {
+  const sourceBase = new URL(article.sourcePath, "https://source.local/");
+  const sameProject = articles.filter((item) => item.sourceProject === article.sourceProject && item.status !== "draft");
+  for (const link of target.querySelectorAll("a[href]")) {
+    const href = link.getAttribute("href");
+    if (href.startsWith("#")) continue;
+    let url;
+    try { url = new URL(href, sourceBase); } catch { link.removeAttribute("href"); continue; }
+    if (!["https:", "http:", "mailto:"].includes(url.protocol)) {
+      link.removeAttribute("href");
+      continue;
+    }
+    if (url.origin !== sourceBase.origin) continue;
+    let sourcePath;
+    try { sourcePath = decodeURIComponent(url.pathname.slice(1)); } catch { continue; }
+    let match = sameProject.find((item) => item.sourcePath === sourcePath);
+    if (!match) {
+      const candidates = sameProject.filter((item) => item.sourcePath.split("/").pop() === sourcePath.split("/").pop());
+      if (candidates.length === 1) match = candidates[0];
+    }
+    if (match) {
+      link.setAttribute("href", articleUrl(match.id));
+      link.removeAttribute("target");
+    } else {
+      const project = article.sourceProject === "life" ? "life5years" : "Career-Information-Sharing";
+      link.setAttribute("href", `https://github.com/windmoon-Lotus/${project}/blob/main/${sourcePath.split("/").map(encodeURIComponent).join("/")}`);
+    }
+  }
+}
+
 async function bootArticleView() {
   const target = document.querySelector("[data-article-content]");
   if (!target) return;
@@ -341,6 +371,7 @@ async function bootArticleView() {
     } else {
       target.innerHTML = markdownToHtml(sourceText);
     }
+    resolveContentLinks(target, article, articles);
 
     const relatedTarget = document.querySelector("[data-related-articles]");
     const related = articles

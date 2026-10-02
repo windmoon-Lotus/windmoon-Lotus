@@ -1,0 +1,628 @@
+{
+  "sources": [
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/人生五年-人物索引.md",
+      "id": "life-7b061f22c1dc"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260613-从电影情节般的爱情，到她亲手种下的真实/2026-0613_播客单集介绍.md",
+      "id": "life-bfaaa90987de"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260712-小鱼/博士生也迷茫-修订版.md",
+      "id": "life-c317a66642c6"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260712-小鱼/博士生也迷茫：当目标过期以后-访谈后记-公众号排版.html",
+      "id": "life-14ee83830b0b"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260613-从电影情节般的爱情，到她亲手种下的真实/2026-0613_从电影情节般的爱情，到她亲手种下的真实.md",
+      "id": "life-f6ac40366028"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260808-i747/第九期/公众号HTML与封面/从网吧足球到基层工作-人物正传.md",
+      "id": "life-cefeed1c189d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/第八期/公开文章.md",
+      "id": "life-b8ac0c37fba9"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260808-i747/第九期/公众号HTML与封面/source/cover-prompts.md",
+      "id": "life-a883c5dc7c43"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260808-i747/第九期后记.md",
+      "id": "life-0c9f2dc62b4e"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-顾家的人也在找路-受访者的故事.md",
+      "id": "life-e473fc8264e0"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260425-访谈保险代理人刘进步/刘进步的故事.md",
+      "id": "life-e60f5bd3bbb1"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/流年的故事.md",
+      "id": "life-67e5e130a54f"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260712-小鱼/迷茫没有让她停下-公众号排版.html",
+      "id": "life-018155f04bad"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/人生五年V1——破茧成蝶的自由职业者Yamu.md",
+      "id": "life-cc8cf6a30eb1"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260425-访谈保险代理人刘进步/人生五年V2——访谈保险代理人刘进步-发布公众号等公开平台.md",
+      "id": "life-a3c5298224a1"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260512-爱玩游戏的短暂自由人/人生五年V3-感觉不上班真养人的流年.md",
+      "id": "life-4c03b7637a91"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260526-幸福的一种模样/人生五年V4-幸福的一种模样和我的阴暗面.md",
+      "id": "life-83f4b6bb0297"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260613-从电影情节般的爱情，到她亲手种下的真实/人生五年v5后记——在朋友家里，看见一个家庭的支点.md",
+      "id": "life-f9037c20eb1e"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260628-玲子/人生五年V6-她说自己完成了世俗对女人的期待我却听见了难过.md",
+      "id": "life-0bad2f00e4d4"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260808-i747/第九期/公众号HTML与封面/我为什么想采访一名基层公务员-访谈后记.md",
+      "id": "life-60ff1eb04709"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260628-玲子/用十年换两年：一个美术教师重新成为创作者-受访者故事.md",
+      "id": "life-aff7e01fd6d0"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260411-不被定义的斜杠00后，成功的个人职业者/Yamu的故事-发布公众号等公开平台.md",
+      "id": "life-501d2e48a882"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/教培服务咨询业/第八次访谈_心理咨询师/第八次访谈-回国后的心理咨询师.md",
+      "id": "career-c1c91ef2fd6b"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/第九次访谈/第九次访谈-医疗行业办公室副主任.md",
+      "id": "career-6c105cc20013"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/教培服务咨询业/第七次_迦迦的艺术之路/第七次访谈-我首次了解的艺术人生（美术老师）.md",
+      "id": "career-176ceaace7ff"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/电力/第三次访谈/第三次访谈对话AI精炼后人工修改版.md",
+      "id": "career-e55d54c19e17"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/第十次访谈—运营专员/第十次访谈—不做广告的运营专员.md",
+      "id": "career-fc4e698b8c91"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/第十一次访谈-会计/第十一次访谈-沉浸事业的财务.md",
+      "id": "career-537c5f69bc38"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/第五次访谈——六十分万岁与完美主义者的跨时代对话.md",
+      "id": "career-c90705ad933d"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/第五次访谈对话AI精炼版.md",
+      "id": "career-3c806ba11950"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/教培服务咨询业/第七次_迦迦的艺术之路/对话AI精炼版.md",
+      "id": "career-d27d506f4cfb"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/二次访谈-Secur1ty0的网安人生.md",
+      "id": "career-0c3c846eb6b6"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/访谈Secur1ty0的网安人生.md",
+      "id": "career-d49215cf161c"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/电力/第三次访谈/刚有孩子的大学好友-视频监控设备部署工程师.md",
+      "id": "career-99646b9514c5"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/个人创业者职业信息问卷-Maggie答.md",
+      "id": "career-648a3d115602"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/会计到独立制片人的传奇人生【还是M仓户外装备互助租赁管理人】.md",
+      "id": "career-a1f9eed6896c"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/互联网/首次访谈-玩了一年多的功能测试.md",
+      "id": "career-0e10ddf9e1f1"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/电力/第三次访谈/职业信息共享问卷_.md",
+      "id": "career-a4c5c67fb069"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/教培服务咨询业/第八次访谈_心理咨询师/职业信息共享问卷_第八次访谈.md",
+      "id": "career-da3c7844dfe6"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/第十次访谈—运营专员/职业信息共享问卷_广告运营.md",
+      "id": "career-bf30971162a4"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/教培服务咨询业/第七次_迦迦的艺术之路/职业信息共享问卷_迦迦答.md",
+      "id": "career-482edb01e007"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/第五次访谈_陶艺工作室/职业信息共享问卷_序号5.md",
+      "id": "career-e7fea33d2b5e"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/第九次访谈/职业信息共享问卷_序号8.md",
+      "id": "career-43483aaa1c28"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/互联网/第二次访谈Secur1ty0的网安人生/问卷问题_Secur1ty0答.md",
+      "id": "career-eb8cac2ec58f"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业访谈/个体经营/影视行业/第六次_访谈Maggie：会计到独立制片人传奇人生/AI精炼对话文本.md",
+      "id": "career-8526499b036c"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/吃冰淇淋被坑后能发现的经济常识.md",
+      "id": "life-b83ff6a8e747"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/创意、心态、能力与团队.md",
+      "id": "life-943f1c6eca57"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/读书笔记/读书的料与寒门贵子的感慨.md",
+      "id": "life-cdf20bf28455"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/风水背后的话语体系.md",
+      "id": "life-53db317c156c"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/公众号留言区言论氛围变化考.md",
+      "id": "life-1e777d39c7bb"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/海南骑行记【2026-1-25至26】.md",
+      "id": "life-158b10f480dd"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/回不去的农村，留不下的城市和想定居城市的女性.md",
+      "id": "life-29de10e1fef9"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/论虚荣：虚荣不虚？与理性.md",
+      "id": "life-f9cfcd7c293d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/迷茫是不甘，折腾是反抗.md",
+      "id": "life-cbaee56e7f67"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/名为关系的迷障.md",
+      "id": "life-457e044e879d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/农村发展的浅见-研学发展可行性？.md",
+      "id": "life-9c088323f312"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/农家研学反思二三事.md",
+      "id": "life-4b2447a8be52"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/奇事考/奇事考-导航趣事.md",
+      "id": "life-243b0c200a5d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/奇事考/奇事考-华为电脑管家系统盘瘦身迁移事件.md",
+      "id": "life-a18601a6df6d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/奇事考/奇事考-快递合集.md",
+      "id": "life-d2853fe90a22"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/奇事考/奇事考-网购坑事记.md",
+      "id": "life-eddd88fa5d2c"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/奇事考/奇事考-网约车合集.md",
+      "id": "life-97d79548e034"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/情绪经济和AI的思考.md",
+      "id": "life-d2139318e2d6"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生五年访谈计划.md",
+      "id": "life-3eaf50c3dc8b"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/适者所需的环境和基础能力.md",
+      "id": "life-56e2bbf468a2"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/数据巧合下的傲慢与偏见.md",
+      "id": "life-c561b08c2a48"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/水果理论：为什么有些人一直等不到爱情.md",
+      "id": "life-af3a27dfce1a"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/所谓坚持，可能只是欲望足够强.md",
+      "id": "life-c0fd157c6a69"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/所谓适者.md",
+      "id": "life-5e914fa57f5b"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/我对女权主义的迷思.md",
+      "id": "life-0d012fa32f3d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/我放弃进行职业访谈的原因.md",
+      "id": "life-5e393009007d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/读书笔记/县中孩子长大后的感慨（二）学习路上的误区.md",
+      "id": "life-554df29ea224"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/读书笔记/县中孩子长大后的感慨（一）过往与未来.md",
+      "id": "life-c325113c7332"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/意外受伤后医保结算金额遐思.md",
+      "id": "life-89b009feb87a"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/书籍推荐/悠然推荐的书单.md",
+      "id": "life-41606f61a327"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/见闻录/越往上的好好读书越是个费钱的事.md",
+      "id": "life-cc0ee4126ec5"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/越追求完美和理性，越难以进入一段感情？.md",
+      "id": "life-b41dc94d2441"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/糟糕的准备不如没有准备.md",
+      "id": "life-bdd4e50bca21"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/AI时代阅读过时了吗？-新版.md",
+      "id": "life-d92822078b80"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/AI时代，我们还需要怎样学习？.md",
+      "id": "life-121edc98e399"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/AI时代的避风塘和对未来的遐思.md",
+      "id": "life-0ba7311f3f8d"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/AI时代阅读过时了吗？.md",
+      "id": "life-30cbcd191ec2"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/windmoon-Lotus访谈复盘.md",
+      "id": "life-fba91e31d586"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生话题/婚姻观.md",
+      "id": "life-949b34bca9d0"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生话题/人生的意义.md",
+      "id": "life-3b54229e647f"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生话题/人生几道坑.md",
+      "id": "life-e0117be55e4a"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/模板/创业者问卷.md",
+      "id": "career-7117914dcec7"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/模板/访谈报告模板-初版.md",
+      "id": "career-5c9d066796f8"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/模板/职业百科模板.md",
+      "id": "career-41ab193efb53"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/模板/职业信息问卷与访谈提纲.md",
+      "id": "career-7716852fb93e"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/互联网/安服工程师（甲方）.md",
+      "id": "career-1016b7037fb6"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/互联网/产品运营.md",
+      "id": "career-c4b97525f8e1"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/互联网/功能测试.md",
+      "id": "career-5e1b0f281598"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/互联网/互联网行业目录.md",
+      "id": "career-c6c1460f8c13"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/制造业/制造行业目录.md",
+      "id": "career-fde81d13bab9"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/制造业/汽车总装技师.md",
+      "id": "career-c7c105039bac"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/互联网/网络管理员.md",
+      "id": "career-e60f594c3360"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/制造业/义乌制衣厂普工.md",
+      "id": "career-ee7e4f84444a"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业百科/制造业/义乌制衣厂质检.md",
+      "id": "career-75a749ef21f2"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "探索工具/行业和公司认识工具（长期更新，欢迎大家进行接力）.md",
+      "id": "career-18de9f711ded"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "探索工具/自我和方向性认知工具（长期更新，欢迎大家进行接力）.md",
+      "id": "career-2a42c763734b"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "探索工具/IMA知识库更新.md",
+      "id": "career-862400f649c3"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "访谈准备资料/人生五年项目规划书.md",
+      "id": "life-1298443b716a"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "项目故事/大事记的意义.md",
+      "id": "career-3e8256aafb91"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "项目故事/项目发展历程.md",
+      "id": "career-4f5f4ebd60e8"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/创业构思和实践.md",
+      "id": "career-8c69cb97e77c"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/公众号宣传.md",
+      "id": "career-662792e818d3"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/家长讲义.md",
+      "id": "career-9316284badd0"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/农家研学课程体系设计.md",
+      "id": "career-21c20f95253d"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/生活指北（达人信任订阅平台）V1.md",
+      "id": "career-240ac88ea2f1"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/书知转绘本.md",
+      "id": "career-0a36a5782a3f"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "共创专区/进行中的项目/农家研学构思AI完善板_最终补全版.md",
+      "id": "career-627b874cd81d"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "趣味知识/每个人的经济学：五种失业模式和失业统计小知识.md",
+      "id": "career-adb92ddc92c7"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "管理规范/内容贡献协议.md",
+      "id": "career-84326e003763"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "README.md",
+      "id": "career-8ec9a00bfd09"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年访谈计划.md",
+      "id": "life-dc77440009a6"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "职业人生故事征集.md",
+      "id": "career-fd8436fe362a"
+    },
+    {
+      "sourceProject": "career",
+      "sourcePath": "图片/剪辑说明.md",
+      "id": "career-a78fd22da2e0"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "README.md",
+      "id": "life-8ec9a00bfd09"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260826-愚者/发布候选包-拙己-v1/什么都不缺，只是没有特别想要的-人物故事A版-公众号排版.html",
+      "title": "什么都不缺，只是没有特别想要的",
+      "removeConfirmedDraftLabel": true,
+      "id": "life-4d5fd62a6143"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260826-愚者/第十期访谈后记.md",
+      "title": "当未来变得可以预料",
+      "id": "life-10b8b2ad78a5"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260919-青溟/第十二期人物故事-公众号复制版.html",
+      "title": "很喜欢人类，却不太喜欢自己",
+      "id": "life-2acf65b3f2a3"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "人生五年/20260919-青溟/第十二期访谈后记-修改版.md",
+      "id": "life-e97428767309"
+    },
+    {
+      "sourceProject": "life",
+      "sourcePath": "随笔/人生遐思/意义不意义-二版.md",
+      "id": "life-de4a0b3208c5"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ let voices = [];
 const chineseOrders = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
 
 function issueLabel(order) {
+  if (order > 10 && order < 20) return `第十${chineseOrders[order - 10]}期`;
   return `第${chineseOrders[order] || order}期`;
 }
 
@@ -49,6 +50,7 @@ function buildTicks() {
   voices.forEach((voice, index) => {
     const button = document.createElement("button");
     button.type = "button";
+    button.setAttribute("aria-pressed", "false");
     button.setAttribute("aria-label", `摘录 ${index + 1}：${voice.name}`);
     button.addEventListener("click", () => show(index));
     el.ticks.appendChild(button);
@@ -59,6 +61,7 @@ function markTicks() {
   if (!el.ticks) return;
   el.ticks.querySelectorAll("button").forEach((button, index) => {
     button.classList.toggle("active", index === current);
+    button.setAttribute("aria-pressed", String(index === current));
   });
 }
 

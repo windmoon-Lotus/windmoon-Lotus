@@ -28,6 +28,10 @@ const sources = [
 
 const contentRoot = path.join(siteRoot, "content");
 const dataRoot = path.join(siteRoot, "data");
+const publicationManifest = JSON.parse(await readFile(path.join(dataRoot, "public-sources.json"), "utf8"));
+const approvedSources = new Map(publicationManifest.sources.map((item) => [
+  `${item.sourceProject}:${item.sourcePath}`, item
+]));
 
 function normalizeSlash(value) {
   return value.split(path.sep).join("/");
@@ -100,13 +104,12 @@ function sectionFor(sourceKey, relativePath) {
 }
 
 function shouldIncludeFile(sourceKey, fullPath, sourceRoot) {
+  const relativePath = normalizeSlash(path.relative(sourceRoot, fullPath));
+  const source = sources.find((item) => item.key === sourceKey);
+  if (!approvedSources.has(`${sourceKey}:${publicSourceInfo(relativePath, source).sourcePath}`)) return false;
   const extension = path.extname(fullPath).toLowerCase();
   if (extension === ".md") return true;
-  if (extension !== ".html" || sourceKey !== "life") return false;
-
-  // 仅兼容直接放在单期目录中的公众号定稿；嵌套的排版稿通常已有同名 Markdown。
-  const relativePath = normalizeSlash(path.relative(sourceRoot, fullPath));
-  return /^人生五年\/[^/]+\/[^/]+\.html$/i.test(relativePath);
+  return extension === ".html" && sourceKey === "life";
 }
 
 function isSupersededSource(relativePath) {
@@ -152,6 +155,24 @@ function githubSourceUrl(source, relativePath) {
 }
 
 async function main() {
+  if (path.dirname(contentRoot) !== siteRoot || path.basename(contentRoot) !== "content") {
+    throw new Error("正文输出目录必须位于网站根目录内");
+  }
+  // 先确认所有公开来源存在，避免目录改名后悄悄删掉线上文章。
+  for (const item of publicationManifest.sources) {
+    const source = sources.find((entry) => entry.key === item.sourceProject);
+    if (!source) throw new Error(`未知来源：${item.sourceProject}`);
+    let localSourcePath = item.sourcePath;
+    if (item.sourcePath === "人生五年/第八期/公开文章.md") {
+      const directories = await readdir(path.join(source.root, "人生五年"));
+      const directory = directories.find((name) => name.startsWith("20260722-"));
+      if (!directory) throw new Error("未找到第八期公开文章");
+      localSourcePath = `人生五年/${directory}/第八期-五年后在决定是否公开的一场访谈.md`;
+    }
+    const fullPath = path.resolve(source.root, localSourcePath);
+    if (!fullPath.startsWith(`${source.root}${path.sep}`)) throw new Error("来源路径超出资料库");
+    await stat(fullPath);
+  }
   await rm(contentRoot, { recursive: true, force: true });
   await mkdir(contentRoot, { recursive: true });
   await mkdir(dataRoot, { recursive: true });
@@ -166,11 +187,13 @@ async function main() {
       const normalizedRelative = normalizeSlash(relativePath);
       if (isSupersededSource(normalizedRelative)) continue;
 
-      const sourceText = await readFile(fullPath, "utf8");
+      const approval = approvedSources.get(`${source.key}:${publicSourceInfo(normalizedRelative, source).sourcePath}`);
+      const sourceText = (await readFile(fullPath, "utf8"))
+        .replace(approval.removeConfirmedDraftLabel ? " · A 版确认稿" : /$^/, "");
       const extension = path.extname(fullPath).toLowerCase();
       const contentFormat = extension === ".html" ? "html" : "markdown";
       const [section, sectionLabel] = sectionFor(source.key, normalizedRelative);
-      const id = makeId(source.key, normalizedRelative);
+      const id = approval.id || makeId(source.key, normalizedRelative);
       const outputDir = path.join(contentRoot, section);
       const outputPath = path.join(outputDir, `${id}${extension}`);
       const text = contentFormat === "html" ? stripHtml(sourceText) : stripMarkdown(sourceText);
@@ -185,13 +208,15 @@ async function main() {
 
       articles.push(enrichArticle({
         id,
-        title,
+        title: approval.title || title,
         sourceProject: source.key,
         sourceProjectLabel: source.label,
         section,
         sectionLabel,
         sourcePath: publicSource.sourcePath,
-        sourceUrl: publicSource.sourceUrl,
+        sourceUrl: publicSource.sourceUrl
+          ? `https://github.com/windmoon-Lotus/windmoon-Lotus/blob/main/content/${section}/${id}${extension}`
+          : null,
         contentPath: normalizeSlash(path.relative(siteRoot, outputPath)),
         excerpt: text.slice(0, 180),
         wordCount: text.length,

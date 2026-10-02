@@ -21,9 +21,11 @@ const variantButtons = document.querySelectorAll("[data-variant]");
 function applyVariant(index) {
   const variant = variants[index];
   if (!variant || !cardLine || !cardSpark) return;
-  variantButtons.forEach((button) =>
-    button.classList.toggle("active", Number(button.dataset.variant) === index)
-  );
+  variantButtons.forEach((button) => {
+    const selected = Number(button.dataset.variant) === index;
+    button.classList.toggle("active", selected);
+    button.setAttribute("aria-pressed", String(selected));
+  });
   if (prefersReduced) {
     cardLine.textContent = variant.line;
     cardSpark.textContent = variant.spark;

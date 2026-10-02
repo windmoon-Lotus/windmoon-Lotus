@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="do.css">
+    <link rel="stylesheet" href="do.css?v=20261002">
   </head>
   <body>
     <a class="skip-link" href="#method">跳到正文</a>
@@ -64,10 +64,10 @@
               </div>
             </article>
           </div>
-          <div class="card-switch" role="tablist" aria-label="切换引子卡">
-            <button class="active" type="button" data-variant="0" aria-label="引子 1"></button>
-            <button type="button" data-variant="1" aria-label="引子 2"></button>
-            <button type="button" data-variant="2" aria-label="引子 3"></button>
+          <div class="card-switch" role="group" aria-label="切换引子卡">
+            <button class="active" type="button" data-variant="0" aria-label="引子 1" aria-pressed="true"></button>
+            <button type="button" data-variant="1" aria-label="引子 2" aria-pressed="false"></button>
+            <button type="button" data-variant="2" aria-label="引子 3" aria-pressed="false"></button>
             <span class="card-switch-hint mono">换一张 · 截图保存</span>
           </div>
         </div>
@@ -171,15 +171,20 @@
       </section>
 
       <!-- 收录联系 -->
-      <section class="band band--join" aria-labelledby="do-join-title">
+      <section class="band band--join" id="submit" aria-labelledby="do-join-title">
         <div class="band-inner" data-reveal>
           <p class="kicker mono kicker--light">Also · 愿意把它留在这里吗？</p>
           <h2 id="do-join-title">让你的五年，<br>在这里与更多人相遇。</h2>
           <p class="band-lede">如果你已经在自己的平台发布，也愿意让更多人读到，可以把文章发给「事象记录」。收录前会与你确认，之后你也可以随时修改或撤下。</p>
           <div class="join-actions">
-            <a class="btn btn--solid" href="#top">了解收录方式</a>
+            <a class="btn btn--solid" href="#submit-steps">了解收录方式</a>
             <span class="join-contact mono">收录 / 联系：公众号「事象记录」</span>
           </div>
+          <ol class="submit-steps" id="submit-steps">
+            <li>在微信搜索公众号「事象记录」，通过公众号消息发送你的文章链接或正文。</li>
+            <li>说明希望展示的名字或笔名，以及愿意公开的范围。</li>
+            <li>我们与你确认展示内容后再收录；修改或撤下，也可以通过同一渠道联系。</li>
+          </ol>
         </div>
       </section>
     </main>
@@ -202,6 +207,6 @@
       </div>
     </footer>
 
-    <script src="do.js"></script>
+    <script src="do.js?v=20261002"></script>
   </body>
 </html>
